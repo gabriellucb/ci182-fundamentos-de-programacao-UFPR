@@ -1,0 +1,163 @@
+CI182 - Fundamentos de Programação de
+Computadores 2026/1
+Professora: Aurora Trinidad Ramirez Pozo
+Monitoria e Elaboração: Gabriel Lucas Barbosa
+
+Lista 07 – Manipulação de Arquivos
+Revisão
+•
+•
+
+Abertura de Arquivos: Usamos a função open("nome_do_arquivo.txt", "modo").
+Modos de Operação:
+"r" (Read): Lê o arquivo (o arquivo precisa existir).
+"w" (Write): Escreve no arquivo. Se o arquivo já existir, ele apaga tudo e recria do zero!
+"a" (Append): Adiciona conteúdo ao final do arquivo sem apagar o que já existe.
+
+•
+
+arq.read(): Lê o arquivo inteiro como uma única String.
+
+•
+
+arq.read().splitlines(): Lê o arquivo e devolve uma Lista, onde cada elemento é uma
+linha do arquivo.
+
+•
+
+Escrita: Usamos arq.write("texto"). Lembre-se que o .write() não pula linha
+automaticamente, você deve adicionar \n no final da string.
+Fechamento: Nunca esqueça de usar arq.close() após terminar de usar o arquivo
+para salvar as alterações e liberar a memória!
+
+•
+
+- Exercício 1
+Crie um programa que abra (ou crie) um arquivo chamado saudacao.txt em modo
+de escrita ("w"). Escreva a frase "Escrito no Python!" dentro dele e feche o arquivo.
+Lembre de escrever uma mensagem ao usuário quando criar o arquivo.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário.
+Saída Esperada:
+Arquivo 'saudacao.txt' criado com sucesso!
+
+- Exercício 2
+Crie um programa que abra o arquivo que você acabou de criar (saudacao.txt) em
+modo de leitura ("r"), leia todo o seu conteúdo usando .read(), imprima o conteúdo
+na tela e feche o arquivo.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário.
+Saída Esperada:
+Escrito no Python!
+
+- Exercício 3
+Crie um programa que abra o arquivo saudacao.txt em modo de adição ("a" append) e adicione a frase "Esta é a segunda linha adicionada." no final do arquivo.
+Lembre-se do \n.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário.
+Saída Esperada:
+Nova linha adicionada ao final do arquivo!
+
+- Exercício 4
+Crie um programa que utilize um laço para pedir ao usuário o nome de 3
+convidados para uma festa. O programa deve abrir um arquivo chamado
+convidados.txt e gravar cada nome digitado em uma linha diferente do arquivo.
+Exemplo de execução:
+Entrada:
+Nome do convidado 1: Maria
+Nome do convidado 2: João
+Nome do convidado 3: Ana
+Saída Esperada:
+Lista de convidados salva no arquivo 'convidados.txt'.
+
+- Exercício 5
+Crie um programa que leia o arquivo convidados.txt criado no exercício anterior
+usando o método .read().splitlines(). O programa deve imprimir a lista gerada e
+informar quantos convidados existem (usando a função len()).
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário.
+Saída Esperada:
+Lista extraída: ['Maria', 'João', 'Ana']
+Total de convidados registrados: 3
+
+- Exercício 6
+Crie um programa que abra arquivo chamado numeros.txt em modo de escrita
+("w"). Utilize um laço for para gravar 5 números no arquivo, garantindo que cada
+número fique em uma linha diferente (use o \n). Abra o arquivo numeros.txt em
+modo de leitura. Utilize o método .read().splitlines() para extrair as linhas como
+uma lista. Converta cada elemento para inteiro, calcule a soma total de todos os
+números e imprima o resultado.
+Exemplo de execução:
+Entrada:
+Insira um valor: 2
+Insira um valor: 42
+Insira um valor: 5
+Insira um valor: 8
+Insira um valor: 23
+Saída Esperada:
+Arquivo ‘numeros.txt’ gerado com sucesso.
+Soma dos números do arquivo é: 80
+
+- Exercício 7
+Sistemas comerciais armazenam dados organizados por delimitadores (como a
+vírgula). Faça um programa que peça ao usuário o Nome e a Idade de 3 pessoas.
+Salve esses dados em um arquivo chamado dados.csv no formato Nome,Idade
+em cada linha.
+Exemplo de execução:
+Entrada:
+Nome da pessoa 1: Felipe
+Idade: 20
+Nome da pessoa 2: Marina
+Idade: 22
+Nome da pessoa 3: João
+Idade: 19
+Saída Esperada:
+Base de dados 'dados.csv' gerada com sucesso!
+
+- Exercício 8
+Crie um programa que abra o arquivo dados.csv em modo de leitura. O programa
+deve ler linha por linha, utilizar a função .split(",") para separar o nome da idade, e
+descobrir qual é o nome da pessoa mais velha da lista.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário.
+Saída Esperada:
+A pessoa mais velha do arquivo é Marina com 22 anos.
+
+- Exercício 9
+Crie um programa que leia o arquivo numeros.txt gerado no exercício 6. O
+programa deve abrir um SEGUNDO arquivo chamado pares.txt em modo "w", e
+gravar nele apenas os números lidos do primeiro arquivo que sejam pares.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário.
+Saída Esperada:
+Filtro concluído! Apenas os pares foram salvos em 'pares.txt'.
+
+- Desafio
+Em jogos, o inventário do personagem é frequentemente atualizado e consultado.
+Vamos simular isso utilizando os três modos de ficheiro ("w", "a", "r").
+Inicie o inventário. Abra um arquivo chamado mochila.txt em modo de escrita ("w")
+e grave dois itens iniciais (um por linha), Ex: "Mapa" e "Moedas". Feche o arquivo.
+Crie um laço perguntando se o usuário quer adicionar um item (S/N). Se sim (‘S’),
+peça para digitar o nome. Abra o arquivo em modo de adição ("a"), grave este novo
+item com uma quebra de linha (\n) e feche o arquivo.
+Caso o usuário digite ‘N’, mostre o inventário completo. Abra o arquivo em modo
+de leitura ("r"), extraia as linhas usando .read().splitlines() e imprima a lista
+atualizada. Utilize também a função len() para informar quantos itens o inventário
+tem no total.
+Exemplo de execução:
+Entrada:
+Adicionar item (S/N)? S
+Qual o nome do item? Câmera
+Adicionar item (S/N)? N
+Saída Esperada:
+Item adicionado!
+Inventário Atualizado: [‘Mapa’, ‘Moedas’, ‘Câmera’]
+O inventário tem o total de 3 itens.
+
+

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" width="480" height="260">
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <!-- fundo -->
+  <rect width="480" height="260" fill="white" rx="8" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- título -->
+  <text x="240" y="24" text-anchor="middle" dominant-baseline="central" class="mono" font-size="14" font-weight="bold" fill="#333">notas = [8.5, 7.0, 9.0, 6.5]</text>
+
+  <!-- painel esquerdo: ATRIBUTOS -->
+  <rect x="20" y="46" width="205" height="194" rx="8" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.8"/>
+  <text x="122" y="68" text-anchor="middle" dominant-baseline="central" class="sans" font-size="13" font-weight="bold" fill="#1a3a6a">ATRIBUTOS (dados)</text>
+
+  <!-- 4 células com os valores da lista -->
+  <rect x="35"  y="90" width="38" height="44" rx="5" fill="white" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="81"  y="90" width="38" height="44" rx="5" fill="white" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="127" y="90" width="38" height="44" rx="5" fill="white" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="173" y="90" width="38" height="44" rx="5" fill="white" stroke="#3a80c8" stroke-width="1.5"/>
+
+  <text x="54"  y="112" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" fill="#1a3a6a">8.5</text>
+  <text x="100" y="112" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" fill="#1a3a6a">7.0</text>
+  <text x="146" y="112" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" fill="#1a3a6a">9.0</text>
+  <text x="192" y="112" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" fill="#1a3a6a">6.5</text>
+
+  <text x="54"  y="146" text-anchor="middle" class="sans" font-size="10" fill="#7ba7d6">0</text>
+  <text x="100" y="146" text-anchor="middle" class="sans" font-size="10" fill="#7ba7d6">1</text>
+  <text x="146" y="146" text-anchor="middle" class="sans" font-size="10" fill="#7ba7d6">2</text>
+  <text x="192" y="146" text-anchor="middle" class="sans" font-size="10" fill="#7ba7d6">3</text>
+
+  <text x="122" y="212" text-anchor="middle" class="sans" font-size="11" fill="#5a7ba0">cada posição guarda</text>
+  <text x="122" y="228" text-anchor="middle" class="sans" font-size="11" fill="#5a7ba0">um valor</text>
+
+  <!-- painel direito: MÉTODOS -->
+  <rect x="255" y="46" width="205" height="194" rx="8" fill="#fff7ed" stroke="#e07722" stroke-width="1.8"/>
+  <text x="357" y="68" text-anchor="middle" dominant-baseline="central" class="sans" font-size="13" font-weight="bold" fill="#7c2d12">MÉTODOS (ações)</text>
+
+  <text x="357" y="104" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" fill="#7c2d12">notas.append(7.5)</text>
+  <text x="357" y="138" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" fill="#7c2d12">notas.sort()</text>
+  <text x="357" y="172" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" fill="#7c2d12">notas.count(7.0)</text>
+
+  <text x="357" y="212" text-anchor="middle" class="sans" font-size="11" fill="#b9702e">o que o objeto sabe</text>
+  <text x="357" y="228" text-anchor="middle" class="sans" font-size="11" fill="#b9702e">fazer com os dados</text>
+</svg>

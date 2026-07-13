@@ -1,0 +1,258 @@
+CI182 - Fundamentos de Programação de
+Computadores 2026/1
+Professora: Aurora Trinidad Ramirez Pozo
+Monitoria e Elaboração: Gabriel Lucas Barbosa
+
+Lista 03 - Estruturas de Repetição
+- Exercício 1
+Você foi encarregado de programar o painel de lançamento de um foguete de
+testes. Usando um laço while, crie um programa que peça ao usuário um número
+inicial para a contagem regressiva. O programa deve imprimir o valor do contador,
+diminuir 1 a cada repetição e, quando o contador chegar a 0, imprimir a
+mensagem "FOGO!".
+Exemplo de execução:
+Entrada:
+Insira o número inicial: 3
+Saída Esperada:
+3
+2
+1
+FOGO!
+
+- Exercício 2
+Um pesquisador precisa somar o peso de 5 amostras de rocha coletadas no
+campo. Usando um laço while e uma variável acumuladora, crie um programa que
+peça o peso da amostra 5 vezes. Ao final do laço, imprima o peso total acumulado.
+Exemplo de execução:
+Entrada:
+Digite o peso da amostra (kg): 2
+Digite o peso da amostra (kg): 3
+Digite o peso da amostra (kg): 1
+Digite o peso da amostra (kg): 4
+Digite o peso da amostra (kg): 5
+Saída Esperada:
+Peso total acumulado: 15 kg.
+
+- Exercício 3
+Em uma catraca de refeitório, o sistema não sabe quantos alunos vão entrar, mas
+sabe que a catraca trava quando o operador digita o código "0". Usando while, crie
+um programa que leia continuamente a matrícula do aluno (número inteiro). Pare
+de ler quando o número 0 for digitado. Ao final, use uma variável contadora para
+mostrar exatamente quantos alunos passaram (não conte o zero).
+Exemplo de execução:
+Entrada:
+Matrícula do aluno (0 para travar): 202610
+Matrícula do aluno (0 para travar): 202615
+Matrícula do aluno (0 para travar): 0
+Saída Esperada:
+Total de alunos registrados: 2.
+
+- Exercício 4
+Faça um programa que leia um número inteiro digitado pelo usuário, calcule e
+imprima a tabuada de 1 a 10 desse número.
+Exemplo de execução:
+Entrada:
+Qual tabuada você deseja ver? 5
+Saída Esperada:
+5x1=5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+- Exercício 5
+O comando de repetição for, quando utilizado junto com a função range(), facilita
+muito a criação de laços onde sabemos exatamente o valor inicial, o valor final e o
+"passo" (o tamanho do salto entre um número e outro).
+Crie um programa que peça ao usuário um número inteiro limite. Utilizando um
+laço for, o programa deve imprimir todos os números pares, começando do 0 até
+atingir esse número limite (incluindo o próprio limite, caso ele seja par).
+Dica: Na função range(), o valor apontado no "fim" nunca é incluído na repetição.
+Você precisará somar 1 ao valor de parada dentro do seu range().
+Exemplo de execução:
+Entrada:
+Digite o número limite: 6
+Saída Esperada:
+0
+2
+4
+6
+
+- Exercício 6
+Escreva um programa para calcular a soma acumulada de uma sequência de
+números. O programa deve pedir ao usuário dois números inteiros: um valor inicial
+e um valor final (assuma que o valor inicial será sempre menor ou igual ao final).
+Usando um laço de repetição, o programa deve percorrer todos os números dentro
+desse intervalo fechado (ou seja, incluindo o número inicial e o número final) e
+somá-los passo a passo. Ao final da repetição, exiba o resultado total da soma.
+Dica: Por exemplo, se os números fornecidos forem 5 e 7, o programa deverá
+calcular 5 + 6 + 7 e apresentar o resultado final.
+Exemplo de execução:
+Entrada:
+Digite o valor inicial: 5
+Digite o valor final: 7
+Saída Esperada:
+A soma do intervalo é: 18
+
+- Exercício 7
+Escreva um programa que solicite ao usuário dois números inteiros,
+representando o início e o fim de um intervalo. Utilizando um laço de repetição, o
+programa deve analisar cada número dentro desse intervalo fechado (ou seja,
+incluindo os próprios números digitados). Durante a repetição, o programa deve
+fazer duas tarefas simultaneamente: somar os valores desses números e registrar
+quantos foram encontrados. Ao final, imprima a soma total e a quantidade de
+números divisíveis por 7.
+Exemplo de execução:
+Entrada:
+Valor inicial: 1
+Valor final: 15
+Saída Esperada:
+Soma dos divisíveis por 7: 21
+Quantidade de números encontrados: 2
+
+- Exercício 8
+Você foi encarregado de desenvolver um software para auxiliar um professor a
+calcular a média das notas de uma turma. Como o professor não sabe de
+antemão quantos alunos existem na sala, o programa deve pedir as notas
+continuamente. A repetição só deve ser interrompida quando o professor digitar
+um valor negativo (por exemplo, -1), que servirá como um "sinal de parada".
+O programa deve acumular a soma das notas válidas e contar quantas notas
+foram digitadas. Ao final, calcule e imprima a média aritmética da turma
+Exemplo de execução:
+Entrada:
+Informe a nota do aluno (-1 para encerrar): 8.0
+Informe a nota do aluno (-1 para encerrar): 9.0
+Informe a nota do aluno (-1 para encerrar): 7.0
+Informe a nota do aluno (-1 para encerrar): -1
+Saída Esperada:
+Média da turma: 8.0
+
+- Exercício 9
+Crie um programa que simule um caixa de mercado usando while True. O sistema
+deve pedir o valor de cada produto comprado. Se o valor digitado for 0, o laço deve
+ser encerrado. Durante o processo, acumule o valor total da compra. Quando o
+laço acabar, se o total da compra for maior que R$ 200.00, aplique um desconto
+de 10%. Imprima o valor final a ser pago.
+Exemplo de execução:
+Entrada:
+Valor do produto (0 para finalizar): 100
+Valor do produto (0 para finalizar): 150
+Valor do produto (0 para finalizar): 0
+Saída Esperada:
+Total a pagar com desconto: R$ 225.00
+
+-Exercício 10
+Crie um sistema de segurança utilizando o laço while True (que cria uma repetição
+infinita por padrão). O programa deve pedir a senha ao usuário, mas ele possui um
+limite estrito de 5 tentativas.
+Dentro do laço, o seu código deve seguir estas regras:
+1. Se a senha digitada for "UFPR2026", imprima "Acesso Liberado" e encerre o
+programa na hora.
+2. Caso a senha esteja errada, reduza o número de tentativas e avise o
+usuário de quantas chances ele ainda tem.
+3. Se as tentativas acabarem, o programa também deve ser encerrado.
+Exemplo de execução:
+Entrada:
+Digite a senha de acesso: admin
+Digite a senha de acesso: UFPR2026
+Saída Esperada:
+Senha incorreta, restam 4 tentativas.
+Acesso Liberado
+
+- Exercício 11
+O fatorial de um número inteiro positivo (representado por N!) é a multiplicação
+desse número por todos os seus antecessores até o número 1. Escreva um
+programa que receba um número e, utilizando um laço de repetição (while ou for),
+calcule o seu Fatorial (produto acumulado).
+Exemplo de execução:
+Entrada:
+Digite um número para calcular o fatorial: 5
+Saída Esperada:
+O fatorial é 120
+
+- Exercício 12
+Sistemas industriais precisam de dados confiáveis. Escreva um programa que
+obrigue o operador a preencher duas informações de forma correta usando laços
+while:
+1. Temperatura de Operação: Não pode ser menor que 0 nem maior que 1000.
+2. Pressão da Válvula: Deve ser um valor estritamente maior que 0.
+Caso o operador digite um valor inválido, o programa deve pedir o mesmo dado
+novamente até que seja válido. Só imprima "Configuração aceita" quando ambos
+estiverem corretos.
+Exemplo de execução:
+Entrada:
+Temperatura de Operação (0 a 1000): 1500
+Temperatura de Operação (0 a 1000): 500
+Pressão da Válvula (>0): -10
+Pressão da Válvula (>0): 50
+Saída Esperada:
+Erro! Temperatura inválida.
+Erro! Pressão inválida.
+Configuração aceita.
+
+- Exercício 13
+Em uma linha de produção industrial, o controle de qualidade avalia os lotes
+analisando 10 peças por vez. Crie um programa que utilize o laço de repetição for
+para solicitar ao operador o comprimento (em centímetros) de exatamente 10
+peças.
+Durante a repetição, o programa deve classificar e contar cada peça com base nas
+seguintes regras:
+•
+
+Tamanho Ideal: O comprimento deve estar entre 10.0 cm e 10.5 cm
+(incluindo esses valores).
+
+•
+
+Defeituosa: Qualquer comprimento que esteja fora desse intervalo.
+
+Ao final do laço (após a leitura e classificação de todas as 10 peças), o programa
+deve exibir: a quantidade de peças com tamanho ideal, a quantidade de peças
+defeituosas e a porcentagem de peças defeituosas do lote.
+Exemplo de execução:
+Entrada:
+Comprimento da peça: 10.2
+Comprimento da peça: 10.3
+Comprimento da peça: 10.1
+Comprimento da peça: 10.4
+Comprimento da peça: 10.5
+Comprimento da peça: 10.0
+Comprimento da peça: 10.2
+Comprimento da peça: 10.3
+Comprimento da peça: 11.0
+Comprimento da peça: 9.5
+Saída Esperada:
+Peças ideais: 8
+Peças defeituosas: 2
+20.0% de perda.
+
+- Exercício 14 (Desafio)
+Em sistemas de criptografia, a geração de números primos é uma etapa
+fundamental. Um número primo é aquele que só é divisível exatamente por 1 e por
+ele mesmo. Escreva um programa que leia um número inteiro "limite" maior que 1.
+O programa deve analisar e imprimir todos os números primos que existem entre
+2 e o número limite digitado.
+Dica: Utilize laços aninhados. Você precisará de um laço externo para percorrer os
+números até o limite. Dentro dele, precisará de um laço interno para testar os
+divisores do número atual. Lembre-se de "zerar" o seu contador de divisores toda
+vez que o laço externo for testar um número novo!
+Exemplo de execução:
+Entrada:
+Digite o número limite: 20
+Saída Esperada:
+Os números primos de 2 até 20 são:
+2
+3
+5
+7
+11
+13
+17
+19
+
+

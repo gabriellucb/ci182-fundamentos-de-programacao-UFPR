@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 214" width="620" height="214">
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <!-- fundo -->
+  <rect width="620" height="214" fill="white" rx="8" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- ── PAINEL ESQUERDO: print ── -->
+  <!-- fundo branco -->
+  <rect x="14" y="14" width="278" height="186" rx="8" fill="white"/>
+  <!-- cabeçalho colorido (rx só nos cantos superiores: desenhamos o rect com rx e depois um rect plano sobrepõe os cantos inferiores) -->
+  <rect x="14" y="14" width="278" height="40" rx="8" fill="#fdecea"/>
+  <rect x="14" y="40" width="278" height="14" fill="#fdecea"/>
+  <!-- borda do painel inteiro -->
+  <rect x="14" y="14" width="278" height="186" rx="8" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+  <!-- título -->
+  <text x="153" y="39" text-anchor="middle" dominant-baseline="central" class="sans" font-size="15" font-weight="bold" fill="#922b21">✗  print</text>
+
+  <!-- código -->
+  <text x="30" y="76" class="mono" font-size="13" fill="#555">def soma(a, b):</text>
+  <text x="30" y="98" class="mono" font-size="14" font-weight="bold" fill="#c0392b">    print(a + b)</text>
+  <text x="30" y="118" class="sans" font-size="11" fill="#c0392b" font-style="italic">      → imprime na tela e some</text>
+
+  <!-- separador -->
+  <line x1="30" y1="130" x2="278" y2="130" stroke="#f5b7b1" stroke-width="1" stroke-dasharray="5,3"/>
+
+  <text x="30" y="151" class="mono" font-size="13" fill="#555">res = soma(3, 5)</text>
+  <text x="30" y="173" class="mono" font-size="13" fill="#c0392b">print(res)  # None  ✗</text>
+  <text x="30" y="192" class="sans" font-size="11" fill="#a93226">res ficou vazio — não dá para usar</text>
+
+  <!-- ── "vs" central ── -->
+  <text x="310" y="110" text-anchor="middle" dominant-baseline="central" class="sans" font-size="13" fill="#CCCCCC">vs</text>
+
+  <!-- ── PAINEL DIREITO: return ── -->
+  <rect x="328" y="14" width="278" height="186" rx="8" fill="white"/>
+  <rect x="328" y="14" width="278" height="40" rx="8" fill="#e9f5ee"/>
+  <rect x="328" y="40" width="278" height="14" fill="#e9f5ee"/>
+  <rect x="328" y="14" width="278" height="186" rx="8" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+  <text x="467" y="39" text-anchor="middle" dominant-baseline="central" class="sans" font-size="15" font-weight="bold" fill="#1e8449">✓  return</text>
+
+  <!-- código -->
+  <text x="344" y="76" class="mono" font-size="13" fill="#555">def soma(a, b):</text>
+  <text x="344" y="98" class="mono" font-size="14" font-weight="bold" fill="#27ae60">    return a + b</text>
+  <text x="344" y="118" class="sans" font-size="11" fill="#27ae60" font-style="italic">      → valor volta para quem chamou</text>
+
+  <!-- separador -->
+  <line x1="344" y1="130" x2="592" y2="130" stroke="#a9dfbf" stroke-width="1" stroke-dasharray="5,3"/>
+
+  <text x="344" y="151" class="mono" font-size="13" fill="#555">res = soma(3, 5)</text>
+  <text x="344" y="173" class="mono" font-size="13" fill="#27ae60">print(res)  # 8   ✓</text>
+  <text x="344" y="192" class="sans" font-size="11" fill="#1e8449">res guarda o 8 — pode usar depois</text>
+</svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 300" width="580" height="300">
+  <style>
+    .s { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .m { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <defs>
+    <marker id="arr-g" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,1 L7,4 L0,7 Z" fill="#c8cdd4"/>
+    </marker>
+  </defs>
+
+  <!-- Fundo com borda sutil -->
+  <rect width="580" height="300" fill="white" rx="8" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Título -->
+  <text x="270" y="27" text-anchor="middle" class="s" font-size="13.5" font-weight="bold" fill="#111827">rede neural — pesos como matriz</text>
+
+  <!-- Rótulos das camadas (y=52 e y=65) -->
+  <text x="85"  y="52" text-anchor="middle" class="s" font-size="11.5" font-weight="bold" fill="#2563eb">camada de entrada</text>
+  <text x="222" y="52" text-anchor="middle" class="s" font-size="10.5" fill="#6b7280">pesos_camada[i][j]</text>
+  <text x="222" y="65" text-anchor="middle" class="m" font-size="9.5"  fill="#9ca3af">3×3 = 9 valores</text>
+  <text x="360" y="52" text-anchor="middle" class="s" font-size="11.5" font-weight="bold" fill="#b45309">camada oculta</text>
+
+  <!-- ══════════════════════════════════════════════
+       LINHAS DE CONEXÃO — desenhadas ANTES dos nós
+       Cor: vermelho/laranja = positivo, azul = negativo
+       Espessura: forte ≥ 0.5 (w=3), médio 0.2-0.5 (w=2), fraco < 0.2 (w=1, opac=0.55)
+       ══════════════════════════════════════════════ -->
+
+  <!-- I0(85,95)  → H0(360,95)   pesos[0][0] =  0.23  pos médio -->
+  <line x1="85" y1="95"  x2="360" y2="95"  stroke="#ea580c" stroke-width="2"/>
+  <!-- I1(85,160) → H0(360,95)   pesos[0][1] = -0.71  neg forte -->
+  <line x1="85" y1="160" x2="360" y2="95"  stroke="#1d4ed8" stroke-width="3"/>
+  <!-- I2(85,225) → H0(360,95)   pesos[0][2] =  0.14  pos fraco -->
+  <line x1="85" y1="225" x2="360" y2="95"  stroke="#fdba74" stroke-width="1" opacity="0.55"/>
+  <!-- I0(85,95)  → H1(360,160)  pesos[1][0] =  0.58  pos forte -->
+  <line x1="85" y1="95"  x2="360" y2="160" stroke="#dc2626" stroke-width="3"/>
+  <!-- I1(85,160) → H1(360,160)  pesos[1][1] =  0.09  pos fraco -->
+  <line x1="85" y1="160" x2="360" y2="160" stroke="#fdba74" stroke-width="1" opacity="0.55"/>
+  <!-- I2(85,225) → H1(360,160)  pesos[1][2] = -0.33  neg médio -->
+  <line x1="85" y1="225" x2="360" y2="160" stroke="#3b82f6" stroke-width="2"/>
+  <!-- I0(85,95)  → H2(360,225)  pesos[2][0] = -0.42  neg médio -->
+  <line x1="85" y1="95"  x2="360" y2="225" stroke="#3b82f6" stroke-width="2"/>
+  <!-- I1(85,160) → H2(360,225)  pesos[2][1] =  0.87  pos forte -->
+  <line x1="85" y1="160" x2="360" y2="225" stroke="#dc2626" stroke-width="3"/>
+  <!-- I2(85,225) → H2(360,225)  pesos[2][2] =  0.25  pos médio -->
+  <line x1="85" y1="225" x2="360" y2="225" stroke="#ea580c" stroke-width="2"/>
+
+  <!-- ══════════════════════════════════════════════
+       SAÍDA DOS NÓS OCULTOS → colchete → próxima camada
+       ══════════════════════════════════════════════ -->
+  <line x1="386" y1="95"  x2="418" y2="95"  stroke="#d1d5db" stroke-width="1.2"/>
+  <line x1="386" y1="160" x2="418" y2="160" stroke="#d1d5db" stroke-width="1.2"/>
+  <line x1="386" y1="225" x2="418" y2="225" stroke="#d1d5db" stroke-width="1.2"/>
+  <!-- Colchete ']' unindo as três saídas -->
+  <polyline points="418,88 430,88 430,232 418,232" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+  <!-- Seta central do colchete -->
+  <line x1="430" y1="160" x2="462" y2="160" stroke="#c8cdd4" stroke-width="1.5" marker-end="url(#arr-g)"/>
+  <!-- Label "próximas camadas" -->
+  <text x="470" y="156" class="s" font-size="10" fill="#9ca3af">→ próximas</text>
+  <text x="470" y="169" class="s" font-size="10" fill="#9ca3af">camadas…</text>
+
+  <!-- ══════════════════════════════════════════════
+       NÓS — desenhados SOBRE as linhas
+       ══════════════════════════════════════════════ -->
+
+  <!-- Nós de entrada (azul) -->
+  <circle cx="85" cy="95"  r="26" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="85" cy="160" r="26" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="85" cy="225" r="26" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="85" y="95"  text-anchor="middle" dominant-baseline="central" class="s" font-size="15" fill="#1e40af">x₀</text>
+  <text x="85" y="160" text-anchor="middle" dominant-baseline="central" class="s" font-size="15" fill="#1e40af">x₁</text>
+  <text x="85" y="225" text-anchor="middle" dominant-baseline="central" class="s" font-size="15" fill="#1e40af">x₂</text>
+
+  <!-- Nós ocultos (âmbar) -->
+  <circle cx="360" cy="95"  r="26" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <circle cx="360" cy="160" r="26" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <circle cx="360" cy="225" r="26" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="360" y="95"  text-anchor="middle" dominant-baseline="central" class="s" font-size="15" fill="#92400e">h₀</text>
+  <text x="360" y="160" text-anchor="middle" dominant-baseline="central" class="s" font-size="15" fill="#92400e">h₁</text>
+  <text x="360" y="225" text-anchor="middle" dominant-baseline="central" class="s" font-size="15" fill="#92400e">h₂</text>
+
+  <!-- ══════════════════════════════════════════════
+       LEGENDA — 2 linhas, 3 itens na primeira, 2 na segunda
+       ══════════════════════════════════════════════ -->
+  <!-- Linha 1 (y=260): positivos -->
+  <line x1="20"  y1="260" x2="50"  y2="260" stroke="#dc2626" stroke-width="3"/>
+  <text x="57"   y="264" class="s" font-size="10.5" fill="#dc2626">positivo forte  (≥ 0.5)</text>
+  <line x1="212" y1="260" x2="242" y2="260" stroke="#ea580c" stroke-width="2"/>
+  <text x="249"  y="264" class="s" font-size="10.5" fill="#ea580c">positivo médio</text>
+  <line x1="380" y1="260" x2="410" y2="260" stroke="#fdba74" stroke-width="1" opacity="0.7"/>
+  <text x="417"  y="264" class="s" font-size="10.5" fill="#f59e0b">positivo fraco</text>
+
+  <!-- Linha 2 (y=278): negativos -->
+  <line x1="20"  y1="278" x2="50"  y2="278" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="57"   y="282" class="s" font-size="10.5" fill="#1d4ed8">negativo forte  (≤ −0.5)</text>
+  <line x1="212" y1="278" x2="242" y2="278" stroke="#3b82f6" stroke-width="2"/>
+  <text x="249"  y="282" class="s" font-size="10.5" fill="#3b82f6">negativo médio</text>
+  <text x="380"  y="282" class="s" font-size="10" fill="#9ca3af">espessura ∝ magnitude do peso</text>
+</svg>

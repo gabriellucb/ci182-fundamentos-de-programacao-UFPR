@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 190">
+  <!-- Universe rectangle -->
+  <rect x="8" y="8" width="284" height="140" rx="8" fill="#f8f8f8" stroke="#ccc" stroke-width="1.5"/>
+
+  <!-- Base circles (gray, not highlighted) -->
+  <circle cx="125" cy="78" r="60" fill="#e0e0e0"/>
+  <circle cx="195" cy="78" r="60" fill="#e0e0e0"/>
+
+  <!-- Intersection highlighted in blue using clipPath -->
+  <defs>
+    <clipPath id="ca">
+      <circle cx="125" cy="78" r="60"/>
+    </clipPath>
+  </defs>
+  <circle cx="195" cy="78" r="60" fill="#4A90D9" clip-path="url(#ca)"/>
+
+  <!-- Circle borders on top for clean appearance -->
+  <circle cx="125" cy="78" r="60" fill="none" stroke="#999" stroke-width="1.5"/>
+  <circle cx="195" cy="78" r="60" fill="none" stroke="#999" stroke-width="1.5"/>
+
+  <!-- Labels inside non-overlapping areas -->
+  <text x="100" y="78" font-family="monospace" font-size="14" font-weight="bold" fill="#777" text-anchor="middle" dominant-baseline="middle">a</text>
+  <text x="220" y="78" font-family="monospace" font-size="14" font-weight="bold" fill="#777" text-anchor="middle" dominant-baseline="middle">b</text>
+
+  <!-- Caption -->
+  <text x="150" y="175" font-family="sans-serif" font-size="11.5" fill="#555" text-anchor="middle">a and b — True somente quando os dois forem True</text>
+</svg>

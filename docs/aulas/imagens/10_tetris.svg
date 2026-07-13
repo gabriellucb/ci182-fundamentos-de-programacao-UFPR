@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 235" width="580" height="235">
+  <style>
+    .s { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .m { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <rect width="580" height="235" fill="#f8f9fa" rx="8"/>
+
+  <!-- Título -->
+  <text x="240" y="22" text-anchor="middle" class="s" font-size="13" font-weight="bold" fill="#333">tabuleiro do Tetris</text>
+  <text x="240" y="37" text-anchor="middle" class="s" font-size="11" fill="#aaa">0 = vazio   ·   1 = bloco preenchido</text>
+
+  <!-- Cabeçalhos das colunas (acima da grade, y=48) -->
+  <text x="109" y="48" text-anchor="middle" class="s" font-size="10" fill="#999">col 0</text>
+  <text x="147" y="48" text-anchor="middle" class="s" font-size="10" fill="#999">col 1</text>
+  <text x="185" y="48" text-anchor="middle" class="s" font-size="10" fill="#999">col 2</text>
+  <text x="223" y="48" text-anchor="middle" class="s" font-size="10" fill="#999">col 3</text>
+  <text x="261" y="48" text-anchor="middle" class="s" font-size="10" fill="#999">col 4</text>
+  <text x="299" y="48" text-anchor="middle" class="s" font-size="10" fill="#999">col 5</text>
+  <text x="337" y="48" text-anchor="middle" class="s" font-size="10" fill="#999">col 6</text>
+  <text x="375" y="48" text-anchor="middle" class="s" font-size="10" fill="#999">col 7</text>
+
+  <!-- Rótulos das linhas (esquerda da grade, alinhados ao centro vertical de cada linha) -->
+  <text x="82" y="83"  text-anchor="end" class="s" font-size="10.5" fill="#888">linha 0</text>
+  <text x="82" y="123" text-anchor="end" class="s" font-size="10.5" fill="#888">linha 1</text>
+  <text x="82" y="163" text-anchor="end" class="s" font-size="10.5" fill="#888">linha 2</text>
+  <text x="82" y="203" text-anchor="end" class="s" font-size="10.5" fill="#888">linha 3</text>
+
+  <!-- ══ Linha 0 (y=59): tudo vazio ══ -->
+  <rect x="90"  y="59" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="128" y="59" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="166" y="59" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="204" y="59" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="242" y="59" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="280" y="59" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="318" y="59" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="356" y="59" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+
+  <!-- ══ Linha 1 (y=99): cols 3 e 4 preenchidas (peça caindo) ══ -->
+  <rect x="90"  y="99" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="128" y="99" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="166" y="99" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <!-- Col 3: bloco ciano -->
+  <rect x="204" y="99" width="38" height="40" fill="#26c6da" stroke="#0097a7" stroke-width="1.2"/>
+  <rect x="207" y="102" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.55"/>
+  <!-- Col 4: bloco ciano -->
+  <rect x="242" y="99" width="38" height="40" fill="#26c6da" stroke="#0097a7" stroke-width="1.2"/>
+  <rect x="245" y="102" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.55"/>
+  <rect x="280" y="99" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="318" y="99" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="356" y="99" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+
+  <!-- ══ Linha 2 (y=139): col 3 preenchida ══ -->
+  <rect x="90"  y="139" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="128" y="139" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="166" y="139" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <!-- Col 3: bloco ciano -->
+  <rect x="204" y="139" width="38" height="40" fill="#26c6da" stroke="#0097a7" stroke-width="1.2"/>
+  <rect x="207" y="142" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.55"/>
+  <rect x="242" y="139" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="280" y="139" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="318" y="139" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+  <rect x="356" y="139" width="38" height="40" fill="#d0d5db" stroke="#9aa0a8" stroke-width="0.8"/>
+
+  <!-- ══ Linha 3 (y=179): toda preenchida — LINHA COMPLETA ══ -->
+  <rect x="90"  y="179" width="38" height="40" fill="#ffc107" stroke="#e65100" stroke-width="1.2"/>
+  <rect x="93"  y="182" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  <rect x="128" y="179" width="38" height="40" fill="#ffc107" stroke="#e65100" stroke-width="1.2"/>
+  <rect x="131" y="182" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  <rect x="166" y="179" width="38" height="40" fill="#ffc107" stroke="#e65100" stroke-width="1.2"/>
+  <rect x="169" y="182" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  <rect x="204" y="179" width="38" height="40" fill="#ffc107" stroke="#e65100" stroke-width="1.2"/>
+  <rect x="207" y="182" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  <rect x="242" y="179" width="38" height="40" fill="#ffc107" stroke="#e65100" stroke-width="1.2"/>
+  <rect x="245" y="182" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  <rect x="280" y="179" width="38" height="40" fill="#ffc107" stroke="#e65100" stroke-width="1.2"/>
+  <rect x="283" y="182" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  <rect x="318" y="179" width="38" height="40" fill="#ffc107" stroke="#e65100" stroke-width="1.2"/>
+  <rect x="321" y="182" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  <rect x="356" y="179" width="38" height="40" fill="#ffc107" stroke="#e65100" stroke-width="1.2"/>
+  <rect x="359" y="182" width="32" height="34" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+
+  <!-- Destaque: borda tracejada ao redor da linha completa -->
+  <rect x="88" y="177" width="308" height="44" fill="none" stroke="#e65100" stroke-width="2" stroke-dasharray="5,3" rx="3"/>
+
+  <!-- Anotação à direita da linha 3 -->
+  <text x="406" y="194" class="m" font-size="10.5" fill="#e65100">← all(linha) == True</text>
+  <text x="406" y="211" class="s" font-size="10.5" fill="#e65100">→ linha completa, deletar!</text>
+</svg>

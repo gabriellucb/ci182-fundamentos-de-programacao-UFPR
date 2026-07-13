@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 225" width="600" height="225">
+  <style>
+    .s { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .m { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <rect width="600" height="225" fill="#f8f9fa" rx="8"/>
+
+  <!-- Título -->
+  <text x="300" y="24" text-anchor="middle" class="s" font-size="13" font-weight="bold" fill="#333">foto colorida = três matrizes sobrepostas (RGB)</text>
+
+  <!-- Rótulos dos canais -->
+  <text x="75"  y="50" text-anchor="middle" class="s" font-size="12" font-weight="bold" fill="#c0180a">canal R</text>
+  <text x="219" y="50" text-anchor="middle" class="s" font-size="12" font-weight="bold" fill="#1a6600">canal G</text>
+  <text x="363" y="50" text-anchor="middle" class="s" font-size="12" font-weight="bold" fill="#0040c0">canal B</text>
+  <text x="511" y="50" text-anchor="middle" class="s" font-size="12" font-weight="bold" fill="#444">foto</text>
+
+  <!-- ══ Canal R (x=15, células 40×36, grade 3×3) ══ -->
+  <!-- Linha 0 -->
+  <rect x="15"  y="58" width="40" height="36" fill="rgb(220,0,0)"/>
+  <rect x="55"  y="58" width="40" height="36" fill="rgb(180,0,0)"/>
+  <rect x="95"  y="58" width="40" height="36" fill="rgb(100,0,0)"/>
+  <!-- Linha 1 -->
+  <rect x="15"  y="94" width="40" height="36" fill="rgb(240,0,0)"/>
+  <rect x="55"  y="94" width="40" height="36" fill="rgb(160,0,0)"/>
+  <rect x="95"  y="94" width="40" height="36" fill="rgb(40,0,0)"/>
+  <!-- Linha 2 -->
+  <rect x="15"  y="130" width="40" height="36" fill="rgb(200,0,0)"/>
+  <rect x="55"  y="130" width="40" height="36" fill="rgb(100,0,0)"/>
+  <rect x="95"  y="130" width="40" height="36" fill="rgb(60,0,0)"/>
+  <!-- Valores R (branco) -->
+  <text x="35"  y="80"  text-anchor="middle" class="m" font-size="11.5" fill="white">220</text>
+  <text x="75"  y="80"  text-anchor="middle" class="m" font-size="11.5" fill="white">180</text>
+  <text x="115" y="80"  text-anchor="middle" class="m" font-size="11.5" fill="white">100</text>
+  <text x="35"  y="116" text-anchor="middle" class="m" font-size="11.5" fill="white">240</text>
+  <text x="75"  y="116" text-anchor="middle" class="m" font-size="11.5" fill="white">160</text>
+  <text x="115" y="116" text-anchor="middle" class="m" font-size="11.5" fill="white">40</text>
+  <text x="35"  y="152" text-anchor="middle" class="m" font-size="11.5" fill="white">200</text>
+  <text x="75"  y="152" text-anchor="middle" class="m" font-size="11.5" fill="white">100</text>
+  <text x="115" y="152" text-anchor="middle" class="m" font-size="11.5" fill="white">60</text>
+  <!-- Grade R -->
+  <rect x="15"  y="58" width="120" height="108" fill="none" stroke="#c0180a" stroke-width="1.2"/>
+  <line x1="15"  y1="94"  x2="135" y2="94"  stroke="#c0180a" stroke-width="0.5" opacity="0.6"/>
+  <line x1="15"  y1="130" x2="135" y2="130" stroke="#c0180a" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55"  y1="58"  x2="55"  y2="166" stroke="#c0180a" stroke-width="0.5" opacity="0.6"/>
+  <line x1="95"  y1="58"  x2="95"  y2="166" stroke="#c0180a" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Símbolo + -->
+  <text x="147" y="120" text-anchor="middle" class="s" font-size="26" fill="#bbb">+</text>
+
+  <!-- ══ Canal G (x=159) ══ -->
+  <!-- Linha 0 -->
+  <rect x="159" y="58" width="40" height="36" fill="rgb(0,80,0)"/>
+  <rect x="199" y="58" width="40" height="36" fill="rgb(0,100,0)"/>
+  <rect x="239" y="58" width="40" height="36" fill="rgb(0,160,0)"/>
+  <!-- Linha 1 -->
+  <rect x="159" y="94" width="40" height="36" fill="rgb(0,120,0)"/>
+  <rect x="199" y="94" width="40" height="36" fill="rgb(0,160,0)"/>
+  <rect x="239" y="94" width="40" height="36" fill="rgb(0,100,0)"/>
+  <!-- Linha 2 -->
+  <rect x="159" y="130" width="40" height="36" fill="rgb(0,180,0)"/>
+  <rect x="199" y="130" width="40" height="36" fill="rgb(0,180,0)"/>
+  <rect x="239" y="130" width="40" height="36" fill="rgb(0,80,0)"/>
+  <!-- Valores G: branco quando G < 150, escuro quando G >= 150 -->
+  <text x="179" y="80"  text-anchor="middle" class="m" font-size="11.5" fill="white">80</text>
+  <text x="219" y="80"  text-anchor="middle" class="m" font-size="11.5" fill="white">100</text>
+  <text x="259" y="80"  text-anchor="middle" class="m" font-size="11.5" fill="#0a3300">160</text>
+  <text x="179" y="116" text-anchor="middle" class="m" font-size="11.5" fill="white">120</text>
+  <text x="219" y="116" text-anchor="middle" class="m" font-size="11.5" fill="#0a3300">160</text>
+  <text x="259" y="116" text-anchor="middle" class="m" font-size="11.5" fill="white">100</text>
+  <text x="179" y="152" text-anchor="middle" class="m" font-size="11.5" fill="#0a3300">180</text>
+  <text x="219" y="152" text-anchor="middle" class="m" font-size="11.5" fill="#0a3300">180</text>
+  <text x="259" y="152" text-anchor="middle" class="m" font-size="11.5" fill="white">80</text>
+  <!-- Grade G -->
+  <rect x="159" y="58" width="120" height="108" fill="none" stroke="#1a6600" stroke-width="1.2"/>
+  <line x1="159" y1="94"  x2="279" y2="94"  stroke="#1a6600" stroke-width="0.5" opacity="0.6"/>
+  <line x1="159" y1="130" x2="279" y2="130" stroke="#1a6600" stroke-width="0.5" opacity="0.6"/>
+  <line x1="199" y1="58"  x2="199" y2="166" stroke="#1a6600" stroke-width="0.5" opacity="0.6"/>
+  <line x1="239" y1="58"  x2="239" y2="166" stroke="#1a6600" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Símbolo + -->
+  <text x="291" y="120" text-anchor="middle" class="s" font-size="26" fill="#bbb">+</text>
+
+  <!-- ══ Canal B (x=303) ══ -->
+  <!-- Linha 0 -->
+  <rect x="303" y="58" width="40" height="36" fill="rgb(0,0,40)"/>
+  <rect x="343" y="58" width="40" height="36" fill="rgb(0,0,60)"/>
+  <rect x="383" y="58" width="40" height="36" fill="rgb(0,0,200)"/>
+  <!-- Linha 1 -->
+  <rect x="303" y="94" width="40" height="36" fill="rgb(0,0,30)"/>
+  <rect x="343" y="94" width="40" height="36" fill="rgb(0,0,160)"/>
+  <rect x="383" y="94" width="40" height="36" fill="rgb(0,0,200)"/>
+  <!-- Linha 2 -->
+  <rect x="303" y="130" width="40" height="36" fill="rgb(0,0,100)"/>
+  <rect x="343" y="130" width="40" height="36" fill="rgb(0,0,140)"/>
+  <rect x="383" y="130" width="40" height="36" fill="rgb(0,0,180)"/>
+  <!-- Valores B (todos brancos — azul puro é sempre escuro o suficiente) -->
+  <text x="323" y="80"  text-anchor="middle" class="m" font-size="11.5" fill="white">40</text>
+  <text x="363" y="80"  text-anchor="middle" class="m" font-size="11.5" fill="white">60</text>
+  <text x="403" y="80"  text-anchor="middle" class="m" font-size="11.5" fill="white">200</text>
+  <text x="323" y="116" text-anchor="middle" class="m" font-size="11.5" fill="white">30</text>
+  <text x="363" y="116" text-anchor="middle" class="m" font-size="11.5" fill="white">160</text>
+  <text x="403" y="116" text-anchor="middle" class="m" font-size="11.5" fill="white">200</text>
+  <text x="323" y="152" text-anchor="middle" class="m" font-size="11.5" fill="white">100</text>
+  <text x="363" y="152" text-anchor="middle" class="m" font-size="11.5" fill="white">140</text>
+  <text x="403" y="152" text-anchor="middle" class="m" font-size="11.5" fill="white">180</text>
+  <!-- Grade B -->
+  <rect x="303" y="58" width="120" height="108" fill="none" stroke="#0040c0" stroke-width="1.2"/>
+  <line x1="303" y1="94"  x2="423" y2="94"  stroke="#0040c0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="303" y1="130" x2="423" y2="130" stroke="#0040c0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="343" y1="58"  x2="343" y2="166" stroke="#0040c0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="383" y1="58"  x2="383" y2="166" stroke="#0040c0" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Símbolo = -->
+  <text x="437" y="120" text-anchor="middle" class="s" font-size="26" fill="#bbb">=</text>
+
+  <!-- ══ Foto final — cores combinadas (x=451) ══ -->
+  <!-- Linha 0: (220,80,40) (180,100,60) (100,160,200) -->
+  <rect x="451" y="58" width="40" height="36" fill="rgb(220,80,40)"/>
+  <rect x="491" y="58" width="40" height="36" fill="rgb(180,100,60)"/>
+  <rect x="531" y="58" width="40" height="36" fill="rgb(100,160,200)"/>
+  <!-- Linha 1: (240,120,30) (160,160,160) (40,100,200) -->
+  <rect x="451" y="94" width="40" height="36" fill="rgb(240,120,30)"/>
+  <rect x="491" y="94" width="40" height="36" fill="rgb(160,160,160)"/>
+  <rect x="531" y="94" width="40" height="36" fill="rgb(40,100,200)"/>
+  <!-- Linha 2: (200,180,100) (100,180,140) (60,80,180) -->
+  <rect x="451" y="130" width="40" height="36" fill="rgb(200,180,100)"/>
+  <rect x="491" y="130" width="40" height="36" fill="rgb(100,180,140)"/>
+  <rect x="531" y="130" width="40" height="36" fill="rgb(60,80,180)"/>
+  <!-- Grade foto -->
+  <rect x="451" y="58" width="120" height="108" fill="none" stroke="#888" stroke-width="1.2"/>
+  <line x1="451" y1="94"  x2="571" y2="94"  stroke="#888" stroke-width="0.5"/>
+  <line x1="451" y1="130" x2="571" y2="130" stroke="#888" stroke-width="0.5"/>
+  <line x1="491" y1="58"  x2="491" y2="166" stroke="#888" stroke-width="0.5"/>
+  <line x1="531" y1="58"  x2="531" y2="166" stroke="#888" stroke-width="0.5"/>
+
+  <!-- Sub-rótulos -->
+  <text x="75"  y="184" text-anchor="middle" class="s" font-size="10" fill="#c0180a">vermelho (0–255)</text>
+  <text x="219" y="184" text-anchor="middle" class="s" font-size="10" fill="#1a6600">verde (0–255)</text>
+  <text x="363" y="184" text-anchor="middle" class="s" font-size="10" fill="#0040c0">azul (0–255)</text>
+  <text x="511" y="184" text-anchor="middle" class="s" font-size="10" fill="#555">cores reais</text>
+
+  <!-- Legenda -->
+  <text x="300" y="210" text-anchor="middle" class="s" font-size="10.5" fill="#aaa">cada pixel da foto carrega um valor para cada canal — juntos determinam a cor exata</text>
+</svg>

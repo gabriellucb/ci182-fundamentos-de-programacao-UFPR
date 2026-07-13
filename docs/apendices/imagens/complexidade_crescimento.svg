@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="560" height="360">
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <defs>
+    <marker id="cx-arrow-orange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#e07722"/>
+    </marker>
+  </defs>
+
+  <rect width="560" height="360" fill="white" rx="8" stroke="#CCCCCC" stroke-width="1"/>
+
+  <text x="280" y="20" text-anchor="middle" dominant-baseline="central" class="sans" font-size="12" font-weight="bold" fill="#555">Crescimento de comparações: O(n) vs O(log n)</text>
+  <text x="280" y="36" text-anchor="middle" dominant-baseline="central" class="sans" font-size="10" fill="#999">ilustrativo, os eixos não estão em escala real</text>
+
+  <!-- eixos -->
+  <line x1="70" y1="52"  x2="70"  y2="256" stroke="#999" stroke-width="1.3"/>
+  <line x1="70" y1="256" x2="520" y2="256" stroke="#999" stroke-width="1.3"/>
+  <text x="30" y="154" text-anchor="middle" dominant-baseline="central" class="sans" font-size="11" fill="#666" transform="rotate(-90,30,154)">comparações</text>
+  <text x="295" y="290" text-anchor="middle" class="sans" font-size="11" fill="#666">tamanho da lista (n) →</text>
+
+  <!-- marcas do eixo x -->
+  <line x1="140" y1="256" x2="140" y2="261" stroke="#999" stroke-width="1.3"/>
+  <line x1="250" y1="256" x2="250" y2="261" stroke="#999" stroke-width="1.3"/>
+  <line x1="360" y1="256" x2="360" y2="261" stroke="#999" stroke-width="1.3"/>
+  <line x1="470" y1="256" x2="470" y2="261" stroke="#999" stroke-width="1.3"/>
+  <text x="140" y="274" text-anchor="middle" class="mono" font-size="10" fill="#666">100</text>
+  <text x="250" y="274" text-anchor="middle" class="mono" font-size="10" fill="#666">1.000</text>
+  <text x="360" y="274" text-anchor="middle" class="mono" font-size="10" fill="#666">10.000</text>
+  <text x="470" y="274" text-anchor="middle" class="mono" font-size="10" fill="#666">1.000.000</text>
+
+  <!-- curva O(n) — busca linear: sobe rápido e sai do gráfico -->
+  <path d="M 140,250 L 250,168 L 330,78" fill="none" stroke="#e07722" stroke-width="2.6"/>
+  <path d="M 330,78 L 348,58" fill="none" stroke="#e07722" stroke-width="2.6" stroke-dasharray="4,4" marker-end="url(#cx-arrow-orange)"/>
+  <circle cx="140" cy="250" r="3.5" fill="#e07722"/>
+  <circle cx="250" cy="168" r="3.5" fill="#e07722"/>
+  <circle cx="330" cy="78"  r="3.5" fill="#e07722"/>
+  <text x="115" y="242" class="mono" font-size="9" fill="#96450d">100</text>
+  <text x="258" y="162" class="mono" font-size="9" fill="#96450d">1.000</text>
+  <text x="298" y="72" class="mono" font-size="9" fill="#96450d">10.000</text>
+
+  <!-- anotação da linha O(n), bem afastada do título -->
+  <rect x="356" y="70" width="150" height="56" rx="6" fill="#fdeee2" stroke="#e07722" stroke-width="1.2"/>
+  <text x="366" y="86" class="sans" font-size="9.5" fill="#96450d">Em 1.000.000, seriam</text>
+  <text x="366" y="100" class="sans" font-size="9.5" fill="#96450d">1.000.000 de comparações,</text>
+  <text x="366" y="114" class="sans" font-size="9.5" fill="#96450d">sai muito fora do gráfico.</text>
+
+  <!-- curva O(log n) — busca binária: quase reta, quase não sobe -->
+  <path d="M 140,240 L 250,234 L 360,224 L 470,208" fill="none" stroke="#3a80c8" stroke-width="2.6"/>
+  <circle cx="140" cy="240" r="3.5" fill="#3a80c8"/>
+  <circle cx="250" cy="234" r="3.5" fill="#3a80c8"/>
+  <circle cx="360" cy="224" r="3.5" fill="#3a80c8"/>
+  <circle cx="470" cy="208" r="3.5" fill="#3a80c8"/>
+  <text x="470" y="192" text-anchor="middle" class="sans" font-size="10" font-weight="bold" fill="#1a3a6a">só 20 comparações</text>
+
+  <!-- legenda -->
+  <rect x="356" y="300" width="150" height="50" rx="6" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  <line x1="366" y1="314" x2="386" y2="314" stroke="#e07722" stroke-width="2.6"/>
+  <text x="392" y="314" dominant-baseline="central" class="sans" font-size="11" fill="#555">O(n) — busca linear</text>
+  <line x1="366" y1="334" x2="386" y2="334" stroke="#3a80c8" stroke-width="2.6"/>
+  <text x="392" y="334" dominant-baseline="central" class="sans" font-size="11" fill="#555">O(log n) — busca binária</text>
+</svg>

@@ -1,0 +1,230 @@
+CI182 - Fundamentos de Programação de
+Computadores 2026/1
+Professora: Aurora Trinidad Ramirez Pozo
+Monitoria e Elaboração: Gabriel Lucas Barbosa
+
+Lista 02 - Condicionais e Operadores Lógicos
+- Exercício 1
+Escreva um programa de controle de acesso para o Laboratório de Prototipagem
+Noturno. O sistema deve solicitar que o aluno digite sua idade atual. Caso a idade
+informada seja maior ou igual a 18 anos, o programa deve exibir a mensagem
+"Acesso autorizado ao laboratório noturno". Caso contrário, o sistema deve
+informar "Acesso restrito: apenas para maiores de 18 anos".
+Exemplo de Execução:
+Entrada:
+Digite sua idade: 17
+Saída Esperada:
+Acesso restrito: apenas para maiores de 18 anos.
+
+- Exercício 2
+Crie um programa de análise matemática que receba um número inteiro qualquer
+fornecido pelo usuário. O programa deve informar se ele pertence à categoria dos
+números Pares ou Ímpares e também verificar se o número lido é o zero. Além
+disso, o programa deve imprimir se o número é positivo ou negativo.
+Exemplo de Execução:
+Entrada:
+Digite um número: 7
+Saída Esperada:
+O número 7 é Ímpar.
+O número é positivo.
+
+- Exercício 3
+Um sistema de uma indústria química classifica os reagentes pelo pH:
+•
+
+pH < 7: "Ácido"
+
+•
+
+pH == 7: "Neutro"
+
+•
+
+pH > 7: "Básico"
+
+O programa deve ler o pH e garantir que o valor esteja entre 0 e 14. Se estiver fora
+disso, imprima "Erro: pH inválido".
+Exemplo de Execução:
+Entrada:
+pH: 8.5
+Saída Esperada:
+Básico.
+
+- Exercício 4
+Um sistema de agricultura de precisão utiliza sensores capacitivos para monitorar
+a umidade do solo em tempo real. Você foi contratado para desenvolver o módulo
+de decisão do controlador de irrigação. O programa deve solicitar que o operador
+digite o percentual de umidade atual (um valor entre 0 e 100).
+Com base no valor lido, o sistema deve disparar as seguintes ações:
+•
+
+Abaixo de 30%: Exibir "Irrigação ligada: Nível Crítico detectado".
+
+•
+
+Entre 30% e 60% (inclusive): Exibir "Irrigação em modo econômico ativada".
+
+•
+
+Acima de 60%: Exibir "Umidade suficiente. Irrigação desligada".
+
+Exemplo de Execução:
+Entrada:
+Digite o percentual de umidade do solo: 45
+Saída Esperada:
+Irrigação em modo econômico ativada.
+
+- Exercício 5
+Uma empresa de logística dá desconto baseado na distância. Faça um programa
+que peça a distância em quilômetros e calcule o valor seguindo esses critérios:
+•
+
+Até 100km: R$ 50,00 fixo.
+
+•
+
+Entre 100km e 300km: R$ 0,45 por km.
+
+•
+
+Acima de 300km: R$ 0,35 por km.
+
+Exemplo de Execução:
+Entrada:
+Insira a distância (em quilômetros): 400
+Saída Esperada:
+Valor do frete: R$ 140.00.
+
+- Exercício 6
+Um engenheiro de segurança está desenvolvendo um módulo de autenticação.
+Faça um programa que solicite uma senha de acesso e siga estas regras:
+1. Se a senha não possuir exatamente 8 caracteres, deve exibir um erro.
+2. Se o tamanho está certo, o programa verifica se a senha é igual a "UFPR2026".
+3. Caso os caracteres sejam diferentes, exiba: "Senha incorreta: acesso negado".
+Dica: Se passarmos uma string (texto) para a função len(), ela nos retorna o
+número total de caracteres (incluindo espaços e símbolos). len("OI") resulta em 2.
+Exemplo de Execução:
+Entrada:
+Digite a senha de acesso: UFPR
+Saída Esperada:
+Erro: A senha deve ter exatamente 8 caracteres.
+Entrada 2:
+Digite a senha de acesso: 12345678
+Saída Esperada:
+Senha incorreta: acesso negado.
+
+- Exercício 7
+Crie um programa de login que peça o nome de Usuário e a Senha. O acesso só
+deve ser permitido se o Usuário for "admin" e a Senha for "1234". Caso o usuário
+esteja incorreto, o programa deve exibir "Erro: Usuário inválido". Caso o usuário
+esteja correto mas a senha esteja incorreta, deve exibir "Erro: Senha incorreta".
+Somente se ambos estiverem corretos, exiba "Acesso concedido".
+Exemplo de Execução:
+Entrada:
+Usuário: admin
+Senha: 000
+Saída Esperada:
+Erro: Senha incorreta.
+
+- Exercício 8
+Desenvolva um algoritmo que solicite ao usuário um ano e determine se ele é
+Bissexto. A regra para esse cálculo segue três critérios que devem ser validados
+pelo seu programa:
+•
+•
+•
+
+O ano deve ser divisível por 4;
+PORÉM, ele não pode ser divisível por 100;
+A MENOS QUE ele também seja divisível por 400 (neste caso, ele é bissexto).
+
+Dica: Utilize os operadores lógicos AND e OR. Para uma dessas operações lógicas
+ser feita antes que a outra, faça o uso dos parênteses.
+Exemplo de Execução:
+Entrada:
+Ano: 2024
+Saída Esperada:
+O ano 2024 é Bissexto.
+
+- Exercício 9
+Você está desenvolvendo o software de monitoramento para uma estação de
+tratamento de água. O sistema lê continuamente o nível de Cloro Residual (mg/L)
+e verifica o estado de um Botão de Interrupção de Emergência.
+O programa deve solicitar dois valores:
+1. O nível de Cloro (número decimal).
+2. O estado da interrupção: digite 1 para Ativado ou 0 para Desativado.
+Regras de Operação:
+•
+
+Se a interrupção estiver ‘Ativada’ (1), o sistema deve ignorar a leitura do
+cloro e exibir: "Operação Suspensa: Sistema paralisado pelo operador".
+
+•
+
+Se a interrupção NÃO estiver ativa, o programa deve avaliar o cloro:
+o
+
+Entre 0.2 e 2.0 (inclusive): Exibir "Monitoramento: Nível Ideal".
+
+o
+
+Fora desse intervalo: Exibir "Alerta: Nível de cloro fora dos padrões.
+Verifique o dosador".
+
+Dica: No python Bool(1) vira True e Bool(0) vira false. Utilize isso.
+Exemplo de Execução:
+Entrada:
+Nível de Cloro: 1.0
+Interrupção (1 = Ativado / 0 = Desativado): 1
+Saída Esperada:
+Operação Suspensa: Sistema paralisado pelo operador.
+Entrada 2:
+Nível de cloro: 1.8
+Interrupção (1 = Ativado / 0 = Desativado): 0
+Saída Esperada:
+Monitoramento: Nível Ideal.
+
+- Exercício 10 (Desafio)
+Você foi contratado para programar a lógica de segurança de um elevador
+industrial. O elevador transporta materiais sensíveis e possui três sensores:
+1. Peso (int): Carga atual em kg.
+2. Porta (bool): 1 se estiver aberta, 0 se estiver fechada.
+3. Botão de Emergência (bool): 1 se estiver pressionado, 0 caso não.
+O sistema de hardware é antigo e, às vezes, os sensores enviam sinais
+contraditórios. Você deve implementar as seguintes regras de decisão:
+1. Prioridade Máxima (Emergência): Se o botão de emergência estiver ativo, o
+elevador deve travar imediatamente.
+2. Segurança de Cabine: O elevador nunca pode se mover com a porta
+aberta. Se houver peso e a porta estiver aberta, o sistema deve impedir o
+movimento e avisar o erro.
+3. Sobrecarga Crítica: O limite técnico é de 1000kg. Se o peso exceder isso, o
+elevador não deve se mover.
+Contradição de Sensor: Se o sensor de peso marcar zero ou menos, mas a porta
+estiver fechada, o sistema deve entender que o sensor de peso falhou (pois o
+elevador nunca fica vazio e fechado ao mesmo tempo no protocolo da fábrica).
+Crie um programa que receba peso, porta e emergencia. O programa deve exibir
+apenas uma das seguintes mensagens, respeitando a hierarquia:
+•
+
+"STATUS: BLOQUEIO TOTAL": Se a emergência estiver ativa.
+
+•
+
+"STATUS: ERRO DE PORTA": Se a porta estiver aberta (e não for emergência).
+
+•
+
+"STATUS: SOBRECARGA": Se o peso for maior que 1000 (e a porta estiver
+fechada e sem emergência).
+
+•
+
+"STATUS: SENSOR DE PESO AVARIADO": Se o peso for <= 0 com a porta
+fechada (e sem emergência).
+
+•
+
+"STATUS: LIBERADO PARA SUBIR": Se o peso for entre 1 e 1000, porta
+fechada e sem emergência.
+
+

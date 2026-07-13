@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+para fazer
+Revisados
+CLAUDE.md
+claude.md
+venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# arquivos gerados em tempo de execução pelos exemplos e respostas
+*.csv
+caderneta.txt
+relatorio.txt
+docs/respostas/relatorio_final.txt
+docs/respostas/notas_turma.csv
+docs/respostas/15_modulos/resultado.csv
+docs/exemplos/arquivos_uteis/*.txt
+docs/projetos/copa_penaltis/historico.txt

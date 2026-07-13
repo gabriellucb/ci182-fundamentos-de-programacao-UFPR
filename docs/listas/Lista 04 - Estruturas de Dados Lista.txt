@@ -1,0 +1,253 @@
+CI182 - Fundamentos de Programação de
+Computadores 2026/1
+Professora: Aurora Trinidad Ramirez Pozo
+Monitoria e Elaboração: Gabriel Lucas Barbosa
+
+Lista 04 - Estruturas de Dados: Listas
+Revisão
+•
+
+Criação: Uma lista é definida por colchetes [] e pode começar vazia ou com
+elementos. Exemplo: lista = [] ou lista = ["A", "B"].
+
+•
+
+Acesso por Índice: Cada item tem uma posição, começando do 0. Você também
+pode usar índices negativos, onde lista[-1] acessa o último elemento.
+
+•
+
+Modificação: Você pode substituir um dado diretamente. Exemplo: lista[0] = "Novo".
+
+•
+
+Operador in: Verifica se um elemento existe dentro da lista, retornando True ou False.
+
+•
+
+len(lista): Retorna o tamanho da lista (a quantidade total de elementos).
+
+•
+
+.append(elemento): Insere um novo elemento sempre no final da lista.
+
+•
+
+.pop(): Remove o último elemento da lista.
+
+•
+
+.insert(índice, elemento): Insere um elemento no índice indicado da lista.
+
+•
+
+.sort(): Ordena os elementos em ordem crescente ou lexicográfica (alfabética).
+
+- Exercício 1
+Um laboratório de meteorologia registra a temperatura de uma cidade ao longo de
+7 dias, armazenando os dados em uma lista pré-definida no código:
+temperaturas = [22.5, 23.0, 21.5, 24.0, 25.5, 20.0, 19.5]. Escreva um programa que
+acesse e imprima exclusivamente a temperatura do primeiro e do último dia
+registrado, garantindo que o código funcione dinamicamente mesmo se a lista
+tiver seu tamanho alterado no futuro.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário
+Saída Esperada:
+Temperatura do primeiro dia: 22.5
+Temperatura do último dia: 19.5
+
+- Exercício 2
+O robô de exploração enviou uma sequência de movimentos, mas um erro foi
+detectado. A lista original recebida é: rota = ["Frente", "Direita", "Esquerda",
+"Frente", "Trás"]. A equipe percebeu que o terceiro movimento deveria ser "Direita",
+e não "Esquerda". Crie um programa que faça essa alteração e imprima a lista.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário
+Saída Esperada:
+Rota corrigida: ['Frente', 'Direita', 'Direita', 'Frente', 'Trás'].
+
+- Exercício 3
+O DINF possui um controle de acesso aos laboratórios através do GRR. Considere
+a seguinte base de dados: autorizados = ["GRR20260001", "GRR20260002",
+"GRR20260003", "GRR20260004"]. Escreva um programa que solicite o GRR do
+aluno e verifique se ele possui permissão de acesso.
+Exemplo de execução:
+Entrada:
+Digite seu GRR: GRR20260005
+Saída Esperada:
+Acesso Negado: Matrícula não consta no sistema.
+
+- Exercício 4
+Um formulário de satisfação do RU coletou as opiniões dos alunos sobre a
+refeição: opinioes = ["Bom", "Regular", "Ruim", "Bom", "Bom", "Regular", "Bom"]. O
+chef de cozinha pediu para você descobrir e exibir quantas vezes a avaliação
+"Bom" foi registrada na pesquisa, para calcular indicadores de qualidade.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário
+Saída Esperada:
+A avaliação 'Bom' foi registrada 4 vezes.
+
+- Exercício 5
+Após uma competição de robótica, os juízes lançaram as pontuações no sistema:
+pontos = [120, 85, 300, 210, 95]. Para a cerimônia de premiação, é necessário
+exibir as notas da menor para a maior, além de destacar quem foi o grande
+vencedor (a maior nota). Organize a lista e extraia o valor máximo.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário
+Saída Esperada:
+Classificação geral: [85, 95, 120, 210, 300]
+Pontuação do grande vencedor: 300
+
+- Exercício 6
+Você está desenvolvendo um carrinho de compras para um e-commerce. Crie um
+programa que inicie com uma estrutura vazia e, utilizando um laço de repetição,
+peça para o usuário digitar o nome de um produto e o adicione ao final da lista. Ao
+término do laço, exiba o carrinho.
+Exemplo de execução:
+Entrada:
+Digite o nome do produto: Teclado
+Digite o nome do produto: Mouse
+Digite o nome do produto: Monitor
+Saída Esperada:
+Carrinho de compras: ['Teclado', 'Mouse', 'Monitor']
+
+- Exercício 7
+Um sistema de caixa registradora precisa ler o preço de vários produtos que um
+cliente está comprando. Crie um programa que inicie uma lista vazia e utilize um
+laço para pedir valores ao usuário. O sistema deve continuar pedindo e
+armazenando valores na lista até que o operador digite 0. Mostre a lista de preços
+e a soma deles no final.
+
+Exemplo de execução:
+Entrada:
+Digite o preço do produto (0 para finalizar): 15.50
+Digite o preço do produto (0 para finalizar): 10.00
+Digite o preço do produto (0 para finalizar): 5.25
+Digite o preço do produto (0 para finalizar): 0
+Saída Esperada:
+Produtos registrados: [15.5, 10.0, 5.25]
+Valor final: R$ 30.75
+
+- Exercício 8
+Crie um programa que inicie uma lista que guarda as notas de um aluno em uma
+disciplina. Utilize um laço para solicitar valores positivos continuamente (digitar
+valores negativos deve parar a leitura dos valores). Ao final, o programa deve
+calcular a média e enfim exibir as notas inseridas e a média final.
+Exemplo de execução:
+Entrada:
+Digite uma nota (ou negativo para encerrar): 8.5
+Digite uma nota (ou negativo para encerrar): 9.0
+Digite uma nota (ou negativo para encerrar): 6.5
+Digite uma nota (ou negativo para encerrar): -1
+Saída Esperada:
+Notas registradas: [8.5, 9.0, 6.5]
+A média geral do aluno é: 8.0
+
+- Exercício 9
+Um empresário pediu para construir um programa de comparação de ações. Crie
+um programa que leia vários valores numéricos informados pelo usuário e os
+armazene em uma lista. A leitura deve prosseguir até o usuário digitar o valor 0.
+Após o fim da leitura encontre e imprima o maior e o menor valor lido.
+
+Exemplo de execução:
+Entrada:
+Digite o preço da ação (ou 0 para sair): 25.50
+Digite o preço da ação (ou 0 para sair): 28.30
+Digite o preço da ação (ou 0 para sair): 21.00
+Digite o preço da ação (ou 0 para sair): 24.15
+Digite o preço da ação (ou 0 para sair): 0
+Saída Esperada:
+Preços registrados: [25.5, 28.3, 21.0, 24.15]
+O maior preço registrado foi: 28.3
+O menor preço registrado foi: 21.0
+
+-Exercício 10
+Você recebeu uma tarefa de criar uma lista com diversas idades informadas pelo
+usuário. Para fins legais, seu programa precisa distribuir essas idades em duas
+novas listas diferentes: uma apenas para maiores de idade e outra para menores
+de idade. No final, imprima as duas novas estruturas.
+Exemplo de execução:
+Entrada:
+Digite a idade: 22
+Digite a idade: 18
+Digite a idade: 15
+Digite a idade: 30
+Digite a idade: 17
+Digite a idade: 12
+Digite a idade: 21
+Saída Esperada:
+Maiores de idade: [22, 18, 30, 21]
+Menores de idade: [15, 17, 12]
+
+- Exercício 11
+Uma fábrica produz peças de hardware que recebem um número de identificação.
+O maquinário precisa separar essas peças automaticamente: identificadores
+pares vão para a esteira do "Lote A" e os ímpares para a esteira do "Lote B". Faça
+um programa que peça ao usuário diversos números inteiros positivos. A condição
+de parada será o usuário digitar um número negativo. O programa deve analisar os
+dados e separá-los em uma lista por lote. Exiba o resultado final das duas listas.
+Exemplo de execução:
+Entrada:
+Digite um número de série (negativo para parar): 14
+Digite um número de série (negativo para parar): 7
+Digite um número de série (negativo para parar): 3
+Digite um número de série (negativo para parar): 10
+Digite um número de série (negativo para parar): 22
+Digite um número de série (negativo para parar): -1
+Saída Esperada:
+Lote A (Pares): [14, 10, 22]
+Lote B (Ímpares): [7, 3]
+
+- Exercício 12
+Você deve criar um sistema para um mercadinho. Crie duas listas no código:
+produtos = ["Maçã", "Banana", "Leite"] e precos = [3.50, 2.00, 5.00] (note que os
+índices se correspondem). O programa deve solicitar o nome de um produto. Se
+ele existir, o programa deve localizar em qual índice ele está na primeira lista e
+usar esse mesmo índice para resgatar e imprimir o seu valor na segunda lista.
+Exemplo de execução:
+Entrada:
+Digite o produto que deseja consultar: Banana
+Saída Esperada:
+O valor do produto Banana é R$ 2.00
+
+- Exercício 13
+Em muitas áreas da computação, processamos dados no formato de grades. Isso
+é feito no Python usando uma lista que guarda outras listas dentro. Faça um
+programa que construa uma matriz 3x3. Utilize laços de repetição para varrer as
+linhas e as colunas, pedindo para o usuário informar o valor de cada posição. Ao
+final, percorra a matriz construída e imprima-a formatada na tela, linha por linha.
+Exemplo de execução:
+Entrada:
+Digite o valor de [0, 0]: 1
+Digite o valor de [0, 1]: 2
+Digite o valor de [0, 2]: 3
+Digite o valor de [1, 0]: 4
+Digite o valor de [1, 1]: 5
+Digite o valor de [1, 2]: 6
+Digite o valor de [2, 0]: 7
+Digite o valor de [2, 1]: 8
+Digite o valor de [2, 2]: 9
+Saída Esperada:
+Matriz 3x3 gerada:
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+- Exercício 14
+Um laboratório de bioinformática está analisando fragmentos de sequências de
+DNA. Eles precisam identificar se uma sequência específica é um palíndromo (ou
+seja, se a lista lida da esquerda para a direita é exatamente igual se for lida da
+direita para a esquerda). Crie um programa que faça essa verificação.
+Exemplo de execução:
+Entrada:
+Insira o Fragmento: A
+Insira o Fragmento: C
+Insira o Fragmento: A
+Saída Esperada:
+A sequência ['A', 'C', 'A'] é um palíndromo!
+
+

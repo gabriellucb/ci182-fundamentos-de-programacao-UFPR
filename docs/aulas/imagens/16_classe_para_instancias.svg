@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" width="460" height="320">
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <defs>
+    <marker id="ah-purple" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+
+  <!-- fundo -->
+  <rect width="460" height="320" fill="white" rx="8" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- título -->
+  <text x="230" y="16" text-anchor="middle" dominant-baseline="central" class="sans" font-size="12" font-weight="bold" fill="#333">Uma classe, vários objetos</text>
+
+  <!-- caixa da classe (molde, genérico) -->
+  <rect x="20" y="130" width="150" height="100" rx="8" fill="#f4f0fb" stroke="#7c3aed" stroke-width="2"/>
+  <text x="95" y="152" text-anchor="middle" dominant-baseline="central" class="mono" font-size="14" font-weight="bold" fill="#4a1d96">class Aluno</text>
+  <text x="35" y="178" dominant-baseline="central" class="mono" font-size="12" fill="#4a1d96">nome: ?</text>
+  <text x="35" y="200" dominant-baseline="central" class="mono" font-size="12" fill="#4a1d96">nota: ?</text>
+  <text x="95" y="242" text-anchor="middle" class="sans" font-size="10" fill="#7c3aed">(molde, genérico)</text>
+
+  <!-- setas fan-out para as 3 instâncias -->
+  <path d="M172,160 C 220,160 220,75 278,75" fill="none" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#ah-purple)"/>
+  <path d="M172,180 L 278,180" fill="none" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#ah-purple)"/>
+  <path d="M172,200 C 220,200 220,275 278,275" fill="none" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#ah-purple)"/>
+
+  <!-- instância a1 -->
+  <rect x="280" y="40" width="160" height="70" rx="8" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.8"/>
+  <text x="360" y="58" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" font-weight="bold" fill="#1a3a6a">a1</text>
+  <text x="296" y="78" dominant-baseline="central" class="mono" font-size="12" fill="#1a3a6a">nome: "Ana"</text>
+  <text x="296" y="96" dominant-baseline="central" class="mono" font-size="12" fill="#1a3a6a">nota: 8.5</text>
+
+  <!-- instância a2 -->
+  <rect x="280" y="145" width="160" height="70" rx="8" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.8"/>
+  <text x="360" y="163" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" font-weight="bold" fill="#1a3a6a">a2</text>
+  <text x="296" y="183" dominant-baseline="central" class="mono" font-size="12" fill="#1a3a6a">nome: "Bruno"</text>
+  <text x="296" y="201" dominant-baseline="central" class="mono" font-size="12" fill="#1a3a6a">nota: 7.0</text>
+
+  <!-- instância a3 -->
+  <rect x="280" y="240" width="160" height="70" rx="8" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.8"/>
+  <text x="360" y="258" text-anchor="middle" dominant-baseline="central" class="mono" font-size="13" font-weight="bold" fill="#1a3a6a">a3</text>
+  <text x="296" y="278" dominant-baseline="central" class="mono" font-size="12" fill="#1a3a6a">nome: "Carlos"</text>
+  <text x="296" y="296" dominant-baseline="central" class="mono" font-size="12" fill="#1a3a6a">nota: 9.0</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="580" height="210" viewBox="0 0 580 210" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="210" fill="white" rx="8" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- Linha divisória vertical -->
+  <line x1="290" y1="15" x2="290" y2="182" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- === ESQUERDO: subconjunto (a ⊂ b) === -->
+  <!-- B (superconjunto) em azul claro -->
+  <circle cx="135" cy="100" r="80" fill="#C8DFF0"/>
+  <!-- A (subconjunto) em azul escuro, totalmente dentro de B -->
+  <circle cx="152" cy="108" r="44" fill="#4A7FC1"/>
+  <!-- Contornos -->
+  <circle cx="135" cy="100" r="80" fill="none" stroke="#2C5F9E" stroke-width="2.5"/>
+  <circle cx="152" cy="108" r="44" fill="none" stroke="#2C5F9E" stroke-width="2.5"/>
+  <!-- Rótulos -->
+  <text x="152" y="108" font-family="Georgia, serif" font-style="italic" font-size="20" font-weight="bold"
+        fill="white" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="75" y="50" font-family="Georgia, serif" font-style="italic" font-size="20" font-weight="bold"
+        fill="#2C5F9E" text-anchor="middle" dominant-baseline="central">b</text>
+  <!-- Subtítulo -->
+  <text x="140" y="196" font-family="'Courier New', Courier, monospace" font-size="12"
+        fill="#555" text-anchor="middle">a.issubset(b) → True</text>
+
+  <!-- === DIREITO: disjunto === -->
+  <!-- A em azul -->
+  <circle cx="360" cy="100" r="58" fill="#4A7FC1"/>
+  <!-- B em azul -->
+  <circle cx="492" cy="100" r="58" fill="#4A7FC1"/>
+  <!-- Contornos -->
+  <circle cx="360" cy="100" r="58" fill="none" stroke="#2C5F9E" stroke-width="2.5"/>
+  <circle cx="492" cy="100" r="58" fill="none" stroke="#2C5F9E" stroke-width="2.5"/>
+  <!-- Rótulos -->
+  <text x="360" y="100" font-family="Georgia, serif" font-style="italic" font-size="20" font-weight="bold"
+        fill="white" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="492" y="100" font-family="Georgia, serif" font-style="italic" font-size="20" font-weight="bold"
+        fill="white" text-anchor="middle" dominant-baseline="central">b</text>
+  <!-- Subtítulo -->
+  <text x="426" y="196" font-family="'Courier New', Courier, monospace" font-size="12"
+        fill="#555" text-anchor="middle">a.isdisjoint(b) → True</text>
+</svg>

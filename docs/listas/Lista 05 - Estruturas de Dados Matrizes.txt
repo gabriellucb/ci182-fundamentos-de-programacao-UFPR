@@ -1,0 +1,285 @@
+CI182 - Fundamentos de Programação de
+Computadores 2026/1
+Professora: Aurora Trinidad Ramirez Pozo
+Monitoria e Elaboração: Gabriel Lucas Barbosa
+
+Lista 04 - Estruturas de Dados: Matrizes
+Revisão
+•
+•
+•
+•
+•
+
+Criação: Uma matriz é representada por listas aninhadas. Ex: m = [[1, 2], [3, 4]].
+Acesso por Índices: O acesso é feito usando dois pares de colchetes, onde o
+primeiro indica a linha e o segundo a coluna. Exemplo: matriz[linha][coluna].
+Modificação: Pode substituir um dado diretamente com os índices. Ex: m[0][1] = 10.
+len(matriz): retorna a quantidade de linhas. Para obter a quantidade de colunas de
+uma linha específica (ex: linha 0), usamos len(matriz[0]).
+Varredura (Loops): Para percorrer todos os elementos de uma matriz, geralmente
+utilizamos laços de repetição aninhados (um for dentro de outro).
+
+- Exercício 1
+Considere a matriz: M = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]. Escreva um programa que
+imprima diretamente o número central e o número no canto superior direito.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário
+Saída Esperada:
+Número central: 5
+Canto superior direito: 3
+
+- Exercício 2
+Crie um programa que construa uma matriz 3x3 preenchida inteiramente com
+zeros (0) utilizando laços de repetição. Ao final, imprima a matriz na tela.
+Exemplo de execução:
+Entrada:
+Sem entrada do usuário
+Saída Esperada:
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+- Exercício 3
+Faça um programa que construa uma matriz 2x2. Utilize dois laços de repetição
+aninhados para pedir ao usuário que digite os 4 valores inteiros necessários para
+preencher a estrutura. Ao final, exiba a matriz gerada em uma única linha.
+Exemplo de execução:
+Entrada:
+Digite o valor [0][0]: 1
+Digite o valor [0][1]: 2
+Digite o valor [1][0]: 3
+Digite o valor [1][1]: 4
+Saída Esperada:
+Matriz gerada: [[1, 2], [3, 4]]
+
+- Exercício 4
+Crie uma matriz 3x3 informada pelo usuário e calcule a soma de todos os seus
+elementos. Ao final, o programa deve imprimir a soma total na tela.
+Exemplo de execução:
+Entrada:
+Digite o valor [0][0]: 1
+Digite o valor [0][1]: 2
+Digite o valor [0][2]: 3
+Digite o valor [1][0]: 4
+Digite o valor [1][1]: 5
+Digite o valor [1][2]: 6
+Digite o valor [2][0]: 7
+Digite o valor [2][1]: 8
+Digite o valor [2][2]: 9
+Saída Esperada:
+Soma = 45
+
+- Exercício 5
+Crie uma matriz 3x3 informada pelo usuário e calcule a soma apenas dos
+elementos da diagonal principal.
+Exemplo de execução:
+Entrada:
+Valor [0][0]: 2
+Valor [0][1]: 0
+Valor [0][2]: 0
+Valor [1][0]: 0
+Valor [1][1]: 3
+Valor [1][2]: 0
+Valor [2][0]: 0
+Valor [2][1]: 0
+Valor [2][2]: 4
+Saída Esperada:
+A soma da diagonal principal é: 9
+
+- Exercício 6
+Faça um programa que leia uma matriz 3x3 com números inteiros. O programa
+deve varrer a matriz e encontrar o maior elemento presente nela, armazenando e
+exibindo também a sua respectiva posição (índice da linha e da coluna).
+Exemplo de execução:
+Entrada:
+Valor [0][0]: 1
+Valor [0][1]: 2
+Valor [0][2]: 3
+Valor [1][0]: 4
+Valor [1][1]: 5
+Valor [1][2]: 6
+Valor [2][0]: 7
+Valor [2][1]: 8
+Valor [2][2]: 9
+Saída Esperada:
+O maior elemento é 9 localizado em [2][2]
+
+- Exercício 7
+Você possui uma turma com 3 alunos, onde cada um tem 2 notas. Preencha uma
+matriz 3x2 com essas notas informadas pelo usuário. Em seguida, o programa
+deve percorrer a matriz e calcular a média de cada aluno, exibindo o resultado.
+Exemplo de execução:
+Entrada:
+Nota 1 do aluno 1: 8
+Nota 2 do aluno 1: 10
+Nota 1 do aluno 2: 5
+Nota 2 do aluno 2: 7
+Nota 1 do aluno 3: 6
+Nota 2 do aluno 3: 6
+Saída Esperada:
+Aluno 1: Média = 9.0
+Aluno 2: Média = 6.0
+Aluno 3: Média = 6.0
+
+- Exercício 8
+Dada uma matriz fixa A = [[2, 4], [6, 8]], peça ao usuário para digitar um número
+inteiro (escalar). O programa deve criar uma nova matriz onde cada elemento de A
+é multiplicado pelo número digitado. Exiba a matriz resultante.
+Exemplo de execução:
+Entrada:
+Digite o valor escalar: 3
+Saída Esperada:
+Matriz resultante: [[6, 12], [18, 24]]
+
+- Exercício 9
+Faça um programa que leia uma matriz 3x3 informada pelo usuário e verifique se
+ela é uma Matriz Identidade. Uma matriz é identidade se todos os elementos da
+diagonal principal são 1 e todos os outros elementos são 0. O programa deve
+imprimir "É Matriz Identidade" ou "Não é Matriz Identidade".
+
+Exemplo de execução:
+Entrada:
+Valor [0][0]: 1
+Valor [0][1]: 0
+Valor [0][2]: 0
+Valor [1][0]: 0
+Valor [1][1]: 1
+Valor [1][2]: 0
+Valor [2][0]: 0
+Valor [2][1]: 0
+Valor [2][2]: 1
+Saída Esperada:
+É Matriz Identidade
+
+- Exercício 10
+A transposta de uma matriz é obtida transformando as suas linhas em colunas.
+Escreva um programa que leia os elementos de uma matriz 2x3 informados pelo
+usuário. Em seguida, o programa deve construir uma nova matriz 3x2 que seja a
+transposta da primeira e imprimi-la na tela formatada.
+Exemplo de execução:
+Entrada:
+Valor [0][0]: 1
+Valor [0][1]: 2
+Valor [0][2]: 3
+Valor [1][0]: 4
+Valor [1][1]: 5
+Valor [1][2]: 6
+Saída Esperada:
+Matriz Transposta:
+[1, 4]
+[2, 5]
+[3, 6]
+
+- Exercício 11
+Crie um programa de busca múltipla. O programa deve pedir para o usuário
+preencher uma matriz 3x3 com números inteiros. Em seguida, o sistema pede
+para o usuário digitar um "número alvo" para ser procurado. O programa deve
+varrer a estrutura e imprimir as coordenadas [linha][coluna] de todas as vezes que
+o número alvo aparecer. Se não aparecer nenhuma, exiba uma mensagem.
+Exemplo de execução:
+Entrada:
+Valor [0][0]: 1
+Valor [0][1]: 0
+Valor [0][2]: 3
+Valor [1][0]: 4
+Valor [1][1]: 0
+Valor [1][2]: 1
+Valor [2][0]: 5
+Valor [2][1]: 0
+Valor [2][2]: 1
+Digite o número alvo: 1
+Saída Esperada:
+O número 1 foi encontrado nas posições:
+[0][0]
+[1][2]
+[2][2]
+
+- Exercício 12
+A multiplicação de duas matrizes não é feita apenas multiplicando elemento por
+elemento correspondente. O elemento C[i][j] da matriz resultante é calculado
+multiplicando-se os elementos da linha i da primeira matriz pelos elementos da
+coluna j da segunda, e somando os resultados. Faça um programa que leia duas
+matrizes quadradas 2x2 e calcule a matriz resultante da multiplicação entre elas.
+
+Exemplo de execução:
+Entrada:
+Matriz 1:
+Valor [0][0]: 1
+Valor [0][1]: 2
+Valor [1][0]: 3
+Valor [1][1]: 4
+Matriz 2:
+Valor [0][0]: 2
+Valor [0][1]: 0
+Valor [1][0]: 1
+Valor [1][1]: 2
+Saída Esperada:
+Matriz Multiplicada:
+[4, 4]
+[10, 8]
+
+- Exercício 13
+Faça um programa que leia uma matriz 3x3 e calcule o seu determinante.
+Exemplo de execução:
+Entrada:
+Digite o valor de [0, 0]: 1
+Digite o valor de [0, 1]: 2
+Digite o valor de [0, 2]: 3
+Digite o valor de [1, 0]: 4
+Digite o valor de [1, 1]: 5
+Digite o valor de [1, 2]: 6
+Digite o valor de [2, 0]: 7
+Digite o valor de [2, 1]: 8
+Digite o valor de [2, 2]: 9
+Saída Esperada:
+Determinante: 0
+
+- Exercício 14
+O conceito de inversão de matrizes é complexo, mas a verificação é simples. Duas
+matrizes quadradas A e B são consideradas inversas se, e somente se, o produto
+delas é exatamente a Matriz Identidade. Faça um programa que leia os valores
+reais de duas matrizes 2x2. Utilize a lógica da multiplicação do Exercício 12 para
+encontrar a matriz resultante e, em seguida, verifique se essa resultante é a
+Identidade. Imprima se as matrizes são ou não inversas
+Exemplo de execução:
+Entrada:
+Matriz A:
+Valor [0][0]: 4
+Valor [0][1]: 7
+Valor [1][0]: 2
+Valor [1][1]: 6
+Matriz B:
+Valor [0][0]: 0.6
+Valor [0][1]: -0.7
+Valor [1][0]:-0.2
+Valor [1][1]: 0.4
+Saída Esperada:
+As matrizes são inversas!
+
+- Desafio
+Faça um programa que leia uma matriz 3x3 contendo os caracteres 'X', 'O' e ' '
+(espaço vazio), representando o estado atual de um jogo da velha. O algoritmo
+deve analisar as linhas, as colunas e as duas diagonais do tabuleiro para sugerir a
+próxima jogada do jogador 'X'. A lógica da sugestão deve seguir uma prioridade:
+1. Se o 'X' puder ganhar o jogo nesta rodada (tiver dois 'X' e um vazio na mesma
+reta), sugira essa posição.
+2. Caso não possa ganhar agora, mas o 'O' estiver prestes a ganhar (dois 'O' e um
+vazio na mesma reta), sugira essa posição para bloquear a derrota.
+3. Caso nenhuma das anteriores seja verdade, sugira qualquer posição vazia.
+
+Exemplo de execução:
+Entrada:
+Tabuleiro:
+Valor [0][0]: X
+Valor [0][1]: O
+Valor [0][2]: “”
+Valor [1][0]: “”
+Valor [1][1]: O
+Valor [1][2]: “”
+Valor [2][0]: X
+Valor [2][1]: “”
+Valor [2][2]: “”
+Saída Esperada:
+Jogada sugerida: [1][0]
+
+

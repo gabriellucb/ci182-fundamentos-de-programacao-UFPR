@@ -1,0 +1,55 @@
+<svg width="580" height="210" viewBox="0 0 580 210" xmlns="http://www.w3.org/2000/svg">
+  <rect width="580" height="210" fill="white" rx="8" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- Linha divisória vertical -->
+  <line x1="290" y1="15" x2="290" y2="182" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <defs>
+    <!-- Recorte pelo círculo A esquerdo (para apagar a interseção em a−b) -->
+    <clipPath id="clipAL">
+      <circle cx="110" cy="98" r="60"/>
+    </clipPath>
+    <!-- Recorte pelo círculo B direito (para apagar a interseção em b−a) -->
+    <clipPath id="clipBR">
+      <circle cx="470" cy="98" r="60"/>
+    </clipPath>
+  </defs>
+
+  <!-- === ESQUERDO: a − b === -->
+  <!-- B em cinza -->
+  <circle cx="190" cy="98" r="60" fill="#DADADA"/>
+  <!-- A em azul -->
+  <circle cx="110" cy="98" r="60" fill="#4A7FC1"/>
+  <!-- Apagar interseção: B recortado por A, em cinza -->
+  <circle cx="190" cy="98" r="60" fill="#DADADA" clip-path="url(#clipAL)"/>
+  <!-- Contornos -->
+  <circle cx="110" cy="98" r="60" fill="none" stroke="#2C5F9E" stroke-width="2.5"/>
+  <circle cx="190" cy="98" r="60" fill="none" stroke="#2C5F9E" stroke-width="2.5"/>
+  <!-- Rótulos -->
+  <text x="75" y="98" font-family="Georgia, serif" font-style="italic" font-size="20" font-weight="bold"
+        fill="white" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="225" y="98" font-family="Georgia, serif" font-style="italic" font-size="20" font-weight="bold"
+        fill="#555" text-anchor="middle" dominant-baseline="central">b</text>
+  <!-- Subtítulo -->
+  <text x="150" y="194" font-family="'Courier New', Courier, monospace" font-size="13"
+        fill="#555" text-anchor="middle">a − b</text>
+
+  <!-- === DIREITO: b − a === -->
+  <!-- A em cinza -->
+  <circle cx="390" cy="98" r="60" fill="#DADADA"/>
+  <!-- B em azul -->
+  <circle cx="470" cy="98" r="60" fill="#4A7FC1"/>
+  <!-- Apagar interseção: A recortado por B, em cinza -->
+  <circle cx="390" cy="98" r="60" fill="#DADADA" clip-path="url(#clipBR)"/>
+  <!-- Contornos -->
+  <circle cx="390" cy="98" r="60" fill="none" stroke="#2C5F9E" stroke-width="2.5"/>
+  <circle cx="470" cy="98" r="60" fill="none" stroke="#2C5F9E" stroke-width="2.5"/>
+  <!-- Rótulos -->
+  <text x="355" y="98" font-family="Georgia, serif" font-style="italic" font-size="20" font-weight="bold"
+        fill="#555" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="505" y="98" font-family="Georgia, serif" font-style="italic" font-size="20" font-weight="bold"
+        fill="white" text-anchor="middle" dominant-baseline="central">b</text>
+  <!-- Subtítulo -->
+  <text x="430" y="194" font-family="'Courier New', Courier, monospace" font-size="13"
+        fill="#555" text-anchor="middle">b − a</text>
+</svg>

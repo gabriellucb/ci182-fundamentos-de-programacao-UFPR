@@ -1,0 +1,170 @@
+CI182 - Fundamentos de Programação de
+Computadores 2026/1
+Professora: Aurora Trinidad Ramirez Pozo
+Monitoria e Elaboração: Gabriel Lucas Barbosa
+
+Lista 01 - Entradas, Saídas e Operações
+- Exercício 1
+Crie um programa que solicite ao usuário o seu nome completo e o seu curso. Em
+seguida, o programa deve imprimir uma mensagem de boas-vindas, com o nome
+em letras maiúsculas.
+Dica: Lembre-se de utilizar .upper() para transformar o texto em letras maiúsculas.
+Exemplo de Execução:
+Entrada:
+Nome completo: Maria da Silva
+Curso: Engenharia Química
+Saída Esperada:
+Olá, MARIA DA SILVA! Seja bem-vindo(a) ao curso de Engenharia Química.
+
+- Exercício 2
+O comportamento dos operadores matemáticos muda dependendo do tipo de
+dado que estamos usando. Escreva um programa que peça ao usuário para digitar
+um número inteiro qualquer. O programa deve salvar essa entrada como um texto
+(String) e como um número inteiro (Int).
+Em seguida, o programa deve multiplicar ambas as variáveis por 3 e mostrar os
+dois resultados na tela.
+Exemplo de Execução:
+Entrada:
+Digite um número: 5
+Saída Esperada:
+Resultado String: 555
+Resultado Inteiro: 15
+
+- Exercício 3
+Um aluno de Engenharia precisou criar um programa para calcular o custo final de
+um serviço. A regra era simples: pegar o custo do material, multiplicar por 2 e
+somar uma taxa de entrega informada pelo usuário. O código que ele escreveu foi:
+custo_material = input("Digite o custo do material: ")
+taxa_entrega = input("Digite a taxa extra de entrega: ")
+custo_total = custo_material * 2 + taxa_entrega
+print(f"O custo total do projeto é de R$ {custo_total}")
+Esse foi um exemplo de execução desse programa:
+Entrada:
+Digite o custo do material: 500
+Digite a taxa de entrega: 15
+Saída Esperada:
+O custo total do projeto é de R$ 1015.00
+Saída Real:
+O custo total do projeto é de R$ 50050015
+a) Explique por que o computador gerou um resultado diferente do esperado.
+b) Reescreva o código do aluno corrigindo o problema.
+
+- Exercício 4
+Escreva um programa que leia a quantidade de dias, horas, minutos e segundos
+de um experimento. O programa deve calcular e mostrar o tempo total do
+experimento expresso apenas em segundos.
+Exemplo de Execução:
+Entrada:
+Dias: 1
+Horas: 2
+Minutos: 30
+Segundos: 15
+Saída Esperada:
+O tempo total do experimento foi de 95415 segundos.
+
+- Exercício 5
+Na manipulação de textos, o fatiamento (slicing) nos permite extrair pedaços
+específicos de uma string utilizando a estrutura texto[inicio:fim]. Escreva um
+programa que peça ao usuário para digitar uma data de nascimento no formato
+DD/MM/AAAA (exatamente com 10 caracteres). O programa deve utilizar o
+fatiamento para extrair e imprimir separadamente o dia, o mês e o ano.
+Exemplo de Execução:
+Entrada:
+Digite a data de nascimento (DD/MM/AAAA): 15/08/2026
+Saída Esperada:
+Dia: 15
+Mês: 08
+Ano: 2026
+
+- Exercício 6
+Um laboratório de química precisa armazenar frascos de um novo reagente em
+caixas. Escreva um programa que peça ao usuário dois valores:
+•
+•
+
+O número total de frascos produzidos.
+A capacidade da caixa (quantos frascos cabem em uma única caixa).
+
+Calcule e mostre na tela:
+•
+•
+
+Quantas caixas ficarão completamente cheias.
+Quantos frascos sobrarão fora das caixas completas.
+
+Exemplo de Execução:
+Entrada:
+Total de frascos: 125
+Capacidade da caixa: 10
+Saída Esperada:
+Caixas completas: 12
+Frascos que sobraram: 5
+
+- Exercício 7
+Escreva um programa que funcione como uma calculadora de volumes para três
+formas geométricas: um cubo, um cilindro e uma pirâmide de base quadrada. O
+programa deve pedir ao usuário que digite três valores (em metros): uma medida
+de lado, uma de raio e uma de altura. Em seguida, ele deve calcular e exibir os
+volumes utilizando as seguintes fórmulas:
+• Cubo: V = lado³
+• Cilindro: V = π × raio² × altura (Utilize 3.14 como valor de π)
+• Pirâmide: V = (lado² × altura) / 3
+Exemplo de Execução:
+Entrada:
+Digite o valor do lado (m): 3.0
+Digite o valor do raio (m): 2.0
+Digite o valor da altura (m): 5.0
+Saída Esperada:
+O volume do cubo é: 27.00 m³
+O volume do cilindro é: 62.80 m³
+O volume da pirâmide é: 15.00 m³
+
+- Exercício 8
+Escreva um programa que receba um número inteiro de três dígitos. Utilizando
+lógica matemática, o programa deve "desmembrar" o número, extrair a centena, a
+dezena e a unidade, e no final imprimir a soma desses três algarismos.
+Dica: Utilize divisão inteira por 10 e o resto para encontrar os algarismos.
+Exemplo de Execução:
+Entrada:
+Digite um número de 3 dígitos: 456
+Saída Esperada:
+Centena: 4
+Dezena: 5
+Unidade: 6
+A soma dos dígitos é: 15
+
+- Exercício 9
+Um Restaurante Universitário possui um caixa eletrônico que só devolve troco
+utilizando notas de R$ 50, R$ 20, R$ 10, R$ 5 e moedas de R$ 1. Escreva um
+programa que leia um valor inteiro correspondente ao troco a ser devolvido. O
+programa deve calcular qual é o menor número de notas e moedas possível para
+devolver esse valor.
+Dica: Você pode descobrir as notas de 50 usando divisão inteira (//). O que sobra
+você passa para calcular as notas de 20, e assim por diante.
+Exemplo de Execução:
+Entrada:
+Digite o valor do troco: 87
+Saída Esperada:
+Notas de 50: 1
+Notas de 20: 1
+Notas de 10: 1
+Notas de 5: 1
+Moedas de 1: 2
+
+- Exercício 10
+Um experimento em um laboratório automatizado, os pesquisadores precisam de
+um programa que calcule automaticamente a que horas um experimento vai
+terminar. Crie um programa que peça ao usuário três valores inteiros: a hora inicial
+(0 a 23), o minuto inicial (0 a 59) e a duração do experimento em minutos. O
+programa deve calcular e imprimir a hora e o minuto exatos em que o experimento
+terminará, respeitando o formato de um relógio de 24 horas (se passar da meianoite, a hora deve voltar a contar a partir do 0).
+Exemplo de Execução
+Entrada:
+Hora inicial: 23
+Minuto inicial: 45
+Duração (em minutos): 100
+Saída Esperada:
+Hora final: 1
+Minuto final: 25
+
+

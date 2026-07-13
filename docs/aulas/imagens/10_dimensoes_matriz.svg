@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 260" width="510" height="260">
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <defs>
+    <!-- Arrowhead para seta azul (direita) -->
+    <marker id="ah-blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#3a80c8"/>
+    </marker>
+    <!-- Arrowhead para seta azul (esquerda), mesmo path aplicado com auto-start-reverse -->
+    <marker id="ah-blue-rev" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto-start-reverse">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#3a80c8"/>
+    </marker>
+    <!-- Arrowhead para seta vermelha (baixo): ápice ao longo de +x, orient="auto" gira pra direção da linha -->
+    <marker id="ah-red" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#c0392b"/>
+    </marker>
+    <!-- Arrowhead para seta vermelha (cima), mesmo path aplicado com auto-start-reverse -->
+    <marker id="ah-red-rev" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto-start-reverse">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+
+  <!-- ══════════════════════════════════════════════
+       SETA HORIZONTAL AZUL  ::  len(matriz[0]) = 3
+       ══════════════════════════════════════════════ -->
+  <text x="246" y="22" text-anchor="middle" class="mono" font-size="13" font-weight="bold" fill="#3a80c8">len(matriz[0]) = 3</text>
+  <line x1="140" y1="34" x2="356" y2="34" stroke="#3a80c8" stroke-width="2"
+        marker-start="url(#ah-blue-rev)" marker-end="url(#ah-blue)"/>
+
+  <!-- ══════════════════════════════════════════════
+       CABEÇALHOS DAS COLUNAS
+       ══════════════════════════════════════════════ -->
+  <text x="176" y="56" text-anchor="middle" class="sans" font-size="11" fill="#666">col 0</text>
+  <text x="248" y="56" text-anchor="middle" class="sans" font-size="11" fill="#666">col 1</text>
+  <text x="320" y="56" text-anchor="middle" class="sans" font-size="11" fill="#666">col 2</text>
+
+  <!-- ══════════════════════════════════════════════
+       GRADE  ::  3 × 3 células  (x=140, y=62, 72×56)
+       ══════════════════════════════════════════════ -->
+  <!-- Linha 0 -->
+  <rect x="140" y="62" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="212" y="62" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="284" y="62" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+  <!-- Linha 1 -->
+  <rect x="140" y="118" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="212" y="118" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="284" y="118" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+  <!-- Linha 2 -->
+  <rect x="140" y="174" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="212" y="174" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+  <rect x="284" y="174" width="72" height="56" fill="#edf3fc" stroke="#3a80c8" stroke-width="1.5"/>
+
+  <!-- ══════════════════════════════════════════════
+       VALORES DAS CÉLULAS
+       ══════════════════════════════════════════════ -->
+  <text x="176" y="96"  text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">1</text>
+  <text x="248" y="96"  text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">2</text>
+  <text x="320" y="96"  text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">3</text>
+  <text x="176" y="152" text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">4</text>
+  <text x="248" y="152" text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">5</text>
+  <text x="320" y="152" text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">6</text>
+  <text x="176" y="208" text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">7</text>
+  <text x="248" y="208" text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">8</text>
+  <text x="320" y="208" text-anchor="middle" class="mono" font-size="19" fill="#1a3a6a">9</text>
+
+  <!-- ══════════════════════════════════════════════
+       RÓTULOS DAS LINHAS
+       ══════════════════════════════════════════════ -->
+  <text x="128" y="96"  text-anchor="end" class="sans" font-size="11" fill="#666">linha 0</text>
+  <text x="128" y="152" text-anchor="end" class="sans" font-size="11" fill="#666">linha 1</text>
+  <text x="128" y="208" text-anchor="end" class="sans" font-size="11" fill="#666">linha 2</text>
+
+  <!-- ══════════════════════════════════════════════
+       SETA VERTICAL VERMELHA  ::  len(matriz) = 3
+       ══════════════════════════════════════════════ -->
+  <line x1="374" y1="62" x2="374" y2="230" stroke="#c0392b" stroke-width="2"
+        marker-start="url(#ah-red-rev)" marker-end="url(#ah-red)"/>
+  <!-- Rótulo rotacionado -90° em torno do ponto (412, 146) -->
+  <text x="412" y="146" text-anchor="middle" class="mono" font-size="13" font-weight="bold"
+        fill="#c0392b" transform="rotate(-90, 412, 146)">len(matriz) = 3</text>
+</svg>

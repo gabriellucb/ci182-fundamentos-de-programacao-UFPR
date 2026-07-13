@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" width="460" height="260">
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <!-- fundo -->
+  <rect width="460" height="260" fill="white" rx="8" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- título -->
+  <text x="230" y="20" text-anchor="middle" dominant-baseline="central" class="sans" font-size="13" font-weight="bold" fill="#333">a1 e a2: objetos independentes na memória</text>
+
+  <!-- caixa a1 -->
+  <rect x="40" y="55" width="170" height="140" rx="8" fill="#e9f5ee" stroke="#27ae60" stroke-width="2"/>
+  <text x="125" y="76" text-anchor="middle" dominant-baseline="central" class="mono" font-size="14" font-weight="bold" fill="#145a32">a1</text>
+  <text x="56" y="104" dominant-baseline="central" class="mono" font-size="12" fill="#145a32">nome: "Ana Julia"</text>
+  <text x="56" y="126" dominant-baseline="central" class="mono" font-size="12" fill="#145a32">nota: 8.5</text>
+  <text x="125" y="160" text-anchor="middle" class="sans" font-size="10" fill="#27ae60">nome mudou</text>
+  <text x="125" y="174" text-anchor="middle" class="sans" font-size="10" fill="#27ae60">(era "Ana")</text>
+
+  <!-- caixa a2 -->
+  <rect x="250" y="55" width="170" height="140" rx="8" fill="#edf3fc" stroke="#3a80c8" stroke-width="2"/>
+  <text x="335" y="76" text-anchor="middle" dominant-baseline="central" class="mono" font-size="14" font-weight="bold" fill="#1a3a6a">a2</text>
+  <text x="266" y="104" dominant-baseline="central" class="mono" font-size="12" fill="#1a3a6a">nome: "Bruno"</text>
+  <text x="266" y="126" dominant-baseline="central" class="mono" font-size="12" fill="#1a3a6a">nota: 7.0</text>
+  <text x="335" y="160" text-anchor="middle" class="sans" font-size="10" fill="#3a80c8">nunca mudou</text>
+
+  <!-- linha tracejada com X no meio: sem ligação entre os dois -->
+  <line x1="212" y1="125" x2="248" y2="125" stroke="#aaaaaa" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="230" y="125" text-anchor="middle" dominant-baseline="central" class="sans" font-size="13" font-weight="bold" fill="#aaaaaa">✕</text>
+
+  <!-- legenda -->
+  <text x="230" y="228" text-anchor="middle" class="sans" font-size="11" fill="#666">objetos separados na memória, sem nenhuma ligação entre eles</text>
+</svg>
