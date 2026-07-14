@@ -21,6 +21,7 @@ Pra praticar sem depender só da leitura:
 
 - **`docs/exemplos/`**: arquivos Python comentados, um por aula, pra consultar sintaxe e ver padrões funcionando.
 - **`docs/listas/`**: listas de exercícios oficiais da disciplina, em PDF e TXT.
+- **`docs/material_professores/`**: material produzido pelos professores da disciplina (notas de aula, slides, provas antigas), usado aqui com autorização.
 - **`docs/gabaritos/`**: gabaritos das listas, abrindo direto no Google Colab. Tente resolver antes de olhar.
 - **`docs/respostas/`**: minhas respostas dos exercícios sugeridos ao final de cada aula.
 - **`docs/debug/`**: programas com bugs intencionais, separados por dificuldade, pra treinar leitura de erro e correção de código (sem gabarito, de propósito).
@@ -51,6 +52,9 @@ Abra [`docs/aulas/00_boas_vindas.md`](docs/aulas/00_boas_vindas.md).
 
 - **GitHub Pages**: transformar o material em um site navegável, com busca e sumário lateral. A ideia está clara, falta tempo e foco.
 - Mais exercícios de debug no nível difícil (hoje são só 3, contra 8 de fácil e 8 de médio).
+- Mais projetos como o `copa_penaltis`, cada um cobrindo um bloco diferente do curso.
+- Mais listas de exercícios próprias, além das 7 oficiais da disciplina.
+- Mais conteúdo relacionado à disciplina, no espírito dos apêndices e do FAQ.
 
 ---
 
@@ -83,4 +87,4 @@ Cada arquivo corresponde a uma aula. O nome segue o mesmo padrão de `docs/aulas
 
 O código-fonte (arquivos `.py`) está sob licença [MIT](LICENSE). O conteúdo escrito (aulas, FAQ, glossário, apêndices e demais `.md`) está sob [Creative Commons BY-SA 4.0](LICENSE-CONTENT).
 
-`docs/listas/` é material oficial da disciplina CI182/CI240 da UFPR, elaborado no âmbito da monitoria sob supervisão da professora responsável. Nenhuma das duas licenças acima cobre esses arquivos; eles estão aqui só como referência de apoio.
+`docs/listas/` é material oficial da disciplina CI182/CI240 da UFPR, elaborado no âmbito da monitoria sob supervisão da professora responsável. `docs/material_professores/` é material produzido pelos professores da disciplina, usado aqui com autorização, mas não é de minha autoria. Nenhuma das duas licenças acima cobre esses arquivos; eles estão aqui só como referência de apoio.
