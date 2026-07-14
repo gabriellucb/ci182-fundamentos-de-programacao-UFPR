@@ -1,0 +1,25 @@
+'''
+9. Uma empresa concederá um aumento de salário aos seus funcionários, variável de
+acordo com o cargo, conforme a tabela abaixo. Faça um programa que leia o salário e o
+cargo de um funcionário e calcule o novo salário. Se o cargo do funcionário não estiver
+na tabela, ele deverá, então, receber 40% de aumento. Mostre o salário antigo, o novo
+salário e a diferença.
+
+(olhar slide para tabela)
+'''
+
+salario = float (input ("Digite o salario: "))
+cargo = int(input ("Digite o codigo do seu cargo: "))
+
+if cargo == 101:
+  novo_salario = salario + (0.10 * salario )
+elif cargo == 102:
+  novo_salario = salario + (0.20 * salario)
+elif cargo == 103:
+  novo_salario = salario + (0.30 * salario)
+else:
+  novo_salario = salario + (0.40 * salario)
+
+print ("Antigo salario: ", salario)
+print ("Novo salario: ", novo_salario)
+print ("Diferença: ", novo_salario - salario)

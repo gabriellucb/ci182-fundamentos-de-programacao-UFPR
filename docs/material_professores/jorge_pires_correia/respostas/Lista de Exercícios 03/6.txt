@@ -1,0 +1,26 @@
+'''
+Faça um programa em Python que lê um número inteiro N, calcule e imprima a soma dos termos da série abaixo, para N termos:  
+(Olhar slide)
+'''
+
+n = int (input ("Digite n: "))
+
+# Podemos perceber que o dividendo é definido por: (dividendo_anterior * 2) - 1
+# Podemos perceber também que o divisor é definido por (divisor_anterior * 2)
+# Sabemos também que o dividendo inicial é 5 e o divisor inicial é 2
+
+soma_total = 5.0 / 2.0 # vamos iniciar soma total com o primeiro elemento
+dividendo_anterior = 5
+divisor_anterior = 2
+
+for i in range (n - 1):
+    dividendo_atual = (dividendo_anterior * 2) - 1;
+    divisor_atual = divisor_anterior * 2;
+
+    soma_total = soma_total + (dividendo_atual / divisor_atual);
+
+    # dividendo e divisor atuais serão divivendo e divisor anteriores para a próxima iteração
+    dividendo_anterior = dividendo_atual;
+    divisor_anterior = divisor_atual;
+
+print ("Soma total:", soma_total)

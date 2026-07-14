@@ -1,0 +1,14 @@
+'''
+10. Escrever um programa que lê um valor em reais e calcula qual o menor
+número possível de notas de 100, 50, 10, 5 e 1 em que o valor lido pode ser
+decomposto. Escrever o valor lido e a relação de notas necessárias.
+'''
+
+valor_total = int (input ("Digite o valor total em reais: "))
+notas_100 = valor_total // 100
+notas_50 = (valor_total % 100) // 50
+notas_10 = ((valor_total % 100) % 50) // 10
+notas_5 = (((valor_total % 100) % 50) % 10) // 5
+notas_1 = (((valor_total % 100) % 50) % 10) % 5
+
+print (notas_100, " notas de 100, ", notas_50, " notas de 50, ", notas_10, " notas de 10, ", notas_5, " notas de 5, ", notas_1, " notas de 1.")

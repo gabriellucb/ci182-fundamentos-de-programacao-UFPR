@@ -1,0 +1,25 @@
+'''
+10. Elaborar um programa que lê 3 valores inteiros e positivos a,b,c e verifica se
+eles formam ou não um triângulo. Caso os valores formem um triângulo, deve-se
+calcular e imprimir o valor do perímetro do triângulo, indicando com uma
+mensagem se este é equilátero (três lados iguais), isósceles (apenas 2 lados
+iguais) ou escaleno (todos os lados são diferentes). Se os valores não formam
+um triângulo, escrever uma mensagem informando o fato. Lembre que em um
+triângulo, o comprimento de cada lado deve ser menor que a soma dos outros
+dois lados.
+'''
+
+a = int (input ("a: "))
+b = int (input ("b: "))
+c = int (input ("c: "))
+
+if (a < b + c) and (b < a + c) and (c < a + b):
+  perimetro = a + b + c
+  if a == b and a == c:
+    print ("triangulo equilatero com perimetro ", perimetro)
+  elif a != b and a != c and b != c:
+    print ("triangulo escaleno com perimetro ", perimetro)
+  else:
+    print ("triangulo isosceles com perimetro ", perimetro)
+else:
+  print ("nao é triangulo")

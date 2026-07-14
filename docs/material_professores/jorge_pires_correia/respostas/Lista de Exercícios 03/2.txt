@@ -1,0 +1,13 @@
+'''
+Fazer um programa que calcule a soma dos primeiros 20 elementos de uma progressão aritmética de razão 3 e cujo 1o elemento é fornecido pelo usuário. Usar repetições. NÃO USAR A FÓRMULA DA P.A.
+'''
+
+elemento_atual = int (input ("Digite o prieiro elemento: "))
+
+soma_total = elemento_atual
+
+#executando 19 vezes pois o primeiro elemento é o recebido do usuário
+for i in range (19):
+	elemento_atual = elemento_atual +  3
+	soma_total = soma_total + elemento_atual
+print ("Soma total:", soma_total)

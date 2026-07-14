@@ -1,0 +1,19 @@
+'''
+Sabe-se que o número Neperiano e = 2.7182818… (que é um número irracional) pode ser calculado pela soma dos valores de uma série infinita, como mostrado abaixo: 
+ 
+(olhar slide)
+
+Fazer um programa em Python que calcule este número (e) considerando apenas as 15 (quinze) primeiras parcelas.
+'''
+
+e = 1
+for i in range (14):
+	denominador_atual = i + 1
+	resultado_fatorial = 1
+	while denominador_atual > 1:
+		resultado_fatorial = resultado_fatorial * denominador_atual
+		denominador_atual = denominador_atual - 1
+
+	e = e + (1 / (resultado_fatorial))
+
+print ("Numero neperiano considerando 15 primeiras parcelas:", e)

@@ -1,0 +1,18 @@
+'''
+6. Faça um programa que leia um número inteiro e mostre uma mensagem
+indicando se este número é par ou ímpar, e se é positivo ou negativo.
+'''
+
+numero = int (input ("Digite o numero: "))
+
+if (numero % 2) == 0:
+	print ("Numero par")
+else:
+	print ("Numero impar")
+
+if numero < 0:
+	print ("Numero negativo")
+elif numero > 0:
+	print ("Numero positivo")
+else:
+	print ("Zero")

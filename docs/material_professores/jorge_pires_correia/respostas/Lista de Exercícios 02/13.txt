@@ -1,0 +1,24 @@
+'''
+13. Escreva um programa para ler as coordenadas (X,Y) de um ponto no sistema
+cartesiano e escrever o quadrante ao qual o ponto pertence. Caso o ponto não
+pertenca a nenhum quandrante, escrever se ele está sobre o eixo X, eixo Y ou na
+origem.
+'''
+
+x = int (input ("digite a coordenada x: "))
+y = int (input ("digite a coordenada y: "))
+
+if x > 0 and y > 0:
+  print ("quadrante 1")
+elif x > 0 and y < 0:
+  print ("quadrante 4")
+elif x < 0 and y > 0:
+  print ("quadrante 2")
+elif x < 0 and y < 0:
+  print ("quadrante 3")
+elif x == 0 and y == 0:
+  print ("origem")
+elif x == 0:
+  print ("eixo y")
+else:
+  print ("eixo x")

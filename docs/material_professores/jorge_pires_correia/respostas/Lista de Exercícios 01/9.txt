@@ -1,0 +1,15 @@
+'''
+9. O custo ao consumidor de um carro novo é a soma do custo de fábrica
+mais a percentagem do distribuidor e dos impostos (aplicados ao custo de
+fábrica). Supondo que a percentagem do distribuidor seja de 28% e os impostos
+de 45%, escrever um programa que leia o custo de fábrica de um carro e escreva
+o custo ao consumidor.
+'''
+
+custo_fabrica = float (input ("Digite o custo de fábrica do carro: "))
+percent_distribuidor = (28 / 100) * custo_fabrica
+impostos = (45 / 100) * custo_fabrica
+
+custo_consumidor = custo_fabrica + percent_distribuidor + impostos
+
+print ("O custo final do carro ao consumidor é: ", custo_consumidor)

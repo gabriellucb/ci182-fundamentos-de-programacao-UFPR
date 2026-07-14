@@ -1,0 +1,26 @@
+'''
+8. Um vendedor necessita de um programa que calcule o preço total devido por um
+cliente, que comprou um produto em sua loja. O programa deve receber o código do
+produto e a quantidade comprada, para então calcular e imprimir na tela o preço total,
+usando a tabela abaixo:
+
+(olhar slide para tabela)
+'''
+
+codigo = input ("Digite o codigo do produto: ")
+quantidade = int (input ("Quantidade: "))
+
+if codigo == "1001":
+  valor = 5.32 * quantidade
+elif codigo == "1324":
+  valor = 6.45 * quantidade
+elif codigo == "6548":
+  valor = 2.37 * quantidade
+elif codigo == "0987":
+  valor = 5.32 * quantidade
+elif codigo == "7623":
+  valor = 6.45 * quantidade
+else:
+  valor = 0
+
+print ("Preço: ", valor)

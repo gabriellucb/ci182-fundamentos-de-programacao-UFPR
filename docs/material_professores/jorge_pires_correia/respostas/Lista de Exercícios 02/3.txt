@@ -1,0 +1,12 @@
+'''
+3. Elaborar um programa que lê 2 valores a e b e os escreve com a mensagem:
+“São múltiplos” ou “Não são múltiplos”.
+'''
+
+a = int (input("Digite o primeiro numero: "))
+b = int (input("Digite o segundo numero: "))
+
+if a % b == 0 or b % a == 0:
+	print ("São múltiplos")
+else:
+	print ("Não são múltiplos")

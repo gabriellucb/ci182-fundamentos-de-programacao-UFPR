@@ -1,0 +1,22 @@
+'''
+14. João recebeu seu salário e precisa pagar duas contas atrasadas. Por causa
+do atraso, ele deverá pagar multa de 2% sobre cada conta. Faça um programa
+que calcule e mostre quanto restará do salário de João após pagar as contas. O
+programa deve ler o valor do salário recebido por João e do valor de cada conta
+que ele deveria ter pago.
+'''
+
+salario = float (input ("Digite o valor do salário: "))
+valor_conta_1 = float (input ("Digite o valor da primeira conta: "))
+valor_conta_2 = float (input ("Digite o valor da segunda_conta: "))
+
+multa_conta_1 = (2 / 100) * valor_conta_1
+novo_valor_conta_1 = valor_conta_1 + multa_conta_1
+
+
+multa_conta_2 = (2 / 100) * valor_conta_2
+novo_valor_conta_2 = valor_conta_2 + multa_conta_2
+
+resto = salario - novo_valor_conta_1 - novo_valor_conta_2
+
+print ("Após o pagamento das duas contas restará ", resto, " reais.")

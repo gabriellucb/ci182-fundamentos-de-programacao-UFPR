@@ -1,0 +1,15 @@
+'''
+6. Sabe-se que, para iluminar de maneira correta os cômodos de uma casa, para
+cada m2 deve-se usar 18W de potência. Faça um programa que recebe as duas
+dimensões de um cômodo (em metros), calcule e mostre a sua área (em m2) e a
+potência de iluminação em watts que deverá ser usada.
+'''
+
+comprimento = int (input ("Digite o comprimento do cômodo: "))
+largura = int (input ("Digite a largura do cômodo: "))
+
+area = comprimento * largura
+
+total_watts = area * 18
+
+print ("São precisos ", total_watts, " watts para iluminar o cômodo")

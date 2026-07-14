@@ -1,0 +1,10 @@
+'''
+4. Converter uma temperatura expressa em Farenheit (F) para Celsius (C).
+DICA: C = 5/9(F − 32)
+'''
+
+temp_farenheit  = float (input ("Digite a temperatura (F): "))
+
+temp_celsius = (5 / 9) * (temp_farenheit - 32)
+
+print ("Temperatura em Celsius é: ", temp_celsius);

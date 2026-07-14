@@ -1,0 +1,16 @@
+'''
+12. Dado um número inteiro não nulo de três dígitos, imprimir este número
+ao contrario, isto e, se a entrada for 123 (cento e vinte e tres), imprimir 321
+(trezentos e vinte e um). Usar operações sobre inteiros, por exemplo, divisões
+sucessivas por 10.
+'''
+
+numero_inicial = int (input ("Digite o número de 3 dígitos: "))
+
+centena_inicial = numero_inicial // 100
+dezena_inicial = (numero_inicial % 100) // 10
+unidade_inicial = (numero_inicial % 100) % 10
+
+novo_numero = unidade_inicial * 100 + dezena_inicial * 10 + centena_inicial
+
+print ("O número invertido é: ", novo_numero)

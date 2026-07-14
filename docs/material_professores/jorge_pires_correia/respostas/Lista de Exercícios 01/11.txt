@@ -1,0 +1,23 @@
+'''
+11. Uma fábrica produz dois tipos de peças de automóveis para venda no varejo. Escrever
+um programa que ajuda um cliente de loja de auto-peças a comprar estes tipos de peças.
+O programa deve ler:
+• a percentagem do IPI a ser acrescido no valor das peças
+• o código da peça 1, valor unitário da peça 1, quantidade de peças 1
+• o código da peça 2, valor unitário da peça 2, quantidade de peças 2
+O programa deve calcular o valor total a ser pago e apresentar o resultado.
+Fórmula : (valor1 * quant1 + valor2 * quant2) * (IPI ∕100 + 1)
+'''
+
+ipi = float (input ("Digite o valor do IPI a ser acrescido no valor de cada peça: "))
+codigo_1 = input ("Digite o código da peça 1: ")
+valor_1 = float (input ("Digite o valor da peça 1: "))
+quantidade_1 = int (input ("Digite o número de unidades da peça 1: "))
+
+codigo_2 = input ("Digite o código da peça 2: ")
+valor_2 = float (input ("Digite o valor da peça 2: "))
+quantidade_2 = int (input ("Digite o número de unidades da peça 2: "))
+
+valor_total = (valor_1 * quantidade_1 + valor_2 * quantidade_2) * (ipi / 100 + 1)
+
+print  ("A compra de ", quantidade_1, " peças do código ", codigo_1, " e ", quantidade_2, " peças do código ", codigo_2, " custa ", valor_total, " reais.")

@@ -1,0 +1,22 @@
+'''
+13. Dado um número de três dígitos, construir outro número de quatro
+dígitos com a seguinte regra: a) os três primeiros dígitos, contados da esquerda
+para a direita, são iguais aos do número dado; b) o quarto dígito é um dígito de
+controle calculado da seguinte forma: primeiro dígito + 3*segundo dígito +
+5*terceiro dígito; o dígito de controle é igual ao resto da divisão dessa soma por
+7.
+'''
+
+numero_inicial = int (input ("Digite o número de 3 dígitos: "))
+
+primeiro_digito = numero_inicial // 100
+segundo_digito = (numero_inicial % 100) // 10
+terceiro_digito = (numero_inicial % 100) % 10
+
+novo_numero = primeiro_digito * 1000 + segundo_digito * 100 + terceiro_digito * 10
+
+quarto_digito = (primeiro_digito + (3 * segundo_digito) + (5 * terceiro_digito)) % 7
+
+novo_numero = novo_numero + quarto_digito
+
+print ("O novo número é: ", novo_numero)

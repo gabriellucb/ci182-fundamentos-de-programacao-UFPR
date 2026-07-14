@@ -1,0 +1,15 @@
+'''
+5. Escreva um programa que leia 3 números inteiros e mostre o maior deles.
+'''
+
+a = int (input ("Digite o primeiro numero: "))
+b = int (input ("Digite o segundo numero: "))
+c = int (input ("Digite o terceiro numero: "))
+
+if a >= b and a >= c:
+	print ("O maior número é: ", a)
+elif b >=a and b >= c:
+	print ("O maior número é: ", b)
+else:
+	print ("O maior número é: ", c)
+

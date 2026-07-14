@@ -1,0 +1,21 @@
+'''
+7. Um banco concederá um crédito especial aos seus clientes, variável com o saldo médio
+no último ano. Faça um programa que leia o saldo médio de um cliente e calcule o valor
+do crédito de acordo com a tabela abaixo. Mostre uma mensagem informando o saldo
+médio e o valor do crédito.
+
+(olhar slide para tabela)
+'''
+saldo_medio = float(input ("Digite o saldo medio: "))
+
+if saldo_medio >= 0 and saldo_medio <= 200:
+  credito = 0
+elif saldo_medio >= 201 and saldo_medio <= 400:
+  credito = 0.20
+elif saldo_medio >= 401 and saldo_medio <= 600:
+  credito = 0.30
+elif saldo_medio >= 601:
+  credito = 0.40
+
+print ("Saldo medio: ", saldo_medio)
+print ("Credito: ", saldo_medio * credito)

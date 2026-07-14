@@ -1,0 +1,33 @@
+'''
+1. Fazer um programa que leia os coeficientes reais A, B e C de uma equação do 2 o grau da forma:
+
+(olhar slide)
+
+Após a leitura o programa deve calcular e mostrar as duas raízes da equação. Caso a equação não tenha
+raízes reais, isto deve ser indicado na saída.
+
+As raízes de uma equação do segundo grau são calculadas pela fórmula de Bhaskara:
+
+(olhar slide)
+
+Sabe-se também que se o valor do Discriminante B 2 - 4AC for menor que 0 (zero), a equação não possui
+raízes reais.
+'''
+
+import math
+
+a = int (input ("a: "))
+b = int (input ("b: "))
+c = int (input ("c: "))
+
+delta = b ** 2 - (4 * a * c)
+
+if delta < 0:
+	print ("Não possui raízes reais")
+else:
+	x1 = (-b + math.sqrt (delta)) / (2 * a)
+	x2 = (-b - math.sqrt (delta)) / (2 * a)
+
+	print ("x1: ", x1)
+	print ("x2: ", x2)
+

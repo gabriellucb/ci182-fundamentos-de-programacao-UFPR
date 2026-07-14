@@ -1,0 +1,13 @@
+'''
+2. Faça um programa que leia as 3 notas de um aluno e calcule a média final
+deste aluno. Considerar que a média é ponderada e que o peso das notas é,
+respectivamente, 2, 3 e 5.
+'''
+
+nota_01 = float (input ("Digite a primeira nota: "))
+nota_02 = float (input ("Digite a segunda nota: "))
+nota_03 = float (input ("Digite a terceira nota: "))
+
+media_final = (nota_01 * 2 + nota_02 * 3 + nota_03 * 5) / (2 + 3 + 5)
+
+print ("A média final é: ", media_final)

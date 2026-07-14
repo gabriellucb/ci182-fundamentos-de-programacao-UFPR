@@ -1,0 +1,27 @@
+'''
+12. Escreva um programa para ler o número de lados de um polígono regular, e a medida
+do lado. Calcular e imprimir o seguinte:
+● se o número de lados for 3, escrever TRIANGULO e o valor do seu perímetro;
+● se o número de lados for 4, escrever QUADRADO e o valor da sua área;
+● se o número de lados for 5, escrever PENTAGONO;
+● se o número de lados for menor que 3 escrever a mensagem "Nao é um poligono";
+● se o número de lador for maior que 5 escrever a mensagem "Poligono nao
+identificado".
+'''
+
+numero_lados = int(input("Digite o número de lados: "))
+medida_lados = int(input("Digite a medida dos lados: "))
+
+if numero_lados == 3:
+  print("TRIANGULO")
+  print("perimetro: ", medida_lados * 3)
+elif numero_lados == 4:
+  print("QUADRADO")
+  print("area: ", medida_lados**2)
+elif numero_lados == 5:
+  print("PENTAGONO")
+elif numero_lados < 3:
+  print("Nao é um poligono")
+else:
+  print("Poligono nao identificado")
+

@@ -1,0 +1,15 @@
+'''
+Faça um programa que receba dois números do usuário [n1, n2] que definem o limite inferior e superior de um intervalo. O programa deve calcular a soma de todos os números presentes no intervalo.
+'''
+
+n1 = int (input ("Digite n1: "))
+n2 = int (input ("Digite n2: "))
+
+soma_total = 0
+
+while n1 <= n2:
+	soma_total = soma_total + n1
+	n1 = n1 + 1
+
+print ("Soma dos elementos do intervalo:", soma_total)
+

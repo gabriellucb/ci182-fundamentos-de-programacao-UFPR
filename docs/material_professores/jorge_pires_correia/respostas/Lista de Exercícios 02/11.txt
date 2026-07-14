@@ -1,0 +1,50 @@
+'''
+11. Escrever um programa que lê um conjunto de 4 valores i,a,b,c, onde i é um
+valor inteiro e positivo e a,b,c, são quaisquer valores reais e os escreva na tela
+da seguinte forma:
+● os três valores a,b,c em ordem crescente, se i = 1
+● os três valores a,b,c em ordem decrescente, se i = 2,
+● os três valores a,b,c de forma que o maior dentre a,b,c fique entre os outros
+dois valores, se i = 3.
+'''
+i = int(input("i: "))
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
+
+if a >= b and a >= c:
+  maior_numero = a
+  if b >= c:
+    segundo_maior_numero = b
+    menor_numero = c
+  else:
+    segundo_maior_numero = c
+    menor_numero = b
+elif b >= a and b >= c:
+  maior_numero = b
+  if a >= c:
+    segundo_maior_numero = a
+    menor_numero = c
+  else:
+    segundo_maior_numero = c
+    menor_numero = a
+else:
+  maior_numero = c
+  if a >= b:
+    segundo_maior_numero = a
+    menor_numero = b
+  else:
+    segundo_maior_numero = b
+    menor_numero = a
+
+if i == 1:
+  print (menor_numero, ", ", segundo_maior_numero, ", ", maior_numero)
+elif i == 2:
+  print (maior_numero, ", ", segundo_maior_numero, ", ", menor_numero)
+elif i == 3:
+  if maior_numero == a:
+    print (b, ", ", a, ", ", c)
+  elif maior_numero == b:
+    print (a, ", ", b, ", ", c)
+  else:
+    print (a, ", ", c, ", ", b)
