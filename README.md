@@ -1,4 +1,6 @@
-# Fundamentos de Programação
+# Bem-vindo
+
+![Fundamentos de Programação: material de apoio à monitoria de CI182/CI240, UFPR](docs/aulas/imagens/fundamentos-banner-1280x640.png)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 ![Licença: MIT + CC BY-SA 4.0](https://img.shields.io/badge/Licença-MIT%20%2B%20CC%20BY--SA%204.0-yellow?style=flat)
