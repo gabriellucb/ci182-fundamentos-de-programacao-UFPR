@@ -6,6 +6,7 @@ Organizei por professor, pra ficar mais fácil de achar o material relevante dep
 
 - **[`jorge_pires_correia/`](jorge_pires_correia/README.md)**: o Prof. Jorge foi meu professor na disciplina, e gentilmente disponibilizou slides, listas de exercícios e respostas.
 - **[`armando_delgado/`](armando_delgado/README.md)**: notas de aula do Prof. Armando Luiz N. Delgado, publicadas abertamente pelo departamento.
+- **[`elias_duarte/`](elias_duarte/README.md)**: lista de exercícios e simulados de prova da turma do Prof. Elias P. Duarte Jr. (1º semestre de 2026).
 - **[`provas/`](provas/README.md)**: reservado para provas antigas. Ainda vazio.
 
 ---
