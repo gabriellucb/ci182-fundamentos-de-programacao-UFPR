@@ -1,4 +1,4 @@
-"""Masmorra — listas de listas, laços aninhados, índices [i][j], enumerate.
+"""Masmorra: listas de listas, laços aninhados, índices [i][j], enumerate.
 
 Você acorda no chão de uma masmorra sem memória de como chegou aqui. Quem nunca né.
 O mapa está riscado na parede: você é o @, os tesouros são $,

@@ -1,4 +1,4 @@
-"""Resposta — Aula 14: Arquivos
+"""Resposta: Aula 14 | Arquivos
 Exercício: salvar alunos/notas em CSV, ler de volta e calcular média da turma.
 Execute duas vezes para ver o modo append funcionando.
 
@@ -66,7 +66,7 @@ def main():
         try:
             nota = float(input(f"  Nota de {nome}: "))
         except ValueError:
-            print("  Nota inválida — digite um número.")
+            print("  Nota inválida: digite um número.")
             continue
         salvar_aluno(nome, nota)
         print(f"  '{nome}' salvo.\n")

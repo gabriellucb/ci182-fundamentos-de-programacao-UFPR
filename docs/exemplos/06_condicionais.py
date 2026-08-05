@@ -1,4 +1,4 @@
-"""Laudo Clínico do Estudante — condicionais, operadores lógicos, comparações.
+"""Laudo Clínico do Estudante: condicionais, operadores lógicos, comparações.
 
 Todo semestre tem aquela semana onde você olha pro calendário e percebe
 que a prova é daqui a dois dias e você viu quarenta porcento do conteúdo.
@@ -18,15 +18,15 @@ print(f"{'LAUDO CLÍNICO DO ESTUDANTE':^{LARGURA}}")
 print("=" * LARGURA)
 print()
 
-nome         = input("Paciente: ")
-curso        = input("Curso: ")
-periodo      = int(input("Período atual: "))
+nome        = input("Paciente: ")
+curso       = input("Curso: ")
+periodo     = int(input("Período atual: "))
 tempo_livre = int(input("Quantas horas por dia tem livres: "))
 
 print()
 print("[SINAIS VITAIS]")
 horas_sono   = float(input("Horas dormidas ontem: "))
-cafeina        = int(input("Cafés/Energéticos consumidos hoje: "))
+cafeina      = int(input("Cafés/Energéticos consumidos hoje: "))
 horas_estudo = float(input("Horas estudadas ontem: "))
 conteudo     = float(input("Conteúdo dominado até agora (%): "))
 dias_prova   = int(input("Dias até a próxima prova: "))
@@ -152,7 +152,7 @@ else:
 print()
 print("=" * LARGURA)
 print(f"  Paciente  : {nome}")
-print(f"  Curso     : {curso}  —  {periodo}º período")
+print(f"  Curso     : {curso}  |  {periodo}º período")
 print("=" * LARGURA)
 print()
 print(f"  'ESTADO FÍSICO' [{estado}]")
@@ -168,7 +168,7 @@ print(f"  'ESTUDO' [{qualidade}]")
 print(f"  {horas_estudo}h ontem  |  {obs_estudo}")
 print()
 if periodo == 1 and risco != "BAIXO":
-    print("  >> Nota: primeiros semestres são pesados mesmo — normal.")
+    print("  >> Nota: primeiros semestres são pesados mesmo; é normal.")
     print()
 elif periodo != 1 and materias_rep > 2:
     print(f"  >> Atenção: com {periodo} períodos, esse padrão vira histórico.")

@@ -1,4 +1,4 @@
-"""Resposta — Aula 11: Dicionários
+"""Resposta: Aula 11 | Dicionários
 Exercício: produto único → desconto → lista → filtragem e contagem.
 """
 

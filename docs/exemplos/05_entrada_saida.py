@@ -1,4 +1,4 @@
-"""Card de jogador de futebol — f-string, alinhamento, sep, end, \n e \t.
+"""Card de jogador de futebol: f-string, alinhamento, sep, end, \n e \t.
 
 Talvez você ja perdeu algumas horas comparando stats de jogador no Ultimate Team.
 Esse programa gera o card formatado de qualquer jogador criado pelo usuário

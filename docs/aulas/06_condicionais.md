@@ -58,9 +58,9 @@ print("Erro!")
 
 ```text
   File "prog.py", line 2
-      print("Erro!")
-      ^
-IndentationError: expected an indented block after 'if' statement
+    print("Erro!")
+    ^^^^^
+IndentationError: expected an indented block after 'if' statement on line 1
 ```
 
 ---
@@ -366,9 +366,9 @@ print("Aprovado")
 
 ```text
   File "prog.py", line 2
-      print("Aprovado")
-      ^
-IndentationError: expected an indented block after 'if' statement
+    print("Aprovado")
+    ^^^^^
+IndentationError: expected an indented block after 'if' statement on line 1
 ```
 
 **Condições que nunca executam por causa da ordem**

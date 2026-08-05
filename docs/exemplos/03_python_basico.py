@@ -1,4 +1,4 @@
-"""10.000 horas — variáveis, tipos e operações básicas.
+"""10.000 horas: variáveis, tipos e operações básicas.
 
 A regra das 10.000 horas diz o seguinte: para dominar de vez
 qualquer habilidade complexa, você precisa de cerca de 10.000 horas de prática.

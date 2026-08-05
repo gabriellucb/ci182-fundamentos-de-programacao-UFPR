@@ -44,7 +44,7 @@ Você também pode juntar strings antes de exibir usando `+`:
 print("Olá, " + nome + "!")   # Olá, Maria!
 ```
 
-A vírgula é mais prática porque não exige nenhuma conversão de tipo, você passa direto o que quiser. A concatenação com `+` só funciona quando todos os valores são strings. Quando você chegar na **[Aula 08](08_strings.md)** vai aprender f-strings, que são, na minha opinião, a melhor maneira de montar texto com variáveis.
+A vírgula é mais prática porque não exige nenhuma conversão de tipo, você passa direto o que quiser. A concatenação com `+` só funciona quando todos os valores são strings. Quando você chegar na **[Aula 05](05_entrada_saida.md)** vai aprender f-strings, que são, na minha opinião, a melhor maneira de montar texto com variáveis.
 
 #### `print()` como ferramenta de debug
 

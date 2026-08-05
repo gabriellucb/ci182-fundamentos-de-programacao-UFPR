@@ -1,5 +1,5 @@
 """
-Jogo da Velha — você vs uma "IA" com estratégia real.
+Jogo da Velha: você vs uma "IA" com estratégia real.
 
 Esse é um dos exemplos que mais acho legal e também um dos que mais me bati,
 não vou mentir. Mas é exatamente por isso que acho que funciona bem pra mostrar
@@ -195,7 +195,7 @@ def partida():
 
 
 def main():
-    """Loop principal — joga partidas até o usuário sair."""
+    """Loop principal: joga partidas até o usuário sair."""
     print("=== JOGO DA VELHA ===")
 
     while True:

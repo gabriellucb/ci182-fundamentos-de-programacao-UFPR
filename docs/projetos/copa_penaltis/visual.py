@@ -42,20 +42,21 @@ def barra(valor, largura=12):
     return cor(desenho, codigo)
 
 
+def linha_placar(sel, marcas, vagas):
+    simbolos = []
+    for i in range(vagas):
+        if i < len(marcas):
+            simbolos.append("⚽" if marcas[i] == "gol" else cor("✗", VERMELHO))
+        else:
+            simbolos.append(cor("·", CINZA))
+    gols_marcados = [m for m in marcas if m == "gol"]
+    gols = len(gols_marcados)
+    nome = f"{sel.nome:<15}"
+    return f"   {sel.bandeira}  {nome} {' '.join(simbolos)}   {cor(str(gols), NEGRITO)}"
+
+
 def placar(sel_a, marcas_a, sel_b, marcas_b):
     # Cada marca é "gol" ou "erro"; o que ainda não foi cobrado vira um ponto.
     vagas = max(5, len(marcas_a), len(marcas_b))
-
-    def linha(sel, marcas):
-        simbolos = []
-        for i in range(vagas):
-            if i < len(marcas):
-                simbolos.append("⚽" if marcas[i] == "gol" else cor("✗", VERMELHO))
-            else:
-                simbolos.append(cor("·", CINZA))
-        gols = sum(1 for m in marcas if m == "gol")
-        nome = sel.nome.ljust(15)
-        return f"   {sel.bandeira}  {nome} {' '.join(simbolos)}   {cor(str(gols), NEGRITO)}"
-
     traco = cor("   " + "─" * 40, CINZA)
-    return f"{traco}\n{linha(sel_a, marcas_a)}\n{linha(sel_b, marcas_b)}\n{traco}"
+    return f"{traco}\n{linha_placar(sel_a, marcas_a, vagas)}\n{linha_placar(sel_b, marcas_b, vagas)}\n{traco}"

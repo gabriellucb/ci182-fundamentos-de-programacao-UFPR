@@ -1,5 +1,5 @@
-"""Resposta — Aula 13: Funções
-Exercício: media(), eh_par() e saudar() — toda lógica dentro das funções,
+"""Resposta: Aula 13 | Funções
+Exercício: media(), eh_par() e saudar(); toda lógica dentro das funções,
 hora recebida como parâmetro inteiro (0–23).
 """
 

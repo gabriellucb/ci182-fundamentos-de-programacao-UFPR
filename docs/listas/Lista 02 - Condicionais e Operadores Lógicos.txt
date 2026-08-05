@@ -30,17 +30,9 @@ O número é positivo.
 
 - Exercício 3
 Um sistema de uma indústria química classifica os reagentes pelo pH:
-•
-
-pH < 7: "Ácido"
-
-•
-
-pH == 7: "Neutro"
-
-•
-
-pH > 7: "Básico"
+• pH < 7: "Ácido"
+• pH == 7: "Neutro"
+• pH > 7: "Básico"
 
 O programa deve ler o pH e garantir que o valor esteja entre 0 e 14. Se estiver fora
 disso, imprima "Erro: pH inválido".
@@ -56,17 +48,9 @@ a umidade do solo em tempo real. Você foi contratado para desenvolver o módulo
 de decisão do controlador de irrigação. O programa deve solicitar que o operador
 digite o percentual de umidade atual (um valor entre 0 e 100).
 Com base no valor lido, o sistema deve disparar as seguintes ações:
-•
-
-Abaixo de 30%: Exibir "Irrigação ligada: Nível Crítico detectado".
-
-•
-
-Entre 30% e 60% (inclusive): Exibir "Irrigação em modo econômico ativada".
-
-•
-
-Acima de 60%: Exibir "Umidade suficiente. Irrigação desligada".
+• Abaixo de 30%: Exibir "Irrigação ligada: Nível Crítico detectado".
+• Entre 30% e 60% (inclusive): Exibir "Irrigação em modo econômico ativada".
+• Acima de 60%: Exibir "Umidade suficiente. Irrigação desligada".
 
 Exemplo de Execução:
 Entrada:
@@ -77,17 +61,9 @@ Irrigação em modo econômico ativada.
 - Exercício 5
 Uma empresa de logística dá desconto baseado na distância. Faça um programa
 que peça a distância em quilômetros e calcule o valor seguindo esses critérios:
-•
-
-Até 100km: R$ 50,00 fixo.
-
-•
-
-Entre 100km e 300km: R$ 0,45 por km.
-
-•
-
-Acima de 300km: R$ 0,35 por km.
+• Até 100km: R$ 50,00 fixo.
+• Entre 100km e 300km: R$ 0,45 por km.
+• Acima de 300km: R$ 0,35 por km.
 
 Exemplo de Execução:
 Entrada:
@@ -130,13 +106,9 @@ Erro: Senha incorreta.
 Desenvolva um algoritmo que solicite ao usuário um ano e determine se ele é
 Bissexto. A regra para esse cálculo segue três critérios que devem ser validados
 pelo seu programa:
-•
-•
-•
-
-O ano deve ser divisível por 4;
-PORÉM, ele não pode ser divisível por 100;
-A MENOS QUE ele também seja divisível por 400 (neste caso, ele é bissexto).
+• O ano deve ser divisível por 4;
+• PORÉM, ele não pode ser divisível por 100;
+• A MENOS QUE ele também seja divisível por 400 (neste caso, ele é bissexto).
 
 Dica: Utilize os operadores lógicos AND e OR. Para uma dessas operações lógicas
 ser feita antes que a outra, faça o uso dos parênteses.
@@ -154,14 +126,10 @@ O programa deve solicitar dois valores:
 1. O nível de Cloro (número decimal).
 2. O estado da interrupção: digite 1 para Ativado ou 0 para Desativado.
 Regras de Operação:
-•
-
-Se a interrupção estiver ‘Ativada’ (1), o sistema deve ignorar a leitura do
+• Se a interrupção estiver ‘Ativada’ (1), o sistema deve ignorar a leitura do
 cloro e exibir: "Operação Suspensa: Sistema paralisado pelo operador".
 
-•
-
-Se a interrupção NÃO estiver ativa, o programa deve avaliar o cloro:
+• Se a interrupção NÃO estiver ativa, o programa deve avaliar o cloro:
 o
 
 Entre 0.2 e 2.0 (inclusive): Exibir "Monitoramento: Nível Ideal".
@@ -204,27 +172,17 @@ estiver fechada, o sistema deve entender que o sensor de peso falhou (pois o
 elevador nunca fica vazio e fechado ao mesmo tempo no protocolo da fábrica).
 Crie um programa que receba peso, porta e emergencia. O programa deve exibir
 apenas uma das seguintes mensagens, respeitando a hierarquia:
-•
+• "STATUS: BLOQUEIO TOTAL": Se a emergência estiver ativa.
 
-"STATUS: BLOQUEIO TOTAL": Se a emergência estiver ativa.
+• "STATUS: ERRO DE PORTA": Se a porta estiver aberta (e não for emergência).
 
-•
-
-"STATUS: ERRO DE PORTA": Se a porta estiver aberta (e não for emergência).
-
-•
-
-"STATUS: SOBRECARGA": Se o peso for maior que 1000 (e a porta estiver
+• "STATUS: SOBRECARGA": Se o peso for maior que 1000 (e a porta estiver
 fechada e sem emergência).
 
-•
-
-"STATUS: SENSOR DE PESO AVARIADO": Se o peso for <= 0 com a porta
+• "STATUS: SENSOR DE PESO AVARIADO": Se o peso for <= 0 com a porta
 fechada (e sem emergência).
 
-•
-
-"STATUS: LIBERADO PARA SUBIR": Se o peso for entre 1 e 1000, porta
+• "STATUS: LIBERADO PARA SUBIR": Se o peso for entre 1 e 1000, porta
 fechada e sem emergência.
 
 

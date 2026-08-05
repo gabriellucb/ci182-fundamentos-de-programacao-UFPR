@@ -202,14 +202,10 @@ para solicitar ao operador o comprimento (em centímetros) de exatamente 10
 peças.
 Durante a repetição, o programa deve classificar e contar cada peça com base nas
 seguintes regras:
-•
-
-Tamanho Ideal: O comprimento deve estar entre 10.0 cm e 10.5 cm
+• Tamanho Ideal: O comprimento deve estar entre 10.0 cm e 10.5 cm
 (incluindo esses valores).
 
-•
-
-Defeituosa: Qualquer comprimento que esteja fora desse intervalo.
+• Defeituosa: Qualquer comprimento que esteja fora desse intervalo.
 
 Ao final do laço (após a leitura e classificação de todas as 10 peças), o programa
 deve exibir: a quantidade de peças com tamanho ideal, a quantidade de peças

@@ -1,4 +1,4 @@
-"""Artilharia da Copa do Mundo — dicionários, dicionários aninhados, lista de dicionários.
+"""Artilharia da Copa do Mundo: dicionários, dicionários aninhados, lista de dicionários.
 
 Copa do mundo é a única época do ano em que seu amigo que não liga para esporte
 de repente vira o maior comentarista esportivo do país. Esse programa mantém a
@@ -103,7 +103,7 @@ while True:
             print(f"    Total no torneio: {artilheiros[jogador]['gols']} gols")
         else:
             artilheiros[jogador] = {"selecao": "?", "gols": 1, "assist": 0, "jogos": 1}
-            print(f"\n  ✓ Novo artilheiro: {jogador} — 1 gol vs {adversario}")
+            print(f"\n  ✓ Novo artilheiro: {jogador}, 1 gol vs {adversario}")
 
     elif opcao == "2":
         jogador_input = input("  Jogador: ").strip()
@@ -116,7 +116,7 @@ while True:
 
         if jogador:
             ficha = artilheiros[jogador]
-            print(f"\n  {jogador} — {ficha['selecao']}")
+            print(f"\n  {jogador}: {ficha['selecao']}")
             print(f"  {'─' * 28}")
             print(f"  Gols: {ficha['gols']}   Assist: {ficha.get('assist', 0)}   Jogos: {ficha['jogos']}")
             print(f"  {'─' * 28}")

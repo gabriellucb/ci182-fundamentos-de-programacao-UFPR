@@ -468,7 +468,7 @@ if not encontrado:
     print(f"Valor {valor_procurado} não encontrado")
 ```
 
-> **Floats e `==`:** floats são armazenados em binário, e nem todo decimal tem representação binária exata. `4.7 + 4.8` em Python não é `9.5`, é `9.499999999999998`. A comparação com `==` pode falhar mesmo que os números "pareçam iguais". O mais seguro é trabalhar com inteiros sempre que possível. (Entenda o porquê no [FAQ: por que `0.1 + 0.2` não é `0.3`?](../extras/faq.md#por-que-01--02-não-é-03))
+> **Floats e `==`:** floats são armazenados em binário, e nem todo decimal tem representação binária exata. `0.1 + 0.2` em Python não é `0.3`, é `0.30000000000000004`. A comparação com `==` pode falhar mesmo que os números "pareçam iguais". O mais seguro é trabalhar com inteiros sempre que possível. (Entenda o porquê no [FAQ: por que `0.1 + 0.2` não é `0.3`?](../extras/faq.md#por-que-01--02-não-é-03))
 
 O `break` sempre encerra apenas o laço **mais interno** onde ele está, por isso são necessários dois. A variável `encontrado` funciona como uma "bandeira" (*flag*): começa `False` e vira `True` quando o valor é achado, esse padrão foi apresentado na [Aula 07](07_repeticao.md). O laço externo checa essa bandeira ao final de cada linha e, se já encontrou, não continua procurando nas linhas seguintes.
 

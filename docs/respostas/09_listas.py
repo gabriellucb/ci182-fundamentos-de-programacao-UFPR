@@ -1,4 +1,4 @@
-"""Resposta — Aula 09: Listas
+"""Resposta: Aula 09 | Listas
 Exercício: coleta notas até "fim"/"f", exibe estatísticas,
 remove os extremos e conta quantas ficaram acima da média original.
 """

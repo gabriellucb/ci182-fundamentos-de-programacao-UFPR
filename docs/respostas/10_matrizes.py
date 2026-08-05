@@ -1,4 +1,4 @@
-"""Resposta — Aula 10: Matrizes
+"""Resposta: Aula 10 | Matrizes
 Exercício: matriz 4×4 zerada, diagonal com 1, inserção manual, soma de linhas e colunas.
 """
 

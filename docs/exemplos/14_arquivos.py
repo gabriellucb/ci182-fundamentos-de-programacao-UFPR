@@ -1,4 +1,4 @@
-"""RPG com save/load — arquivos de texto, leitura, escrita, CSV manual.
+"""RPG com save/load: arquivos de texto, leitura, escrita, CSV manual.
 
 Toda vez que um jogo salva o seu progresso, ele está fazendo exatamente isso:
 escrevendo variáveis em arquivo. Você fecha o terminal, vai dormir, abre de novo
@@ -136,7 +136,7 @@ def adicionar_item(p):
     """Adiciona um item ao inventário."""
     item = input("  Item encontrado: ").strip()
     if not item:
-        print("  Nome vazio — ignorado.\n")
+        print("  Nome vazio: ignorado.\n")
         return
     p["itens"].append(item)
     print(f"  '{item}' adicionado ao inventário.\n")

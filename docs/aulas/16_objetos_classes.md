@@ -72,7 +72,7 @@ class Aluno:
 
 O nome de classes em Python segue a convenção **PascalCase**: cada palavra começa com maiúscula, sem underscore.
 
-Certo: `Aluno`, `ContaBancaria`, `Produto`
+Certo: `Aluno`, `Personagem`, `Produto`
 
 Foge do padrão (mas o Python roda do mesmo jeito):
 

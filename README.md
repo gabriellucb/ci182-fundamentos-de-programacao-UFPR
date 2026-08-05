@@ -21,7 +21,7 @@ Pra praticar sem depender só da leitura:
 
 - **`docs/exemplos/`**: arquivos Python comentados, um por aula, pra consultar sintaxe e ver padrões funcionando.
 - **`docs/listas/`**: listas de exercícios oficiais da disciplina, em PDF e TXT.
-- **`docs/material_professores/`**: material produzido pelos professores da disciplina (notas de aula, slides, provas antigas), usado aqui com autorização.
+- **[`docs/material_professores/`](docs/material_professores/README.md)**: material produzido pelos professores da disciplina (notas de aula, slides, provas antigas), usado aqui com autorização.
 - **`docs/gabaritos/`**: gabaritos das listas, abrindo direto no Google Colab. Tente resolver antes de olhar.
 - **`docs/respostas/`**: minhas respostas dos exercícios sugeridos ao final de cada aula.
 - **`docs/debug/`**: programas com bugs intencionais, separados por dificuldade, pra treinar leitura de erro e correção de código (sem gabarito, de propósito).

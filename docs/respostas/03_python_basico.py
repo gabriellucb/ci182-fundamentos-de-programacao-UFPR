@@ -1,4 +1,4 @@
-"""Resposta — Aula 03: Python Básico
+"""Resposta: Aula 03 | Python Básico
 Exercício: nome, idade e ano em que o usuário vai fazer 30 anos.
 """
 

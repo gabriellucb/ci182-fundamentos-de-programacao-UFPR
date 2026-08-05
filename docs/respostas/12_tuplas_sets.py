@@ -1,4 +1,4 @@
-"""Resposta — Aula 12: Tuplas e Sets
+"""Resposta: Aula 12 | Tuplas e Sets
 Exercício: valores únicos, operações de conjunto e desempacotamento de tuplas.
 """
 

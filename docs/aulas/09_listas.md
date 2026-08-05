@@ -499,14 +499,14 @@ Esse é um dos erros mais comuns ao começar a trabalhar com listas. Quando voc�
 
 ```python
 a = [1, 2, 3]
-b = a         # b e a apontam para a mesma lista
+b = a         # b é outro nome para a mesma lista
 
 b.append(4)
 print(a)      # [1, 2, 3, 4], a também mudou!
 print(b)      # [1, 2, 3, 4]
 ```
 
-Pense assim: `b = a` é como colocar uma segunda placa com o nome `b` na frente da mesma gaveta. Ambas as plaquinhas apontam para a mesma gaveta, mexer pela placa `b` mexe no conteúdo que `a` também enxerga.
+Pense assim: `b = a` é como colocar uma segunda placa com o nome `b` na frente da mesma gaveta. As duas placas são nomes para a mesma gaveta, mexer pela placa `b` mexe no conteúdo que `a` também enxerga.
 
 Esse problema aparece muito em funções: você passa uma lista para uma função, a função modifica a lista "internamente", e quando volta percebe que a lista original mudou também. Pode ser intencional (você quer modificar a original) ou um bug silencioso (você achava que a função trabalhava numa cópia). A distinção entre os dois casos é uma das primeiras armadilhas sérias de Python, a [Aula 13](13_funcoes.md) retoma isso quando você já souber criar funções.
 
@@ -599,7 +599,7 @@ Exemplo rodável desta aula: [`exemplos/09_listas.py`](../exemplos/09_listas.py)
 
 ## Listas da disciplina
 
-> Você terminou a aula de listas. Este é o momento certo para resolver a **Lista 04: Estruturas de Dados Lista**, disponível em `docs/listas/`.
+> Você terminou a aula de listas. Este é o momento certo para resolver a **Lista 04: Estruturas de Dados: Listas**, disponível em `docs/listas/`.
 >
 > Os exercícios usam índices, `append`, `sort`, `pop`, `remove` e iteração com `for`. Tente resolver sem consultar exemplos primeiro.
 

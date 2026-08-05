@@ -1,6 +1,6 @@
 # Glossário
 
-Termos técnicos explicados do jeito que explico na monitoria — sem definição de livro, com exemplo direto.
+Termos técnicos explicados do jeito que explico na monitoria: sem definição de livro, com exemplo direto.
 
 Os termos estão em ordem de quando aparecem no curso, não em ordem alfabética.
 
@@ -8,13 +8,32 @@ Os termos estão em ordem de quando aparecem no curso, não em ordem alfabética
 
 ## Algoritmo
 
-Uma sequência de passos finita e ordenada que resolve um problema. Não é código — é a ideia antes do código. Uma receita de bolo é um algoritmo: tem começo, meio e fim, e cada passo depende do anterior.
+Uma sequência de passos finita e ordenada que resolve um problema. Não é código, é a ideia antes do código. Uma receita de bolo é um algoritmo: tem começo, meio e fim, e cada passo depende do anterior.
 
 ---
 
 ## Programa
 
 Um algoritmo escrito em uma linguagem que o computador consegue executar. O mesmo algoritmo pode virar programas em Python, Java ou qualquer outra linguagem.
+
+---
+
+## Interpretador / Compilador
+
+Dois jeitos de transformar código em algo que o computador executa. Um compilador traduz o programa inteiro para código de máquina antes de rodar, gerando um arquivo executável separado. Um interpretador lê e executa o código linha a linha, sem esse passo intermediário. Python é interpretado: quando você roda `python programa.py`, o Python vai lendo e executando cada linha na hora.
+
+---
+
+## Pseudocódigo
+
+Uma forma de escrever um algoritmo em português (ou qualquer língua natural) estruturado como código, mas sem se prender à sintaxe de nenhuma linguagem específica. Serve para planejar a lógica antes de escrever Python de verdade.
+
+```text
+SE idade >= 18 ENTÃO
+    escreva "Maior de idade"
+SENÃO
+    escreva "Menor de idade"
+```
 
 ---
 
@@ -39,7 +58,7 @@ nome  = "Gabriel"
 idade = 20
 ```
 
-O valor pode mudar ao longo do programa — é por isso que se chama *variável*.
+O valor pode mudar ao longo do programa: é por isso que se chama *variável*.
 
 ---
 
@@ -65,12 +84,12 @@ type(True)     # <class 'bool'>
 
 ## String
 
-Qualquer sequência de caracteres entre aspas. `"Python"`, `"123"`, `"oi!"` são todas strings. O número `"123"` como string é diferente do número `123` como inteiro — você não consegue fazer conta com ele diretamente.
+Qualquer sequência de caracteres entre aspas. `"Python"`, `"123"`, `"oi!"` são todas strings. O número `"123"` como string é diferente do número `123` como inteiro; você não consegue fazer conta com ele diretamente.
 
 ```python
 texto  = "Python"
 numero = "42"      # isso é texto, não número
-print(numero + 1)  # TypeError — não dá para somar texto com número
+print(numero + 1)  # TypeError: não dá para somar texto com número
 ```
 
 ---
@@ -80,11 +99,11 @@ print(numero + 1)  # TypeError — não dá para somar texto com número
 Transformar um valor de um tipo em outro. Necessária porque `input()` sempre retorna string, mesmo que o usuário digite um número.
 
 ```python
-entrada = input("Idade: ")   # "20" — string
-idade   = int(entrada)       # 20   — inteiro
+entrada = input("Idade: ")   # "20" : string
+idade   = int(entrada)       # 20   : inteiro
 
-preco   = float("9.90")      # 9.9  — float
-texto   = str(42)            # "42" — string
+preco   = float("9.90")      # 9.9  : float
+texto   = str(42)            # "42" : string
 ```
 
 ---
@@ -101,7 +120,7 @@ nome = input("Seu nome: ")   # nome é sempre str
 
 ## `print()`
 
-Função que exibe um valor na tela. Não guarda nada, não calcula nada — só mostra.
+Função que exibe um valor na tela. Não guarda nada, não calcula nada, só mostra.
 
 ```python
 print("Olá!")
@@ -113,11 +132,11 @@ print(f"Você tem {idade} anos.")   # f-string: coloca variáveis dentro do text
 
 ## Função embutida
 
-Uma função que já vem pronta no Python — você chama a qualquer momento, sem instalar nem definir nada. `print()`, `input()`, `len()`, `int()`, `float()`, `str()` e `type()` são todas embutidas. Quando precisar de algo que não é embutido, você importa de um módulo (Aula 15) ou cria a sua própria função (Aula 13).
+Uma função que já vem pronta no Python: você chama a qualquer momento, sem instalar nem definir nada. `print()`, `input()`, `len()`, `int()`, `float()`, `str()` e `type()` são todas embutidas. Quando precisar de algo que não é embutido, você importa de um módulo (Aula 15) ou cria a sua própria função (Aula 13).
 
 ```python
-len("Python")   # 6    — conta os caracteres
-str(42)         # "42" — converte número em texto
+len("Python")   # 6    : conta os caracteres
+str(42)         # "42" : converte número em texto
 ```
 
 ---
@@ -137,6 +156,24 @@ idade >= 18    # True se a idade for 18 ou mais
 nota == 10     # True só se a nota for exatamente 10
 nome != ""     # True se o nome não for vazio
 ```
+
+---
+
+## Operadores de identidade e pertencimento (`is` / `in`)
+
+`is` compara se duas variáveis são exatamente o mesmo objeto na memória (diferente de `==`, que compara se os valores são iguais). `in` verifica se um valor existe dentro de uma coleção (string, lista, tupla, dicionário, set).
+
+```python
+nota = None
+if nota is None:        # is, não ==, para comparar com None
+    print("Nota não informada")
+
+vogais = "aeiou"
+if "a" in vogais:        # in verifica pertencimento
+    print("é vogal")
+```
+
+Veja [Aula 04](../aulas/04_operadores.md).
 
 ---
 
@@ -160,20 +197,20 @@ Existe desde o Python 3.10. Se sua versão for mais antiga, use `elif`.
 
 ## Bloco
 
-Um conjunto de linhas que pertencem à mesma estrutura (`if`, `for`, `while`, `def`). Em Python, o bloco é definido pela **indentação** — todas as linhas do bloco têm o mesmo recuo.
+Um conjunto de linhas que pertencem à mesma estrutura (`if`, `for`, `while`, `def`). Em Python, o bloco é definido pela **indentação**: todas as linhas do bloco têm o mesmo recuo.
 
 ```python
 if nota >= 7:
     print("Aprovado")    # bloco do if
     print("Parabéns!")   # ainda no bloco do if
-print("Fim")             # fora do bloco — sempre executa
+print("Fim")             # fora do bloco : sempre executa
 ```
 
 ---
 
 ## Indentação
 
-O recuo (espaços no início da linha) que define a quais estruturas cada linha pertence. Em Python é obrigatório e significativo — código com indentação errada não funciona.
+O recuo (espaços no início da linha) que define a quais estruturas cada linha pertence. Em Python é obrigatório e significativo: código com indentação errada não funciona.
 
 O padrão é **4 espaços** por nível.
 
@@ -183,8 +220,8 @@ O padrão é **4 espaços** por nível.
 
 Uma estrutura que repete um bloco de código. Há dois tipos principais:
 
-- `while` — repete enquanto uma condição for verdadeira
-- `for` — percorre uma sequência de valores
+- `while`: repete enquanto uma condição for verdadeira
+- `for`: percorre uma sequência de valores
 
 ---
 
@@ -196,7 +233,7 @@ Cada execução individual do bloco dentro de um laço. Se um `for` roda 5 vezes
 
 ## Acumulador
 
-Uma variável que vai sendo atualizada a cada iteração do laço para "acumular" um resultado — soma, produto, contagem.
+Uma variável que vai sendo atualizada a cada iteração do laço para "acumular" um resultado: soma, produto, contagem.
 
 ```python
 soma = 0              # inicializa o acumulador
@@ -249,7 +286,7 @@ frutas = ["maçã", "banana", "laranja"]
 #           0         1         2
 
 print(frutas[0])   # "maçã"
-print(frutas[-1])  # "laranja" — índice negativo conta do fim
+print(frutas[-1])  # "laranja" : índice negativo conta do fim
 ```
 
 ---
@@ -274,13 +311,13 @@ for i, fruta in enumerate(frutas):
 
 ## Fatiamento (slicing)
 
-Pegar um pedaço de uma string ou lista de uma vez, com `[início:fim]`. O início entra, o fim **fica de fora** (igual ao `range()`). Um terceiro número define o passo — e `-1` no passo inverte.
+Pegar um pedaço de uma string ou lista de uma vez, com `[início:fim]`. O início entra, o fim **fica de fora** (igual ao `range()`). Um terceiro número define o passo, e `-1` no passo inverte.
 
 ```python
 palavra = "COMPUTADOR"
-palavra[0:4]    # "COMP"        — índices 0, 1, 2, 3
-palavra[4:]     # "UTADOR"      — do índice 4 até o fim
-palavra[::-1]   # "RODATUPMOC"  — invertida
+palavra[0:4]    # "COMP"        : índices 0, 1, 2, 3
+palavra[4:]     # "UTADOR"      : do índice 4 até o fim
+palavra[::-1]   # "RODATUPMOC"  : invertida
 ```
 
 ---
@@ -303,7 +340,7 @@ Que não pode ser alterado depois de criado. Strings e tuplas são imutáveis: p
 
 ```python
 palavra = "Python"
-palavra[0] = "J"          # TypeError — string é imutável
+palavra[0] = "J"          # TypeError : string é imutável
 nova = "J" + palavra[1:]  # cria uma nova: "Jython"
 ```
 
@@ -354,7 +391,7 @@ notas = [
     [8.0, 7.5, 9.0],   # linha 0
     [6.5, 7.0, 5.5],   # linha 1
 ]
-print(notas[0][2])   # 9.0 — linha 0, coluna 2
+print(notas[0][2])   # 9.0 : linha 0, coluna 2
 ```
 
 Acesso: sempre `[linha][coluna]`, com índices a partir de zero.
@@ -409,7 +446,7 @@ print(aluno["nome"])   # "Ana"
 
 ## Tupla
 
-Como uma lista, mas **imutável** — você não pode alterar, adicionar ou remover itens depois de criar. Útil para guardar dados que não devem mudar, como coordenadas.
+Como uma lista, mas **imutável**: você não pode alterar, adicionar ou remover itens depois de criar. Útil para guardar dados que não devem mudar, como coordenadas.
 
 ```python
 ponto = (-25.42, -49.27)
@@ -424,7 +461,7 @@ Uma coleção **sem duplicatas** e **sem ordem garantida**. Útil para descobrir
 
 ```python
 numeros = {1, 2, 2, 3, 3, 3}
-print(numeros)   # {1, 2, 3} — duplicatas removidas
+print(numeros)   # {1, 2, 3} : duplicatas removidas
 ```
 
 ---
@@ -452,8 +489,8 @@ Um número calculado matematicamente a partir de um valor, usado como "endereço
 Só tipos **imutáveis** podem ter hash (strings, números, tuplas). É por isso que sets só aceitam elementos imutáveis, e chaves de dicionário também.
 
 ```python
-hash("Python")   # algum número grande — o "endereço" desse valor
-hash([1, 2, 3])  # TypeError — lista é mutável, não tem hash
+hash("Python")   # algum número grande : o "endereço" desse valor
+hash([1, 2, 3])  # TypeError : lista é mutável, não tem hash
 ```
 
 ---
@@ -466,8 +503,8 @@ Dois conjuntos onde todos os elementos de um estão contidos no outro. Se `a` é
 a = {1, 2, 3}
 b = {1, 2, 3, 4, 5}
 
-a.issubset(b)    # True — todo elemento de a existe em b
-b.issuperset(a)  # True — b contém tudo de a
+a.issubset(b)    # True : todo elemento de a existe em b
+b.issuperset(a)  # True : b contém tudo de a
 ```
 
 São perspectivas opostas da mesma relação: se `a ⊆ b`, então `b ⊇ a`.
@@ -507,7 +544,7 @@ O valor passado para a função na hora de chamá-la.
 dobrar(5)   # 5 é o argumento
 ```
 
-Parâmetro é o nome, argumento é o valor. A confusão é comum e não é grave — na prática os dois termos são usados no mesmo sentido.
+Parâmetro é o nome, argumento é o valor. A confusão é comum e não é grave; na prática os dois termos são usados no mesmo sentido.
 
 ---
 
@@ -522,7 +559,7 @@ def soma(a, b):
 resultado = soma(3, 4)  # resultado recebe 7
 ```
 
-`return` encerra a função imediatamente — nenhuma linha depois dele é executada.
+`return` encerra a função imediatamente; nenhuma linha depois dele é executada.
 
 ---
 
@@ -537,20 +574,20 @@ A região do programa onde uma variável existe e pode ser acessada.
 x = 10          # global
 
 def f():
-    y = 5       # local — só existe dentro de f()
+    y = 5       # local : só existe dentro de f()
     print(x)    # pode LER o global
     print(y)
 
 f()
 print(x)        # OK
-print(y)        # NameError — y não existe aqui
+print(y)        # NameError : y não existe aqui
 ```
 
 ---
 
 ## Docstring
 
-Uma string colocada logo após a definição de uma função (ou classe) que descreve o que ela faz. É a forma padrão de documentar funções em Python — o Python a trata como dado real, não como comentário.
+Uma string colocada logo após a definição de uma função (ou classe) que descreve o que ela faz. É a forma padrão de documentar funções em Python; o Python a trata como dado real, não como comentário.
 
 ```python
 def calcular_media(notas):
@@ -581,7 +618,7 @@ Use `lambda` para funções curtas e descartáveis. Para qualquer coisa com mais
 
 ## Recursão
 
-Quando uma função chama a si mesma durante a execução. Útil para problemas que se dividem em versões menores do mesmo problema. Toda função recursiva precisa de um **caso base** (condição que para a recursão) e de **progresso** em direção a ele — sem caso base, a função entra em loop infinito e o Python lança `RecursionError`.
+Quando uma função chama a si mesma durante a execução. Útil para problemas que se dividem em versões menores do mesmo problema. Toda função recursiva precisa de um **caso base** (condição que para a recursão) e de **progresso** em direção a ele; sem caso base, a função entra em loop infinito e o Python lança `RecursionError`.
 
 ```python
 def fatorial(n):
@@ -612,7 +649,7 @@ print(resultado)   # None
 
 ## Exceção (erro em tempo de execução)
 
-Um erro que acontece enquanto o programa está rodando — diferente de um erro de sintaxe (que impede até de iniciar). Exceções têm tipo (`TypeError`, `ValueError`, `IndexError`...) e podem ser capturadas com `try/except`.
+Um erro que acontece enquanto o programa está rodando: diferente de um erro de sintaxe (que impede até de iniciar). Exceções têm tipo (`TypeError`, `ValueError`, `IndexError`...) e podem ser capturadas com `try/except`.
 
 ```python
 try:
@@ -638,9 +675,23 @@ ZeroDivisionError: division by zero
 
 ---
 
+## Gerenciador de contexto (`with`)
+
+Uma estrutura que garante que um recurso (como um arquivo aberto) seja liberado corretamente no final, mesmo que aconteça um erro no meio do caminho. `with open(...) as arquivo:` fecha o arquivo automaticamente ao sair do bloco, você não precisa chamar `arquivo.close()` manualmente.
+
+```python
+with open("dados.txt", "r", encoding="utf-8") as arquivo:
+    conteudo = arquivo.read()
+# aqui fora, o arquivo já foi fechado, mesmo que read() tivesse dado erro
+```
+
+Veja [Aula 14](../aulas/14_arquivos.md).
+
+---
+
 ## Buffer
 
-Uma memória temporária onde dados ficam acumulados antes de serem gravados definitivamente. Quando você chama `arquivo.write(...)`, o Python pode não gravar imediatamente no disco — ele guarda no buffer e descarrega de uma vez quando o arquivo é fechado. É por isso que `close()` (ou o `with`) é obrigatório: sem fechar, partes do conteúdo podem não ter sido salvas.
+Uma memória temporária onde dados ficam acumulados antes de serem gravados definitivamente. Quando você chama `arquivo.write(...)`, o Python pode não gravar imediatamente no disco: ele guarda no buffer e descarrega de uma vez quando o arquivo é fechado. É por isso que `close()` (ou o `with`) é obrigatório: sem fechar, partes do conteúdo podem não ter sido salvas.
 
 ---
 
@@ -654,7 +705,7 @@ Duas formas de especificar onde um arquivo está:
 Na prática, use caminhos relativos para arquivos do projeto (portáveis entre computadores) e absolutos só quando precisar referenciar um local fixo no sistema.
 
 ```python
-with open("dados.txt", "r", encoding="utf-8") as f:   # relativo — busca na pasta atual
+with open("dados.txt", "r", encoding="utf-8") as f:   # relativo : busca na pasta atual
     ...
 
 with open("/tmp/log.txt", "r", encoding="utf-8") as f:   # absoluto
@@ -665,15 +716,15 @@ with open("/tmp/log.txt", "r", encoding="utf-8") as f:   # absoluto
 
 ## Encoding (codificação)
 
-O conjunto de regras que mapeia caracteres para bytes. UTF-8 é o padrão mais usado — representa todos os caracteres do Unicode (incluindo acentos, emojis, caracteres japoneses) usando 1 a 4 bytes por caractere.
+O conjunto de regras que mapeia caracteres para bytes. UTF-8 é o padrão mais usado: representa todos os caracteres do Unicode (incluindo acentos, emojis, caracteres japoneses) usando 1 a 4 bytes por caractere.
 
-No Python, sempre que abrir um arquivo de texto, especifique `encoding="utf-8"`. Sem isso, o Python usa o padrão do sistema — que no Windows pode ser `cp1252` ou `latin-1`, causando lixo ou erros ao ler arquivos com acentos criados em outro sistema.
+No Python, sempre que abrir um arquivo de texto, especifique `encoding="utf-8"`. Sem isso, o Python usa o padrão do sistema, que no Windows pode ser `cp1252` ou `latin-1`, causando lixo ou erros ao ler arquivos com acentos criados em outro sistema.
 
 ```python
-# Sem encoding — comportamento depende do sistema operacional
+# Sem encoding: comportamento depende do sistema operacional
 with open("notas.txt", "r") as f: ...
 
-# Com encoding — funciona igual em qualquer sistema
+# Com encoding: funciona igual em qualquer sistema
 with open("notas.txt", "r", encoding="utf-8") as f: ...
 ```
 
@@ -694,12 +745,12 @@ with open("notas.txt", "a", encoding="utf-8") as f:
     f.write("novo registro\n")   # "a" não apaga o que já estava lá
 ```
 
-O erro mais comum: usar `"w"` pensando em "write" quando deveria ser `"a"` para "append". Com `"w"`, o arquivo é zerado na hora de abrir — mesmo antes de você escrever qualquer coisa.
+O erro mais comum: usar `"w"` pensando em "write" quando deveria ser `"a"` para "append". Com `"w"`, o arquivo é zerado na hora de abrir; mesmo antes de você escrever qualquer coisa.
 
 Os dois métodos de escrita principais:
 
-- `f.write(texto)` — escreve uma string. Você controla cada caractere, inclusive os `\n` no final de cada linha.
-- `f.writelines(lista)` — escreve uma lista de strings de uma vez, equivale a chamar `write()` para cada item. Não adiciona `\n` automaticamente — cada string da lista já precisa terminar com `\n`.
+- `f.write(texto)`: escreve uma string. Você controla cada caractere, inclusive os `\n` no final de cada linha.
+- `f.writelines(lista)`: escreve uma lista de strings de uma vez, equivale a chamar `write()` para cada item. Não adiciona `\n` automaticamente; cada string da lista já precisa terminar com `\n`.
 
 ```python
 linhas = ["Ana,8.5\n", "Bruno,6.0\n"]
@@ -711,7 +762,7 @@ with open("turma.csv", "w", encoding="utf-8") as f:
 
 ## CSV (Comma-Separated Values)
 
-Um formato de arquivo de texto onde cada linha é um registro e os campos são separados por vírgula. É o formato universal para trocar dados tabulares — Excel, Google Planilhas, bancos de dados, todos exportam e importam CSV.
+Um formato de arquivo de texto onde cada linha é um registro e os campos são separados por vírgula. É o formato universal para trocar dados tabulares: Excel, Google Planilhas, bancos de dados, todos exportam e importam CSV.
 
 ```text
 nome,nota,situação
@@ -848,6 +899,25 @@ class Cachorro(Animal):   # Cachorro herda de Animal
 rex = Cachorro()
 rex.respirar()   # herdado de Animal
 rex.latir()      # próprio de Cachorro
+```
+
+Veja [Aula 17](../aulas/17_poo.md).
+
+---
+
+## `super()`
+
+Dentro de uma classe filha, chama a versão do método definida na classe mãe. É como usar em vez de reescrever: em vez de copiar o `__init__` da mãe na filha, você chama `super().__init__(...)` e deixa a mãe cuidar da própria parte.
+
+```python
+class Animal:
+    def __init__(self, nome):
+        self.nome = nome
+
+class Cachorro(Animal):
+    def __init__(self, nome, raca):
+        super().__init__(nome)   # reaproveita o __init__ de Animal
+        self.raca = raca
 ```
 
 Veja [Aula 17](../aulas/17_poo.md).

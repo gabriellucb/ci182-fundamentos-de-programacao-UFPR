@@ -3,34 +3,23 @@ Computadores 2026/1
 Professora: Aurora Trinidad Ramirez Pozo
 Monitoria e Elaboração: Gabriel Lucas Barbosa
 
-Lista 07 – Manipulação de Arquivos
+Lista 07 - Manipulação de Arquivos
 Revisão
-•
-•
-
-Abertura de Arquivos: Usamos a função open("nome_do_arquivo.txt", "modo").
-Modos de Operação:
+• Abertura de Arquivos: Usamos a função open("nome_do_arquivo.txt", "modo").
+• Modos de Operação:
 "r" (Read): Lê o arquivo (o arquivo precisa existir).
 "w" (Write): Escreve no arquivo. Se o arquivo já existir, ele apaga tudo e recria do zero!
 "a" (Append): Adiciona conteúdo ao final do arquivo sem apagar o que já existe.
 
-•
+• arq.read(): Lê o arquivo inteiro como uma única String.
 
-arq.read(): Lê o arquivo inteiro como uma única String.
-
-•
-
-arq.read().splitlines(): Lê o arquivo e devolve uma Lista, onde cada elemento é uma
+• arq.read().splitlines(): Lê o arquivo e devolve uma Lista, onde cada elemento é uma
 linha do arquivo.
 
-•
-
-Escrita: Usamos arq.write("texto"). Lembre-se que o .write() não pula linha
+• Escrita: Usamos arq.write("texto"). Lembre-se que o .write() não pula linha
 automaticamente, você deve adicionar \n no final da string.
 Fechamento: Nunca esqueça de usar arq.close() após terminar de usar o arquivo
 para salvar as alterações e liberar a memória!
-
-•
 
 - Exercício 1
 Crie um programa que abra (ou crie) um arquivo chamado saudacao.txt em modo

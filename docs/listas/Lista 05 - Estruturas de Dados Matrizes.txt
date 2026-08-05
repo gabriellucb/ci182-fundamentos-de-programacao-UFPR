@@ -5,19 +5,13 @@ Monitoria e Elaboração: Gabriel Lucas Barbosa
 
 Lista 04 - Estruturas de Dados: Matrizes
 Revisão
-•
-•
-•
-•
-•
-
-Criação: Uma matriz é representada por listas aninhadas. Ex: m = [[1, 2], [3, 4]].
-Acesso por Índices: O acesso é feito usando dois pares de colchetes, onde o
+• Criação: Uma matriz é representada por listas aninhadas. Ex: m = [[1, 2], [3, 4]].
+• Acesso por Índices: O acesso é feito usando dois pares de colchetes, onde o
 primeiro indica a linha e o segundo a coluna. Exemplo: matriz[linha][coluna].
-Modificação: Pode substituir um dado diretamente com os índices. Ex: m[0][1] = 10.
-len(matriz): retorna a quantidade de linhas. Para obter a quantidade de colunas de
+• Modificação: Pode substituir um dado diretamente com os índices. Ex: m[0][1] = 10.
+• len(matriz): retorna a quantidade de linhas. Para obter a quantidade de colunas de
 uma linha específica (ex: linha 0), usamos len(matriz[0]).
-Varredura (Loops): Para percorrer todos os elementos de uma matriz, geralmente
+• Varredura (Loops): Para percorrer todos os elementos de uma matriz, geralmente
 utilizamos laços de repetição aninhados (um for dentro de outro).
 
 - Exercício 1

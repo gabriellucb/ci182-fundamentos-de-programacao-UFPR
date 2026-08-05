@@ -5,43 +5,25 @@ Monitoria e Elaboração: Gabriel Lucas Barbosa
 
 Lista 04 - Estruturas de Dados: Listas
 Revisão
-•
-
-Criação: Uma lista é definida por colchetes [] e pode começar vazia ou com
+• Criação: Uma lista é definida por colchetes [] e pode começar vazia ou com
 elementos. Exemplo: lista = [] ou lista = ["A", "B"].
 
-•
-
-Acesso por Índice: Cada item tem uma posição, começando do 0. Você também
+• Acesso por Índice: Cada item tem uma posição, começando do 0. Você também
 pode usar índices negativos, onde lista[-1] acessa o último elemento.
 
-•
+• Modificação: Você pode substituir um dado diretamente. Exemplo: lista[0] = "Novo".
 
-Modificação: Você pode substituir um dado diretamente. Exemplo: lista[0] = "Novo".
+• Operador in: Verifica se um elemento existe dentro da lista, retornando True ou False.
 
-•
+• len(lista): Retorna o tamanho da lista (a quantidade total de elementos).
 
-Operador in: Verifica se um elemento existe dentro da lista, retornando True ou False.
+• .append(elemento): Insere um novo elemento sempre no final da lista.
 
-•
+• .pop(): Remove o último elemento da lista.
 
-len(lista): Retorna o tamanho da lista (a quantidade total de elementos).
+• .insert(índice, elemento): Insere um elemento no índice indicado da lista.
 
-•
-
-.append(elemento): Insere um novo elemento sempre no final da lista.
-
-•
-
-.pop(): Remove o último elemento da lista.
-
-•
-
-.insert(índice, elemento): Insere um elemento no índice indicado da lista.
-
-•
-
-.sort(): Ordena os elementos em ordem crescente ou lexicográfica (alfabética).
+• .sort(): Ordena os elementos em ordem crescente ou lexicográfica (alfabética).
 
 - Exercício 1
 Um laboratório de meteorologia registra a temperatura de uma cidade ao longo de

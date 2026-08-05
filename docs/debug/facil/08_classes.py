@@ -2,39 +2,36 @@
 # Nível: Fácil  │  Tema: Classes
 # ────────────────────────────────────────────────────────────
 #
-# O programa define uma classe ContaBancaria com saldo inicial,
-# métodos depositar() e sacar(), e __str__ formatado.
+# O programa define uma classe Produto com estoque inicial,
+# métodos vender() e repor(), e __str__ formatado.
 #
 # Saída esperada (dados fixos no código):
 #
-#   Depósito de R$ 200.00 realizado.
-#   Saque de R$ 100.00 realizado.
-#   Conta de Ana, saldo: R$ 600.00
+#   Venda de 3 unidade(s) registrada.
+#   Reposição de 10 unidade(s) registrada.
+#   Produto: Teclado, estoque: 12
 #
 # Encontre e corrija o erro antes de rodar.
 # ────────────────────────────────────────────────────────────
 
-class ContaBancaria:
-    def __init__(self, titular, saldo_inicial=0):
-        self.titular = titular
-        self.saldo   = saldo_inicial
+class Produto:
+    def __init__(self, nome, estoque_inicial=0):
+        self.nome    = nome
+        self.estoque = estoque_inicial
 
-    def depositar(valor):
-        self.saldo += valor
-        print(f"Depósito de R$ {valor:.2f} realizado.")
+    def vender(quantidade):
+        self.estoque -= quantidade
+        print(f"Venda de {quantidade} unidade(s) registrada.")
 
-    def sacar(self, valor):
-        if valor > self.saldo:
-            print("Saldo insuficiente.")
-        else:
-            self.saldo -= valor
-            print(f"Saque de R$ {valor:.2f} realizado.")
+    def repor(self, quantidade):
+        self.estoque += quantidade
+        print(f"Reposição de {quantidade} unidade(s) registrada.")
 
     def __str__(self):
-        return f"Conta de {self.titular}, saldo: R$ {self.saldo:.2f}"
+        return f"Produto: {self.nome}, estoque: {self.estoque}"
 
 
-conta = ContaBancaria("Ana", 500)
-conta.depositar(200)
-conta.sacar(100)
-print(conta)
+produto = Produto("Teclado", 5)
+produto.vender(3)
+produto.repor(10)
+print(produto)

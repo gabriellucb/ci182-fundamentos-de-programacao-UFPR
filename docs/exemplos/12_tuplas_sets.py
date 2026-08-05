@@ -1,4 +1,4 @@
-"""Grade de show de trap/funk — tuplas como ficha de artista, sets como grade de cada dia.
+"""Grade de show de trap/funk: tuplas como ficha de artista, sets como grade de cada dia.
 
 Você comprou ingresso só pro sábado achando que ia ser o dia mais maneiro.
 Não pesquisou o lineup completo. Erro clássico. Esse programa faz o que
@@ -35,7 +35,7 @@ for nome_dia, grade in [("Sexta", sexta), ("Sábado", sabado), ("Domingo", domin
         minutos += duracao
     horas = minutos // 60
     resto  = minutos % 60
-    print(f"\n{nome_dia} — {len(grade)} artistas, {horas}h{resto:02d} de música")
+    print(f"\n{nome_dia}: {len(grade)} artistas, {horas}h{resto:02d} de música")
     print(f"  Gêneros: {', '.join(sorted(generos))}")
     for chave in sorted(grade):
         nome, _, duracao = lineup[chave]
@@ -52,7 +52,7 @@ for chave in sorted(repete):
         dias.append("sáb")
     if chave in domingo:
         dias.append("dom")
-    print(f"  {nome} ({genero}) — {' + '.join(dias)}")
+    print(f"  {nome} ({genero}): {' + '.join(dias)}")
 
 perderia = (sexta | domingo) - sabado
 print(f"\nSe for só no sábado, perde ({len(perderia)}):")

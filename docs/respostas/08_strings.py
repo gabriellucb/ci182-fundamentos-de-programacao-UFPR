@@ -1,5 +1,5 @@
-"""Resposta — Aula 08: Strings
-Exercício: análise de frase — maiúsculas, minúsculas, total de letras
+"""Resposta: Aula 08 | Strings
+Exercício: análise de frase, maiúsculas, minúsculas, total de letras
 (sem espaços/pontuação), primeira palavra, contagem de 'a' e frase invertida.
 """
 

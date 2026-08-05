@@ -79,18 +79,12 @@ Ano: 2026
 - Exercício 6
 Um laboratório de química precisa armazenar frascos de um novo reagente em
 caixas. Escreva um programa que peça ao usuário dois valores:
-•
-•
-
-O número total de frascos produzidos.
-A capacidade da caixa (quantos frascos cabem em uma única caixa).
+• O número total de frascos produzidos.
+• A capacidade da caixa (quantos frascos cabem em uma única caixa).
 
 Calcule e mostre na tela:
-•
-•
-
-Quantas caixas ficarão completamente cheias.
-Quantos frascos sobrarão fora das caixas completas.
+• Quantas caixas ficarão completamente cheias.
+• Quantos frascos sobrarão fora das caixas completas.
 
 Exemplo de Execução:
 Entrada:

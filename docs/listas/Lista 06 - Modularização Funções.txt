@@ -3,19 +3,14 @@ Computadores 2026/1
 Professora: Aurora Trinidad Ramirez Pozo
 Monitoria e Elaboração: Gabriel Lucas Barbosa
 
-Lista 06 – Modularização: Funções
+Lista 06 - Modularização: Funções
 Revisão
-•
-•
-•
-•
-
-Definição: Usamos a palavra reservada def para criar uma função, seguida do nome,
+• Definição: Usamos a palavra reservada def para criar uma função, seguida do nome,
 parênteses (Argumentos) e dois pontos “:”.
-Argumentos: São os dados que a função recebe (colocados dentro dos parênteses).
-Retorno (return): É a resposta que a função devolve para o programa principal. Uma
+• Argumentos: São os dados que a função recebe (colocados dentro dos parênteses).
+• Retorno (return): É a resposta que a função devolve para o programa principal. Uma
 função pode imprimir algo ou retornar um valor para ser usado depois.
-Valores Default (Padrão): Podemos definir valores opcionais para os argumentos. Se
+• Valores Default (Padrão): Podemos definir valores opcionais para os argumentos. Se
 o usuário não enviar o dado, a função usa o valor padrão. Ex: def oi(nome="Visitante"):
 
 - Exercício 1
@@ -139,16 +134,12 @@ duas funções:
 números, removendo pontos e traços.
 2. valida_cpf(cpf): Implementa o algoritmo oficial de validação.
 Algoritmo do Dígito Verificador:
-•
-
-Primeiro Dígito: Multiplique os 9 primeiros números pelos pesos decrescentes
+• Primeiro Dígito: Multiplique os 9 primeiros números pelos pesos decrescentes
 de 10 até 2 e some tudo. Multiplique a soma por 10 e divida por 11. O resto
 dessa divisão é o dígito (se o resto for 10, o dígito vira 0). Verifique se ele bate
 com o 10º número do CPF.
 
-•
-
-Segundo Dígito: Mesma lógica, mas agora usa os 10 primeiros números
+• Segundo Dígito: Mesma lógica, mas agora usa os 10 primeiros números
 multiplicados pelos pesos de 11 até 2. O resto da divisão dita o último dígito.
 
 Exemplo de execução:

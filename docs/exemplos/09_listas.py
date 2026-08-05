@@ -1,4 +1,4 @@
-"""Log de partida — filtros, estatísticas e fatiamento de listas.
+"""Log de partida: filtros, estatísticas e fatiamento de listas.
 
 Aquele momento no fim da partida onde você abre as estatísticas e descobre
 que fez 9% do dano total da equipe enquanto ficava "dando suporte". Esse
@@ -33,9 +33,9 @@ print(f"{len(tipos)} eventos registrados.\n")
 
 for i, tipo in enumerate(tipos):
     if tipo in ("ABATE", "MORTE"):
-        print(f"  [{i + 1:02d}] {tipo:<5} — {jogadores[i]}")
+        print(f"  [{i + 1:02d}] {tipo}: {jogadores[i]}")
     else:
-        print(f"  [{i + 1:02d}] {tipo:<5} — {jogadores[i]}: {valores[i]} pts")
+        print(f"  [{i + 1:02d}] {tipo}: {jogadores[i]} ({valores[i]} pts)")
 
 # danos
 hits    = []
@@ -51,7 +51,7 @@ idx   = hits.index(maior)
 print("\n--- DANO ---")
 print(f"  Acertos:     {len(hits)}")
 print(f"  Total:       {sum(hits)} pts")
-print(f"  Maior hit:   {maior} pts — {autores[idx]}")
+print(f"  Maior hit:   {maior} pts, {autores[idx]}")
 print(f"  Menor hit:   {min(hits)} pts")
 print(f"  Média:       {sum(hits) / len(hits):.1f} pts")
 
@@ -72,7 +72,7 @@ idx_cura   = curas.index(maior_cura)
 
 print("\n--- CURA ---")
 print(f"  Total curado: {sum(curas)} pts")
-print(f"  Maior cura:   {maior_cura} pts — {curadores[idx_cura]}")
+print(f"  Maior cura:   {maior_cura} pts, {curadores[idx_cura]}")
 
 # abates
 killers = []

@@ -15,4 +15,4 @@ Material referente à disciplina CI182/CI240 na turma do Prof. Elias P. Duarte J
 
 ---
 
-Nada nesta pasta está coberto pelas licenças deste repositório (veja o [`LICENSE`](../../../LICENSE) e o [`LICENSE-CONTENT`](../../../LICENSE-CONTENT) na raiz). Está tudo aqui apenas como referência de apoio.
+Nada nesta pasta está coberto pelas licenças deste repositório (veja o [`LICENSE`](../../../LICENSE) e o [`LICENSE-CONTENT`](../../../LICENSE-CONTENT) na raiz). Está tudo aqui apenas como referência de apoio, com autorização do Prof. Elias.

@@ -1,5 +1,5 @@
-"""Resposta — Aula 07: Repetição
-Exercício: leitura de números até digitar 0 — soma, quantidade, média e maior.
+"""Resposta: Aula 07 | Repetição
+Exercício: leitura de números até digitar 0, soma, quantidade, média e maior.
 """
 
 soma       = 0

@@ -1,4 +1,4 @@
-"""Resposta — Aula 05: Entrada e Saída
+"""Resposta: Aula 05 | Entrada e Saída
 Exercício: contracheque com cálculo de desconto INSS.
 """
 

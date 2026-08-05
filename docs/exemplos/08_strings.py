@@ -1,4 +1,4 @@
-"""Username check para jogos — métodos de string, fatiamento, for.
+"""Username check para jogos: métodos de string, fatiamento, for.
 
 Nome de jogo é um tipo de identidade. Esse programa verifica se o nick passa nas
 regras básicas da maioria das plataformas (tamanho, caracteres, posição de símbolos),
@@ -29,10 +29,10 @@ else:
     valido = True
 
     if tamanho < MINIMO:
-        print(f"  Muito curto — mínimo {MINIMO} caracteres.")
+        print(f"  Muito curto: mínimo {MINIMO} caracteres.")
         valido = False
     if tamanho > MAXIMO:
-        print(f"  Muito longo — máximo {MAXIMO} caracteres.")
+        print(f"  Muito longo: máximo {MAXIMO} caracteres.")
         valido = False
     if not nick.replace("_", "").replace("-", "").isalnum():
         print("  Só letras, números, _ e - são permitidos.")

@@ -57,7 +57,7 @@ def ordenar_por_confianca(jogadores):
 def linha_escolha(numero, jogador):
     """Uma linha de opção com número colorido e barra de confiança do jogador."""
     etiqueta = visual.cor(f"{numero:>2}", visual.CIANO + visual.NEGRITO)
-    nome = jogador.nome.ljust(20)
+    nome = f"{jogador.nome:<20}"
     return f"    {etiqueta}. {nome} {visual.barra(jogador.confianca)} {int(jogador.confianca)}%"
 
 
@@ -124,11 +124,13 @@ def mostrar_historico():
 
     # Ignora linhas fora do formato "dificuldade;resultado;detalhe" (por
     # exemplo, se o arquivo for editado à mão), em vez de quebrar.
-    campanhas = [partes for partes in (linha.split(";") for linha in linhas) if len(partes) == 3]
+    todas_as_partes = [linha.split(";") for linha in linhas]
+    campanhas = [partes for partes in todas_as_partes if len(partes) == 3]
     if not campanhas:
         return
 
-    titulos = sum(1 for partes in campanhas if partes[1] == "campeao")
+    campeonatos_vencidos = [partes for partes in campanhas if partes[1] == "campeao"]
+    titulos = len(campeonatos_vencidos)
     print(visual.cor(f"  🗂  Campanhas anteriores: {len(campanhas)}   🏆 Títulos: {titulos}", visual.CINZA))
     for dificuldade, _, detalhe in campanhas[-3:]:
         print(visual.cor(f"     [{dificuldade}] {detalhe}", visual.CINZA))
@@ -146,7 +148,7 @@ def mostrar_estatisticas(brasil):
         ranking.append((jogador.aproveitamento(), jogador.gols, indice, jogador))
     ranking.sort(reverse=True)
     for taxa, _, _, jogador in ranking:
-        nome = jogador.nome.ljust(20)
+        nome = f"{jogador.nome:<20}"
         print(f"    {nome} {visual.barra(taxa)} {jogador.gols}/{jogador.cobrancas} ({taxa:.0f}%)")
 
     melhor = None

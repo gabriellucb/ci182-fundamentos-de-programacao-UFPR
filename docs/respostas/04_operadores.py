@@ -1,4 +1,4 @@
-"""Resposta — Aula 04: Operadores
+"""Resposta: Aula 04 | Operadores
 Exercício: soma, média, divisão, paridade e comparação de três números.
 """
 

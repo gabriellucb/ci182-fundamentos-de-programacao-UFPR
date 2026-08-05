@@ -1,4 +1,4 @@
-"""Racha de pizza — operadores aritméticos, divisão inteira e módulo.
+"""Racha de pizza: operadores aritméticos, divisão inteira e módulo.
 
 Sexta à noite, galera reunida e ninguém quer pagar mais do que deve.
 Esse programa divide a conta com precisão de centavo e ainda diz quantas fatias sobram pra disputar.

@@ -6,11 +6,11 @@ Este documento é um complemento às aulas, não substitui nenhuma delas. Aqui v
 
 ## Como usar este repositório
 
-O material principal está em `docs/aulas/`. Cada arquivo é uma aula completa com explicação, exemplos de código e exercício sugerido no final.
+O material principal está em [`docs/aulas/`](aulas/README.md). Cada arquivo é uma aula completa com explicação, exemplos de código e exercício sugerido no final.
 
 Os arquivos em `docs/exemplos/` são código Python comentado, organizados por tema. Servem como referência prática para consultar sintaxe e ver padrões funcionando.
 
-As respostas dos exercícios sugeridos ficam em `docs/respostas/`, com a mesma numeração das aulas. Se quiser praticar identificando bugs, `docs/debug/` tem programas quebrados de propósito, separados por dificuldade (`facil/`, `medio/`, `dificil/`), sem gabarito. E `docs/extras/` reúne glossário, FAQ e referência rápida de sintaxe, para consulta pontual quando um termo ou uma dúvida travar você no meio de uma aula.
+As respostas dos exercícios sugeridos ficam em `docs/respostas/`, com a mesma numeração das aulas. Se quiser praticar identificando bugs, [`docs/debug/`](debug/README.md) tem programas quebrados de propósito, separados por dificuldade (`facil/`, `medio/`, `dificil/`), sem gabarito. E [`docs/extras/`](extras/README.md) reúne glossário, FAQ e referência rápida de sintaxe, para consulta pontual quando um termo ou uma dúvida travar você no meio de uma aula.
 
 Quem quiser ir além do que as aulas cobrem tem duas opções: `docs/apendices/` traz explicações mais fundas sobre temas que aparecem de leve nas aulas (custo de operações, algoritmos de busca, como funciona uma tabela hash, ambiente de desenvolvimento avançado), e `docs/projetos/` tem programas maiores e completos, escritos usando só o que as aulas ensinam (o `copa_penaltis`, por exemplo, é uma disputa de pênaltis interativa inteira).
 
@@ -50,13 +50,13 @@ Os gabaritos estão em `docs/gabaritos/` (`.ipynb`). Você pode abrir qualquer u
 
 | Lista | Gabarito no Colab |
 |-------|-------------------|
-| Lista 01: Entradas, Saídas e Operações | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-ufpr/blob/main/docs/gabaritos/Gabarito_Lista_01.ipynb) |
-| Lista 02: Condicionais e Operadores Lógicos | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-ufpr/blob/main/docs/gabaritos/Gabarito_Lista_02.ipynb) |
-| Lista 03: Estruturas de Repetição | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-ufpr/blob/main/docs/gabaritos/Gabarito_Lista_03.ipynb) |
-| Lista 04: Estruturas de Dados: Listas | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-ufpr/blob/main/docs/gabaritos/Gabarito_Lista_04.ipynb) |
-| Lista 05: Estruturas de Dados: Matrizes | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-ufpr/blob/main/docs/gabaritos/Gabarito_Lista_05.ipynb) |
-| Lista 06: Modularização e Funções | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-ufpr/blob/main/docs/gabaritos/Gabarito_Lista_06.ipynb) |
-| Lista 07: Manipulação de Arquivos | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-ufpr/blob/main/docs/gabaritos/Gabarito_Lista_07.ipynb) |
+| Lista 01: Entradas, Saídas e Operações | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-de-programacao-UFPR/blob/main/docs/gabaritos/Gabarito_Lista_01.ipynb) |
+| Lista 02: Condicionais e Operadores Lógicos | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-de-programacao-UFPR/blob/main/docs/gabaritos/Gabarito_Lista_02.ipynb) |
+| Lista 03: Estruturas de Repetição | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-de-programacao-UFPR/blob/main/docs/gabaritos/Gabarito_Lista_03.ipynb) |
+| Lista 04: Estruturas de Dados: Listas | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-de-programacao-UFPR/blob/main/docs/gabaritos/Gabarito_Lista_04.ipynb) |
+| Lista 05: Estruturas de Dados: Matrizes | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-de-programacao-UFPR/blob/main/docs/gabaritos/Gabarito_Lista_05.ipynb) |
+| Lista 06: Modularização e Funções | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-de-programacao-UFPR/blob/main/docs/gabaritos/Gabarito_Lista_06.ipynb) |
+| Lista 07: Manipulação de Arquivos | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gabriellucb/ci182-fundamentos-de-programacao-UFPR/blob/main/docs/gabaritos/Gabarito_Lista_07.ipynb) |
 
 ---
 
@@ -180,6 +180,20 @@ resultado = entrada * 2                # multiplica a string, não o número
 ```
 
 Sempre converta o que vem do `input()`: `int(input(...))` ou `float(input(...))`.
+
+---
+
+#### `AttributeError`
+
+Você chamou um método ou acessou um atributo que aquele tipo de objeto não tem. É comum a partir da Aula 16 (classes), mas também aparece com os tipos básicos quando você confunde métodos de tipos diferentes.
+
+```text
+AttributeError: 'str' object has no attribute 'append'   ← append() é de lista, não de string
+AttributeError: 'int' object has no attribute 'upper'    ← upper() é de string, não de número
+AttributeError: 'NoneType' object has no attribute 'strip'   ← a variável é None
+```
+
+O terceiro caso é o mais traiçoeiro: geralmente significa que uma função esqueceu o `return` e devolveu `None` sem querer, e você está tentando usar o resultado como se fosse o valor esperado. Confira se a função realmente retorna algo em todos os caminhos antes de checar o nome do método.
 
 ---
 

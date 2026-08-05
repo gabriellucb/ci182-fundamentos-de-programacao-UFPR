@@ -67,6 +67,15 @@ x %= 2   # x = x % 2
 x **= 2  # x = x ** 2
 ```
 
+### Identidade e pertencimento
+
+| Operador | Significado | Exemplo |
+| --- | --- | --- |
+| `is` | Mesmo objeto na memória (use para comparar com `None`) | `nota is None` |
+| `is not` | Objetos diferentes | `nota is not None` |
+| `in` | Valor existe na coleção | `"a" in "aeiou"` |
+| `not in` | Valor não existe na coleção | `"z" not in "aeiou"` |
+
 ---
 
 ## Strings: métodos principais
@@ -427,11 +436,11 @@ class MinhaClasse:
 # Herança
 class Filha(MinhaClasse):
     def __init__(self, param, extra):
-        super().__init__(param)   # chama __init__ da mãe
+        super().__init__(param)   # super() chama o __init__ da mãe em vez de reescrevê-lo
         self.extra = extra
 
     def metodo(self):             # sobrescreve o da mãe
-        return f"{super().metodo()} + {self.extra}"
+        return f"{super().metodo()} + {self.extra}"   # mas ainda pode reaproveitar a versão da mãe
 
 objeto = MinhaClasse("valor")
 print(objeto)     # MinhaClasse(valor)  (usa __str__)

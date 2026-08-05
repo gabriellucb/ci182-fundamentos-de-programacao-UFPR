@@ -38,9 +38,9 @@ Um ou dois bugs por arquivo. Pode não dar traceback, o programa roda, mas o res
 
 | Arquivo | Tema |
 | --- | --- |
-| `01_condicionais.py` | Cálculo de IMC |
+| `01_condicionais.py` | Multa por excesso de velocidade |
 | `02_repeticao.py` | Sequência de Fibonacci |
-| `03_strings.py` | Validador de senha |
+| `03_strings.py` | Verificador de palíndromo |
 | `04_listas.py` | Torneio de games (ranking de pontuações) |
 | `05_matrizes.py` | Placar de eSports (laços aninhados e médias) |
 | `06_funcoes.py` | Conversor de temperatura |

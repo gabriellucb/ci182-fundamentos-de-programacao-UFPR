@@ -1,4 +1,4 @@
-"""Resposta — Aula 06: Condicionais
+"""Resposta: Aula 06 | Condicionais
 Exercício: classificação de IMC.
 """
 

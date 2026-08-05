@@ -1,4 +1,4 @@
-"""Ficha de Treino — while, for, range, break, continue, acumuladores, laços aninhados.
+"""Ficha de Treino: while, for, range, break, continue, acumuladores, laços aninhados.
 
 Toda semana eu planejo ir na academia. Essa já passou. A próxima com certeza vai. 
 Enquanto eu procrastino, esse programa pelo menos gera uma ficha para auxiliar onde 

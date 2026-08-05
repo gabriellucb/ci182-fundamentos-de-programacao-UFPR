@@ -1,6 +1,6 @@
 # Dúvidas frequentes
 
-Dúvidas que aparecem com frequência — na monitoria, nos fóruns de Python, e que eu mesmo tive quando estava aprendendo. Se você travou em algo, provavelmente está aqui.
+Dúvidas que aparecem com frequência: na monitoria, nos fóruns de Python, e que eu mesmo tive quando estava aprendendo. Se você travou em algo, provavelmente está aqui.
 
 ---
 
@@ -14,19 +14,19 @@ Porque `input()` não sabe o que você quer fazer com o dado. Talvez você queir
 
 **Por que `"1" + "2"` dá `"12"` e não `3`?**
 
-Porque as duas são strings — e `+` entre strings é concatenação, não soma. `"1" + "2"` une os dois textos em `"12"`. Para somar, você precisa de números: `int("1") + int("2")` dá `3`.
+Porque as duas são strings, e `+` entre strings é concatenação, não soma. `"1" + "2"` une os dois textos em `"12"`. Para somar, você precisa de números: `int("1") + int("2")` dá `3`.
 
 ---
 
 **Chamei `print()` dentro da minha função e o resultado não foi guardado. Por quê?**
 
-`print()` só exibe — não devolve nada. Para guardar ou usar o resultado fora da função, a função precisa usar `return`. Um `return` entrega o valor para quem chamou; um `print()` apenas mostra na tela e some.
+`print()` só exibe, não devolve nada. Para guardar ou usar o resultado fora da função, a função precisa usar `return`. Um `return` entrega o valor para quem chamou; um `print()` apenas mostra na tela e some.
 
 ```python
 def dobrar(n):
     print(n * 2)       # exibe, mas não retorna
 
-resultado = dobrar(5)  # resultado é None — não tem nada para guardar
+resultado = dobrar(5)  # resultado é None: não tem nada para guardar
 ```
 
 ```python
@@ -48,7 +48,7 @@ Toda função que não tem `return` (ou que chega ao fim sem executar nenhum `re
 
 **O que é `None`? É o mesmo que `0` ou string vazia?**
 
-Não. `None` é a ausência de valor — significa "não tem nada aqui". `0` é o número zero. `""` é uma string vazia. Os três são distintos:
+Não. `None` é a ausência de valor: significa "não tem nada aqui". `0` é o número zero. `""` é uma string vazia. Os três são distintos:
 
 ```python
 print(0 == None)    # False
@@ -62,13 +62,13 @@ Use `None` quando uma variável precisa existir mas ainda não tem valor, ou qua
 
 **Quando usar `int` e quando usar `float`?**
 
-Regra prática: `int` para contagens, idades, índices, anos — qualquer coisa que não vai ter vírgula. `float` para medidas, preços, médias, coordenadas — qualquer coisa que naturalmente pode ser decimal.
+Regra prática: `int` para contagens, idades, índices, anos (qualquer coisa que não vai ter vírgula). `float` para medidas, preços, médias, coordenadas (qualquer coisa que naturalmente pode ser decimal).
 
 ```python
-quantidade = 3        # int — não existe "2.5 maçãs"
-preco = 4.99          # float — preço pode ter centavos
-ano = 2026            # int — ano não tem fração
-media = 7.3           # float — média raramente é exata
+quantidade = 3        # int, não existe "2.5 maçãs"
+preco = 4.99          # float, preço pode ter centavos
+ano = 2026            # int, ano não tem fração
+media = 7.3           # float, média raramente é exata
 ```
 
 Usar `float` para tudo funciona na maioria dos casos, mas floats carregam uma pequena imprecisão e algumas operações (índices de lista, `range()`) exigem `int` explicitamente.
@@ -77,7 +77,7 @@ Usar `float` para tudo funciona na maioria dos casos, mas floats carregam uma pe
 
 **Por que `0.1 + 0.2` não é `0.3`?**
 
-Porque computadores representam decimais em binário (base 2), e `0.1` não tem representação exata nessa base — como `1/3` não tem representação exata em decimal. O resultado é `0.30000000000000004`. Na prática isso raramente causa problema — ao formatar com `:.2f` você nunca vê a diferença. Onde importa: nunca compare floats com `==` diretamente.
+Porque computadores representam decimais em binário (base 2), e `0.1` não tem representação exata nessa base, assim como `1/3` não tem representação exata em decimal. O resultado é `0.30000000000000004`. Na prática isso raramente causa problema: ao formatar com `:.2f` você nunca vê a diferença. Onde importa: nunca compare floats com `==` diretamente.
 
 ```python
 print(0.1 + 0.2 == 0.3)          # False
@@ -88,7 +88,7 @@ print(round(0.1 + 0.2, 10) == 0.3)  # True
 
 **Qual a diferença entre `=` e `==`?**
 
-`=` atribui um valor a uma variável. `==` compara dois valores e retorna `True` ou `False`. Usar `=` dentro de um `if` é um erro de sintaxe — o Python vai reclamar na hora.
+`=` atribui um valor a uma variável. `==` compara dois valores e retorna `True` ou `False`. Usar `=` dentro de um `if` é um erro de sintaxe: o Python vai reclamar na hora.
 
 ```python
 nota = 7       # atribuição: nota recebe o valor 7
@@ -97,9 +97,9 @@ nota == 7      # comparação: isso é 7?  → True
 
 ---
 
-### Como o Python guarda variáveis na memória — e o que o `is` realmente verifica?
+### Como o Python guarda variáveis na memória, e o que o `is` realmente verifica?
 
-Todo valor que o Python cria precisa ser guardado em algum lugar. Esse lugar é a **memória RAM** do computador — um espaço imenso dividido em bilhões de células minúsculas, cada uma com um endereço único (como casas numa rua infinita).
+Todo valor que o Python cria precisa ser guardado em algum lugar. Esse lugar é a **memória RAM** do computador: um espaço imenso dividido em bilhões de células minúsculas, cada uma com um endereço único (como casas numa rua infinita).
 
 Quando você escreve `nome = "Gabriel"`, o Python faz três coisas:
 
@@ -107,7 +107,7 @@ Quando você escreve `nome = "Gabriel"`, o Python faz três coisas:
 2. Anota o endereço desse espaço.
 3. Cria a variável `nome` como um rótulo que aponta para esse endereço.
 
-A variável não *é* o valor — ela é uma **referência** para onde o valor está guardado. Pense como um post-it colado numa gaveta: o post-it tem o endereço da gaveta, o objeto está dentro dela.
+A variável não *é* o valor: ela é uma **referência** para onde o valor está guardado. Pense como um post-it colado numa gaveta: o post-it tem o endereço da gaveta, o objeto está dentro dela.
 
 ```text
 Memória RAM (simplificado):
@@ -157,14 +157,14 @@ a = [1, 2, 3]
 b = [1, 2, 3]   # mesmo conteúdo, objetos diferentes
 c = a           # mesmo objeto que a
 
-print(a == b)   # True  — conteúdo igual
-print(a is b)   # False — endereços diferentes
-print(a is c)   # True  — c aponta para o mesmo endereço que a
+print(a == b)   # True, conteúdo igual
+print(a is b)   # False, endereços diferentes
+print(a is c)   # True, c aponta para o mesmo endereço que a
 ```
 
-**A consequência prática — mutações:**
+**Consequência prática nas mutações:**
 
-Como `c = a` faz `c` apontar para o mesmo objeto, qualquer modificação vista por `a` também é vista por `c` — porque são a mesma gaveta:
+Como `c = a` faz `c` apontar para o mesmo objeto, qualquer modificação vista por `a` também é vista por `c`, porque são a mesma gaveta:
 
 ```python
 a = [1, 2, 3]
@@ -172,7 +172,7 @@ c = a
 
 a.append(4)
 print(a)   # [1, 2, 3, 4]
-print(c)   # [1, 2, 3, 4] — mudou junto: eram o mesmo objeto
+print(c)   # [1, 2, 3, 4] (mudou junto: eram o mesmo objeto)
 ```
 
 Para criar uma cópia independente, use `.copy()`:
@@ -180,12 +180,12 @@ Para criar uma cópia independente, use `.copy()`:
 ```python
 c = a.copy()   # mesmo conteúdo, mas em endereço diferente
 a.append(5)
-print(c)       # [1, 2, 3] — não foi afetado
+print(c)       # [1, 2, 3] (não foi afetado)
 ```
 
 **Por que números e strings se comportam diferente:**
 
-Números, strings e tuplas são **imutáveis** — depois de criados, não têm como ser modificados. Por isso o Python às vezes reutiliza o mesmo objeto para economizar memória — isso se chama *interning*:
+Números, strings e tuplas são **imutáveis**: depois de criados, não têm como ser modificados. Por isso o Python às vezes reutiliza o mesmo objeto para economizar memória; isso se chama *interning*:
 
 ```python
 a = 10
@@ -193,7 +193,7 @@ b = 10
 print(a is b)   # True (em CPython, inteiros pequenos são compartilhados)
 ```
 
-Isso é um detalhe de implementação que pode mudar dependendo do valor ou da versão do Python. **Nunca use `is` para comparar valores** — use `==`. O `is` existe para verificar identidade, não conteúdo.
+Isso é um detalhe de implementação que pode mudar dependendo do valor ou da versão do Python. **Nunca use `is` para comparar valores**, use `==`. O `is` existe para verificar identidade, não conteúdo.
 
 **Por que `None` é especial:**
 
@@ -201,14 +201,14 @@ Existe exatamente **um único** objeto `None` em todo programa Python. Quando vo
 
 ```python
 resultado = None
-print(resultado is None)   # True  — aponta para o único None
+print(resultado is None)   # True, aponta para o único None
 
 resultado = 0
-print(resultado is None)   # False — 0 não é None
-print(resultado == None)   # False — mesmo resultado, mas prefira is None
+print(resultado is None)   # False, 0 não é None
+print(resultado == None)   # False, mesmo resultado, mas prefira is None
 ```
 
-**Resumo — quando usar cada um:**
+**Resumo: quando usar cada um**
 
 | Situação | Use |
 | --- | --- |
@@ -244,13 +244,13 @@ Se a lógica envolve comparar coisas diferentes a cada bloco (`if idade >= 18`, 
 
 **Por que quando copio uma lista com `=` e altero a cópia, a original muda também?**
 
-Porque `=` não copia a lista — cria uma segunda variável apontando para a mesma lista na memória. As duas são o mesmo objeto.
+Porque `=` não copia a lista: cria uma segunda variável apontando para a mesma lista na memória. As duas são o mesmo objeto.
 
 ```python
 a = [1, 2, 3]
 b = a           # b e a apontam para a mesma lista
 b.append(4)
-print(a)        # [1, 2, 3, 4] — mudou junto!
+print(a)        # [1, 2, 3, 4] (mudou junto!)
 ```
 
 Para criar uma cópia independente, use `.copy()` ou fatiamento:
@@ -266,7 +266,7 @@ b = a[:]        # faz a mesma coisa
 
 Na maioria dos casos não faz diferença: os dois deixam você com uma lista vazia para continuar usando. A diferença aparece quando você tem **duas variáveis conectadas à mesma lista**.
 
-Isso acontece ao fazer `b = a`: `b` não é uma cópia — é o mesmo conteúdo, com outro nome. Qualquer mudança feita por `a` também aparece em `b`, e vice-versa.
+Isso acontece ao fazer `b = a`: `b` não é uma cópia, é o mesmo conteúdo, com outro nome. Qualquer mudança feita por `a` também aparece em `b`, e vice-versa.
 
 Veja o que acontece quando você usa `a = []` nessa situação:
 
@@ -276,7 +276,7 @@ b = a   # b é a mesma lista com outro nome
 
 a = []          # a agora tem uma lista nova e vazia
 print(a)        # []
-print(b)        # [1, 2, 3]  — b não mudou, continua com a lista antiga
+print(b)        # [1, 2, 3]  (b não mudou, continua com a lista antiga)
 ```
 
 E quando você usa `a.clear()` na mesma situação:
@@ -287,7 +287,7 @@ b = a   # b é a mesma lista com outro nome
 
 a.clear()       # esvazia o conteúdo da lista que os dois compartilham
 print(a)        # []
-print(b)        # []  — b também ficou vazio!
+print(b)        # []  (b também ficou vazio!)
 ```
 
 O resultado é diferente porque `a = []` troca `a` por uma lista nova (deixando `b` com a lista velha), enquanto `a.clear()` esvazia a lista que `a` e `b` compartilham.
@@ -298,7 +298,7 @@ Se você está começando agora e ainda não chegou na seção de Cópias da [Au
 
 **Por que `[[0] * 4] * 3` não funciona como eu esperava?**
 
-Porque `* 3` na lista externa não cria três listas novas — cria **três nomes para a mesma lista**. É a mesma armadilha de `b = a` aplicada a listas aninhadas.
+Porque `* 3` na lista externa não cria três listas novas: cria **três nomes para a mesma lista**. É a mesma armadilha de `b = a` aplicada a listas aninhadas.
 
 ```python
 matriz = [[0] * 4] * 3
@@ -310,7 +310,7 @@ print(matriz)
 #  [9, 0, 0, 0]]
 ```
 
-O que aconteceu: `[0] * 4` criou uma lista `[0, 0, 0, 0]`. O `* 3` criou três entradas na lista externa, mas todas apontam para essa mesma lista interna. Modificar `matriz[0][0]` é modificar o único objeto que existe — e as três entradas o enxergam.
+O que aconteceu: `[0] * 4` criou uma lista `[0, 0, 0, 0]`. O `* 3` criou três entradas na lista externa, mas todas apontam para essa mesma lista interna. Modificar `matriz[0][0]` é modificar o único objeto que existe, e as três entradas o enxergam.
 
 A solução é criar cada linha dentro de um laço, assim cada iteração gera um objeto novo:
 
@@ -332,7 +332,7 @@ O `[0] * 4` dentro do laço é seguro porque repete um número (imutável), não
 
 **Por que `lista.sort()` não retorna nada?**
 
-Porque `.sort()` ordena a lista no lugar (modifica a própria lista) e retorna `None`. Se você fizer `resultado = lista.sort()`, o `resultado` será `None`. Use `lista.sort()` sozinho. Se quiser uma nova lista ordenada sem modificar a original, use `sorted(lista)` — essa sim retorna.
+Porque `.sort()` ordena a lista no lugar (modifica a própria lista) e retorna `None`. Se você fizer `resultado = lista.sort()`, o `resultado` será `None`. Use `lista.sort()` sozinho. Se quiser uma nova lista ordenada sem modificar a original, use `sorted(lista)`: essa sim retorna.
 
 ```python
 notas = [8, 3, 9, 5]
@@ -371,7 +371,7 @@ Funciona também em strings: `"py" in "python"` retorna `True`.
 
 **Por que Python tem funções prontas como `sum()` e `sort()`?**
 
-Python segue a filosofia de *batteries included* — muita coisa vem embutida. Em linguagens de mais baixo nível, como C, as mesmas operações exigem código manual.
+Python segue a filosofia de *batteries included*: muita coisa vem embutida. Em linguagens de mais baixo nível, como C, as mesmas operações exigem código manual.
 
 Somar uma lista em C:
 
@@ -389,10 +389,10 @@ numeros = [3, 1, 4, 1, 5]
 print(sum(numeros))   # 14
 ```
 
-Ordenar é ainda mais dramático. Por baixo de `sort()` existe um algoritmo chamado **Timsort** — implementá-lo corretamente levaria dezenas de linhas. Uma versão simples (mas mais lenta) já tem essa cara:
+Ordenar é ainda mais dramático. Por baixo de `sort()` existe um algoritmo chamado **Timsort**: implementá-lo corretamente levaria dezenas de linhas. Uma versão simples (mas mais lenta) já tem essa cara:
 
 ```python
-# bubble sort — uma versão simplificada do que sort() faz por baixo
+# bubble sort: uma versão simplificada do que sort() faz por baixo
 def ordenar(lista):
     n = len(lista)
     for i in range(n):
@@ -400,7 +400,7 @@ def ordenar(lista):
             if lista[j] > lista[j + 1]:
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
 
-# com sort() nativo — exatamente o mesmo resultado, em uma linha
+# com sort() nativo: exatamente o mesmo resultado, em uma linha
 numeros = [5, 2, 9, 1, 7]
 numeros.sort()
 ```
@@ -408,14 +408,14 @@ numeros.sort()
 **Vantagens de ter isso pronto:**
 
 - Menos código para escrever e ler.
-- Menos chance de erro — um `<` trocado por `<=` num algoritmo de ordenação é um bug difícil de perceber.
+- Menos chance de erro: um `<` trocado por `<=` num algoritmo de ordenação é um bug difícil de perceber.
 - Mais rápido de desenvolver.
 
 **Desvantagem:**
 
-- Oculta o mecanismo por baixo. Em CI182 você vai aprender a escrever esses algoritmos justamente para entender *como* `sort()` e `sum()` funcionam — usar a função pronta sem saber o que ela faz é conforto sem compreensão.
+- Oculta o mecanismo por baixo. Em CI182 você vai aprender a escrever esses algoritmos justamente para entender *como* `sort()` e `sum()` funcionam; usar a função pronta sem saber o que ela faz é conforto sem compreensão.
 
-A regra prática: em projetos reais, use as funções prontas. Em exercícios de algoritmo, escreva o laço ou o algoritmo à mão — esse é o ponto do exercício.
+A regra prática: em projetos reais, use as funções prontas. Em exercícios de algoritmo, escreva o laço ou o algoritmo à mão: esse é o ponto do exercício.
 
 ---
 
@@ -423,19 +423,19 @@ A regra prática: em projetos reais, use as funções prontas. Em exercícios de
 
 **Por que `dicionario["chave"]` dá `KeyError` mas `dicionario.get("chave")` não?**
 
-Porque os dois têm contratos diferentes: `[]` assume que a chave existe e avisa imediatamente se não existir — o `KeyError` é intencional, não um descuido do Python. `get()` assume que a chave pode não existir e devolve `None` (ou um valor padrão) sem parar o programa.
+Porque os dois têm contratos diferentes: `[]` assume que a chave existe e avisa imediatamente se não existir, o `KeyError` é intencional, não um descuido do Python. `get()` assume que a chave pode não existir e devolve `None` (ou um valor padrão) sem parar o programa.
 
 ```python
 aluno = {"nome": "Ana", "nota": 8.5}
 
-print(aluno["telefone"])               # KeyError: 'telefone' — para tudo
-print(aluno.get("telefone"))           # None  — continua
-print(aluno.get("telefone", "—"))      # "—"   — valor padrão
+print(aluno["telefone"])               # KeyError: 'telefone', para tudo
+print(aluno.get("telefone"))           # None, continua
+print(aluno.get("telefone", "-"))      # "-"   é o valor padrão
 ```
 
 Use `[]` quando a ausência da chave é um bug que você quer detectar logo: se a chave *deveria* estar lá e não está, faz sentido o programa parar. Use `get()` quando a ausência é um caso esperado e você tem um comportamento padrão para ele.
 
-A armadilha de usar `get()` em tudo: você esconde bugs. Se sempre usar `get("nome")` e o valor estiver como `None` em vez de `"Ana"`, o erro vai aparecer só mais tarde — num `print`, num cálculo, num lugar sem relação aparente com o dicionário.
+A armadilha de usar `get()` em tudo: você esconde bugs. Se sempre usar `get("nome")` e o valor estiver como `None` em vez de `"Ana"`, o erro vai aparecer só mais tarde: num `print`, num cálculo, num lugar sem relação aparente com o dicionário.
 
 ---
 
@@ -443,17 +443,17 @@ A armadilha de usar `get()` em tudo: você esconde bugs. Se sempre usar `get("no
 
 **Por que `{1, 2, 3}` não preserva a ordem que eu digitei?**
 
-Porque sets não guardam ordem — por design. Internamente, cada elemento é colocado numa posição determinada pelo seu **hash**, um número calculado a partir do próprio valor. Essa posição não tem nada a ver com a ordem de inserção.
+Porque sets não guardam ordem: é assim por design. Internamente, cada elemento é colocado numa posição determinada pelo seu **hash**, um número calculado a partir do próprio valor. Essa posição não tem nada a ver com a ordem de inserção.
 
 ```python
 s = {5, 1, 4, 2, 3}
-print(s)   # {1, 2, 3, 4, 5} — ordenado pelo hash, não pela inserção
+print(s)   # {1, 2, 3, 4, 5}  (ordenado pelo hash, não pela inserção)
 
 s = {"banana", "abacaxi", "kiwi"}
-print(s)   # pode sair em qualquer ordem — depende do hash de cada string
+print(s)   # pode sair em qualquer ordem (depende do hash de cada string)
 ```
 
-É a mesma razão pela qual buscar em um set é muito mais rápido do que em uma lista: em vez de percorrer tudo, Python calcula o hash e vai direto ao endereço onde aquele valor estaria. O custo dessa velocidade é a ordem — você troca uma pela outra.
+É a mesma razão pela qual buscar em um set é muito mais rápido do que em uma lista: em vez de percorrer tudo, Python calcula o hash e vai direto ao endereço onde aquele valor estaria. O custo dessa velocidade é a ordem: você troca uma pela outra.
 
 Para entender como o hash vira um endereço de memória, por que listas não podem ser chaves de dicionário, o que são colisões e por que inteiros pequenos às vezes parecem vir "em ordem": [Apêndice: Como funciona uma tabela hash](../apendices/tabela_hash.md).
 
@@ -481,7 +481,7 @@ for item in colecao:
 
 **Por que uma variável criada dentro de uma função não existe fora dela?**
 
-Porque ela tem escopo local — existe só durante a execução da função. Quando a função termina, a variável some. É o comportamento esperado: evita que funções alterem acidentalmente variáveis de outras partes do programa.
+Porque ela tem escopo local: existe só durante a execução da função. Quando a função termina, a variável some. É o comportamento esperado: evita que funções alterem acidentalmente variáveis de outras partes do programa.
 
 Se precisar do valor fora, use `return`:
 
@@ -497,32 +497,32 @@ valor = calcular(5)     # valor recebe 10
 
 **Quando devo usar recursão em vez de loop?**
 
-Use recursão quando o problema tem estrutura naturalmente recursiva — ou seja, quando a solução de um caso depende da solução de uma versão menor do mesmo problema. Exemplos clássicos: percorrer uma árvore de pastas, calcular fatorial, busca binária em uma estrutura aninhada.
+Use recursão quando o problema tem estrutura naturalmente recursiva, ou seja, quando a solução de um caso depende da solução de uma versão menor do mesmo problema. Exemplos clássicos: percorrer uma árvore de pastas, calcular fatorial, busca binária em uma estrutura aninhada.
 
-Para a maioria dos problemas do dia a dia (somar uma lista, percorrer elementos, acumular resultados), um `for` ou `while` é mais legível e mais eficiente — o Python tem um limite padrão de ~1000 chamadas recursivas antes de lançar `RecursionError`.
+Para a maioria dos problemas do dia a dia (somar uma lista, percorrer elementos, acumular resultados), um `for` ou `while` é mais legível e mais eficiente; o Python tem um limite padrão de ~1000 chamadas recursivas antes de lançar `RecursionError`.
 
 ```python
-# Com loop — direto, sem limite de profundidade
+# Com loop: direto, sem limite de profundidade
 def soma_loop(nums):
     total = 0
     for n in nums:
         total += n
     return total
 
-# Com recursão — elegante, mas desnecessário aqui
+# Com recursão: elegante, mas desnecessário aqui
 def soma_recursiva(nums):
     if len(nums) == 0:
         return 0
     return nums[0] + soma_recursiva(nums[1:])
 ```
 
-Ambos dão o mesmo resultado. Para listas grandes, o loop é a escolha certa. Use recursão quando o código recursivo for *mais claro* do que o iterativo — não quando for impressionante.
+Ambos dão o mesmo resultado. Para listas grandes, o loop é a escolha certa. Use recursão quando o código recursivo for *mais claro* do que o iterativo, não quando for impressionante.
 
 ---
 
 **Por que modificar uma lista dentro de uma função modifica ela fora também?**
 
-Porque listas são passadas por referência — a função recebe o mesmo objeto, não uma cópia. Qualquer modificação feita dentro da função afeta a lista original. Isso é diferente de números e strings, que são imutáveis.
+Porque listas são passadas por referência: a função recebe o mesmo objeto, não uma cópia. Qualquer modificação feita dentro da função afeta a lista original. Isso é diferente de números e strings, que são imutáveis.
 
 ```python
 def adicionar(lista, item):
@@ -530,7 +530,7 @@ def adicionar(lista, item):
 
 notas = [7, 8]
 adicionar(notas, 9)
-print(notas)   # [7, 8, 9] — foi modificada
+print(notas)   # [7, 8, 9] (foi modificada)
 ```
 
 Se não quiser isso, passe uma cópia: `adicionar(notas.copy(), 9)`.
@@ -557,16 +557,16 @@ O erro não é "você passou o tipo errado": o Python deixa a chamada passar de 
 
 **Por que meu arquivo com acentos abre com caracteres estranhos ou dá erro?**
 
-Provavelmente um problema de **encoding**. Quando você cria um arquivo em UTF-8 (padrão no Linux/Mac e em qualquer editor moderno) e tenta abrir sem especificar o encoding, o Windows pode tentar decodificar usando o padrão do sistema — geralmente `cp1252` ou `latin-1`. O resultado é lixo (`Ã©` em vez de `é`) ou um `UnicodeDecodeError`.
+Provavelmente um problema de **encoding**. Quando você cria um arquivo em UTF-8 (padrão no Linux/Mac e em qualquer editor moderno) e tenta abrir sem especificar o encoding, o Windows pode tentar decodificar usando o padrão do sistema, geralmente `cp1252` ou `latin-1`. O resultado é lixo (`Ã©` em vez de `é`) ou um `UnicodeDecodeError`.
 
 A solução é sempre especificar `encoding="utf-8"` tanto ao escrever quanto ao ler:
 
 ```python
-# Errado — comportamento depende do sistema operacional
+# Errado: comportamento depende do sistema operacional
 with open("notas.txt", "w") as f:
     f.write("Leônidas, 8.5\n")
 
-# Certo — funciona igual em qualquer sistema
+# Certo: funciona igual em qualquer sistema
 with open("notas.txt", "w", encoding="utf-8") as f:
     f.write("Leônidas, 8.5\n")
 
@@ -574,7 +574,7 @@ with open("notas.txt", "r", encoding="utf-8") as f:
     print(f.read())
 ```
 
-Se você já tem um arquivo com encoding errado e precisa convertê-lo, abra no VS Code e clique no indicador de encoding no canto inferior direito — lá dá para mudar e salvar no formato certo.
+Se você já tem um arquivo com encoding errado e precisa convertê-lo, abra no VS Code e clique no indicador de encoding no canto inferior direito: lá dá para mudar e salvar no formato certo.
 
 ---
 
@@ -595,37 +595,37 @@ with open("turma.csv", "r", encoding="utf-8") as f:
         print(linha.strip())
 ```
 
-Na maioria dos casos, a forma mais eficiente é usar o arquivo diretamente no `for` (`for linha in f:`) — o Python lê uma linha por vez sem carregar tudo na memória. `readlines()` só vale quando você precisa acessar linhas por índice ou saber o total.
+Na maioria dos casos, a forma mais eficiente é usar o arquivo diretamente no `for` (`for linha in f:`): o Python lê uma linha por vez sem carregar tudo na memória. `readlines()` só vale quando você precisa acessar linhas por índice ou saber o total.
 
 ---
 
 **Posso misturar `readline()` com `for linha in f` na mesma abertura?**
 
-Sim — e é exatamente o que o padrão de pular cabeçalho faz. `readline()` e `for linha in f` compartilham o mesmo cursor interno. Quando você chama `readline()` uma vez, o cursor avança para a segunda linha. O `for` subsequente continua de onde o cursor está:
+Sim, e é exatamente o que o padrão de pular cabeçalho faz. `readline()` e `for linha in f` compartilham o mesmo cursor interno. Quando você chama `readline()` uma vez, o cursor avança para a segunda linha. O `for` subsequente continua de onde o cursor está:
 
 ```python
 with open("turma.csv", "r", encoding="utf-8") as f:
     cabecalho = f.readline()   # lê linha 1, cursor vai para linha 2
-    for linha in f:            # começa da linha 2 — o cabeçalho foi pulado
+    for linha in f:            # começa da linha 2, o cabeçalho foi pulado
         print(linha.strip())
 ```
 
-O cuidado: se você chamar `readline()` demais antes do `for`, vai pular linhas de dados sem perceber. E se chamar `readlines()` antes do `for`, o `for` não vai produzir nada — o cursor já chegou ao fim do arquivo.
+O cuidado: se você chamar `readline()` demais antes do `for`, vai pular linhas de dados sem perceber. E se chamar `readlines()` antes do `for`, o `for` não vai produzir nada: o cursor já chegou ao fim do arquivo.
 
 ---
 
 **Posso usar `try/except` em vez de `os.path.exists()` para verificar se um arquivo existe?**
 
-Sim — e é a forma preferida em Python. Checar se o arquivo existe antes de abrir e depois abrir são duas operações separadas, e entre as duas o arquivo pode ter sumido (outro processo deletou, o disco falhou). O `try/except` trata isso de uma vez:
+Sim, e é a forma preferida em Python. Checar se o arquivo existe antes de abrir e depois abrir são duas operações separadas, e entre as duas o arquivo pode ter sumido (outro processo deletou, o disco falhou). O `try/except` trata isso de uma vez:
 
 ```python
-# Com os.path.exists — dois passos, pode falhar entre eles
+# Com os.path.exists: dois passos, pode falhar entre eles
 import os
 if os.path.exists("dados.txt"):
     with open("dados.txt", "r", encoding="utf-8") as f:
         ...
 
-# Com try/except — uma operação, mais seguro e idiomático
+# Com try/except: uma operação, mais seguro e idiomático
 try:
     with open("dados.txt", "r", encoding="utf-8") as f:
         ...
@@ -633,13 +633,13 @@ except FileNotFoundError:
     print("Arquivo não encontrado.")
 ```
 
-O estilo Python chama isso de EAFP (*Easier to Ask Forgiveness than Permission*): tente fazer, trate o erro se acontecer. O `import os` também introduz um módulo que só vai aparecer na Aula 15 — então em exercícios de Aula 14, use sempre `try/except`.
+O estilo Python chama isso de EAFP (*Easier to Ask Forgiveness than Permission*): tente fazer, trate o erro se acontecer. O `import os` também introduz um módulo que só vai aparecer na Aula 15; então em exercícios de Aula 14, use sempre `try/except`.
 
 ---
 
 **`float(partes[1])` dá `ValueError` mesmo o arquivo existindo. Por quê?**
 
-Provavelmente uma linha vazia no final do arquivo. Quando você usa `f.write("Ana,8.5\n")`, o `\n` cria uma nova linha — então o arquivo termina com uma linha em branco. `readlines()` inclui essa linha como `"\n"` na lista, e `"\n".strip().split(",")` vira `[""]`, onde `partes[1]` não existe ou é uma string vazia que `float()` não consegue converter.
+Provavelmente uma linha vazia no final do arquivo. Quando você usa `f.write("Ana,8.5\n")`, o `\n` cria uma nova linha; então o arquivo termina com uma linha em branco. `readlines()` inclui essa linha como `"\n"` na lista, e `"\n".strip().split(",")` vira `[""]`, onde `partes[1]` não existe ou é uma string vazia que `float()` não consegue converter.
 
 Duas soluções:
 
@@ -658,7 +658,7 @@ for linha in f:
         partes = linha.strip().split(",")
         nota = float(partes[1])
     except (ValueError, IndexError):
-        continue          # linha com problema — pula e continua
+        continue          # linha com problema: pula e continua
 ```
 
 A solução 1 é mais clara quando o único problema esperado é linha vazia. A solução 2 é mais robusta quando o arquivo pode ter outros tipos de dado inválido.
@@ -701,19 +701,19 @@ Um laço que nunca termina porque a condição de parada nunca vira `False`. Aco
 
 **Por que usar `while True` com `break` em vez de colocar a condição direto no `while`?**
 
-Porque às vezes você só descobre se deve parar *depois* de executar o corpo do laço — não antes.
+Porque às vezes você só descobre se deve parar *depois* de executar o corpo do laço, não antes.
 
 Com a condição no `while`, o Python verifica *antes* de cada rodada. Isso exige que a variável que controla a saída já exista e já tenha um valor relevante antes do laço começar. Quando o valor vem do usuário ou é calculado dentro do laço, você precisa duplicar código: uma vez antes do laço (para ter algo a checar) e de novo dentro (para atualizar). Isso fica feio e propenso a erro.
 
 ```python
-# jeito duplicado — lê a entrada duas vezes
+# jeito duplicado: lê a entrada duas vezes
 linha = input("Texto (ou 'fim'): ")
 while linha != "fim":
     print("Processando:", linha)
     linha = input("Texto (ou 'fim'): ")   # repetição do mesmo input
 ```
 
-Com `while True` + `break`, você lê uma vez, processa, decide se para — tudo no mesmo lugar:
+Com `while True` + `break`, você lê uma vez, processa, decide se para; tudo no mesmo lugar:
 
 ```python
 # jeito limpo
@@ -726,7 +726,7 @@ while True:
 
 Outra vantagem: o `break` pode estar no meio ou no final do corpo, não só no começo. Quando a condição de saída depende de vários passos que acontecem durante a iteração, `while True` + `break` deixa o fluxo muito mais claro do que uma condição complexa no cabeçalho do `while`.
 
-O padrão é tão comum que vale decorar a estrutura — você vai ver em praticamente qualquer código que lê entradas do usuário.
+O padrão é tão comum que vale decorar a estrutura: você vai ver em praticamente qualquer código que lê entradas do usuário.
 
 ---
 
@@ -761,7 +761,7 @@ Resumindo: precisa só do índice de uma lista → `enumerate()`. Precisa andar 
 
 ### Por que a contagem começa em 0 e não em 1?
 
-Parece arbitrário, mas tem razão técnica de verdade — não é capricho do Python nem convenção inventada do nada.
+Parece arbitrário, mas tem razão técnica de verdade: não é capricho do Python nem convenção inventada do nada.
 
 #### A origem: como a memória funciona
 
@@ -771,7 +771,7 @@ Quando um programa guarda uma sequência de valores (um array, uma lista), eles 
 endereço do elemento = endereço do início + (i × tamanho_de_cada_elemento)
 ```
 
-O primeiro elemento está a **zero posições** de distância do início — ou seja, seu deslocamento (*offset*) é 0. Com indexação 1, a fórmula viraria `base + (i−1) × tamanho`, exigindo uma subtração extra a cada acesso. Em C (1972), onde arrays são ponteiros para blocos de memória, `arr[0]` mapeia diretamente para `*arr` sem nenhuma conta. Zero-indexing não é gosto — é o jeito que o hardware funciona.
+O primeiro elemento está a **zero posições** de distância do início, ou seja, seu deslocamento (*offset*) é 0. Com indexação 1, a fórmula viraria `base + (i−1) × tamanho`, exigindo uma subtração extra a cada acesso. Em C (1972), onde arrays são ponteiros para blocos de memória, `arr[0]` mapeia diretamente para `*arr` sem nenhuma conta. Zero-indexing não é gosto, é o jeito que o hardware funciona.
 
 BCPL (1967), predecessor direto de C, já fazia isso. C herdou e consolidou. Nenhuma pessoa "decidiu" começar em zero: foi consequência do modelo de memória.
 
@@ -779,26 +779,26 @@ BCPL (1967), predecessor direto de C, já fazia isso. C herdou e consolidou. Nen
 
 Alguns anos depois, o cientista da computação Edsger Dijkstra escreveu um texto famoso (EWD831, "Why Numbering Should Start at Zero") formalizando matematicamente por que a escolha faz sentido.
 
-O argumento: para representar uma sequência de inteiros, o intervalo **semi-aberto** `[a, b)` — onde `a` entra e `b` não entra — é o único que não tem problemas nos casos limite:
+O argumento: para representar uma sequência de inteiros, o intervalo **semi-aberto** `[a, b)` (onde `a` entra e `b` não entra) é o único que não tem problemas nos casos limite:
 
 - O comprimento da sequência é sempre `b − a`, sem ajuste de ±1.
 - Uma sequência vazia é representada por `a == b`, sem precisar de valor negativo.
 - Para uma sequência de `n` elementos começando em 0: `[0, n)`. O índice de cada elemento é exatamente o número de elementos que o precedem.
 
-Dijkstra chamou qualquer outra escolha de "intelectualmente feia". O argumento dele é o mais elegante, mas é posterior à adoção em C — é a justificativa teórica de algo que já existia por razão de hardware.
+Dijkstra chamou qualquer outra escolha de "intelectualmente feia". O argumento dele é o mais elegante, mas é posterior à adoção em C: é a justificativa teórica de algo que já existia por razão de hardware.
 
 #### Por que Python especificamente
 
-Python é de alto nível — não tem aritmética de ponteiros exposta. Guido van Rossum poderia ter escolhido 1-indexing. Não o fez por duas razões:
+Python é de alto nível: não tem aritmética de ponteiros exposta. Guido van Rossum poderia ter escolhido 1-indexing. Não o fez por duas razões:
 
 1. **Influência de C**: Guido trabalhou extensivamente com C antes de criar Python. A escolha veio naturalmente.
 2. **Slices funcionam melhor**: com zero-indexing e intervalos semi-abertos, `a[:i]` e `a[i:]` dividem qualquer sequência em dois pedaços que somam o original, inclusive quando um dos lados está vazio. Com indexação 1 e intervalos fechados, isso quebra nos casos limite.
 
-O `range()` segue a mesma lógica: `range(n)` gera `n` elementos, e dividir em dois pedaços em qualquer ponto `k` produz `range(k)` e `range(k, n)` — sem sobreposição e sem lacuna.
+O `range()` segue a mesma lógica: `range(n)` gera `n` elementos, e dividir em dois pedaços em qualquer ponto `k` produz `range(k)` e `range(k, n)`, sem sobreposição e sem lacuna.
 
-#### Linguagens que usam 1-indexing — e por quê
+#### Linguagens que usam 1-indexing, e por quê
 
-Nem todas as linguagens fazem isso. Fortran (1957), MATLAB, R e Lua começam em 1. O argumento delas não é técnico: são voltadas para matemáticos e cientistas, e na matemática você escreve `x₁, x₂, ..., xₙ` — então `x[1]` é mais natural que `x[0]`.
+Nem todas as linguagens fazem isso. Fortran (1957), MATLAB, R e Lua começam em 1. O argumento delas não é técnico: são voltadas para matemáticos e cientistas, e na matemática você escreve `x₁, x₂, ..., xₙ`; então `x[1]` é mais natural que `x[0]`.
 
 Não estão erradas. São otimizadas para corresponder ao domínio de quem usa. A diferença é de público-alvo, não de correção.
 
@@ -825,7 +825,7 @@ O Python percebe o problema quando chega num ponto que não faz sentido dado o q
 
 O código tem recuo errado. O Python usa a indentação para saber o que pertence a qual bloco (`if`, `for`, `def`...). Se você misturou espaços e tabs, ou usou recuo inconsistente, ele não consegue interpretar a estrutura.
 
-Configure o editor para usar sempre 4 espaços — nunca tabs. No VS Code isso está em `Configurações > Editor: Tab Size` e `Insert Spaces`.
+Configure o editor para usar sempre 4 espaços, nunca tabs. No VS Code isso está em `Configurações > Editor: Tab Size` e `Insert Spaces`.
 
 ---
 
@@ -855,18 +855,18 @@ total = adicionar(total, 5)
 
 **Chamei `.upper()` (ou `.strip()`, `.replace()`...) e a string não mudou. Por quê?**
 
-Porque strings são **imutáveis** — nenhum método altera a string original. Eles devolvem uma **string nova** com o resultado, e a antiga fica intacta. Se você não guarda esse retorno, ele simplesmente se perde e parece que "não funcionou".
+Porque strings são **imutáveis**: nenhum método altera a string original. Eles devolvem uma **string nova** com o resultado, e a antiga fica intacta. Se você não guarda esse retorno, ele simplesmente se perde e parece que "não funcionou".
 
 ```python
 nome = "ana"
 nome.upper()        # cria "ANA"... e joga fora, porque ninguém guardou
-print(nome)         # "ana" — nada mudou
+print(nome)         # "ana" (nada mudou)
 
 nome = nome.upper() # captura o retorno de volta na variável
 print(nome)         # "ANA"
 ```
 
-A regra: se quer manter o resultado, **reatribua** (`nome = nome.metodo()`). Vale para `.upper()`, `.lower()`, `.strip()`, `.replace()`, `.title()` — todos.
+A regra: se quer manter o resultado, **reatribua** (`nome = nome.metodo()`). Vale para `.upper()`, `.lower()`, `.strip()`, `.replace()`, `.title()`: todos.
 
 ---
 
@@ -884,13 +884,13 @@ if resposta == "s":
 
 **Por que `int("3.5")` dá erro?**
 
-Porque `"3.5"` não é um inteiro válido — tem parte decimal. `int()` não aceita isso. Se o valor pode ser decimal, converta em dois passos: `int(float("3.5"))` → `3`.
+Porque `"3.5"` não é um inteiro válido: tem parte decimal. `int()` não aceita isso. Se o valor pode ser decimal, converta em dois passos: `int(float("3.5"))` → `3`.
 
 ---
 
 **Por que `join()` é chamado no separador e não na lista?**
 
-Parece invertido, mas faz sentido quando você pensa no papel de cada um: o separador é quem "cola" — então é ele que tem a responsabilidade de juntar. A lista é só o material.
+Parece invertido, mas faz sentido quando você pensa no papel de cada um: o separador é quem "cola"; então é ele que tem a responsabilidade de juntar. A lista é só o material.
 
 O jeito de ler que funciona pra mim: `", ".join(palavras)` = *"use vírgula-e-espaço para juntar `palavras`"*.
 
@@ -901,7 +901,7 @@ palavras = ["maçã", "banana", "laranja"]
 "".join(palavras)      # "maçãbananalaranja"
 ```
 
-O inverso seria `palavras.join(", ")` — mas `", "` é uma string, não uma lista, e a lista não sabe qual separador você quer usar. Colocar o método no separador resolve: o separador decide o formato, a lista fornece o conteúdo.
+O inverso seria `palavras.join(", ")`, mas `", "` é uma string, não uma lista, e a lista não sabe qual separador você quer usar. Colocar o método no separador resolve: o separador decide o formato, a lista fornece o conteúdo.
 
 ---
 
@@ -915,12 +915,12 @@ Python tem três métodos para perguntar "isso é um número?", e eles diferem e
 | `isdigit()` | `0`–`9` + superescritos (`²`, `³`) | `"²".isdigit()` → `True` |
 | `isnumeric()` | Tudo acima + frações (`½`) e romanos (`Ⅷ`) | `"½".isnumeric()` → `True` |
 
-Na prática, para validar o que um usuário digitou no teclado, os três se comportam igual — nenhum aceita ponto, vírgula, sinal de menos ou espaço:
+Na prática, para validar o que um usuário digitou no teclado, os três se comportam igual: nenhum aceita ponto, vírgula, sinal de menos ou espaço:
 
 ```python
 print("12345".isdecimal())  # True
-print("3.14".isdecimal())   # False — ponto decimal não é aceito
-print("-5".isdecimal())     # False — sinal de menos não é aceito
+print("3.14".isdecimal())   # False, ponto decimal não é aceito
+print("-5".isdecimal())     # False, sinal de menos não é aceito
 ```
 
 **Regra prática:** use `isdecimal()` por padrão. É o mais restrito e evita surpresas com caracteres incomuns que `isdigit()` e `isnumeric()` aceitariam.
@@ -980,7 +980,7 @@ Depois disso, `venv\Scripts\activate` funciona normalmente em qualquer projeto (
 
 **Para que serve o `self`?**
 
-`self` é a referência ao próprio objeto dentro dos métodos. Quando você chama `conta.depositar(100)`, o Python passa `conta` como primeiro argumento automaticamente — e esse argumento chega ao método com o nome `self`. É obrigatório declarar, mas o Python preenche na chamada.
+`self` é a referência ao próprio objeto dentro dos métodos. Quando você chama `conta.depositar(100)`, o Python passa `conta` como primeiro argumento automaticamente; esse argumento chega ao método com o nome `self`. É obrigatório declarar, mas o Python preenche na chamada.
 
 ```python
 class Conta:
@@ -992,7 +992,7 @@ class Conta:
 
 **Qual a diferença entre atributo e método?**
 
-Atributo é dado (o que o objeto tem ou é). Método é ação (o que o objeto sabe fazer). Em `conta.saldo`, `saldo` é atributo. Em `conta.depositar(100)`, `depositar` é método — note os parênteses.
+Atributo é dado (o que o objeto tem ou é). Método é ação (o que o objeto sabe fazer). Em `conta.saldo`, `saldo` é atributo. Em `conta.depositar(100)`, `depositar` é método: note os parênteses.
 
 ---
 
@@ -1124,4 +1124,4 @@ class Guerreiro(Personagem):
         self.arma = Arma("Espada longa", 30)   # tem uma Arma, não é uma Arma
 ```
 
-Faz sentido dizer "Guerreiro é um Personagem" (herança), mas não faz sentido dizer "Guerreiro é uma Arma" — ele *tem* uma. Se você tentar forçar herança numa relação de posse (`class Guerreiro(Arma)`), o `Guerreiro` herdaria atributos e métodos de `Arma` que não fazem sentido nenhum para ele (`dano` de uma arma não é o mesmo que a força de um guerreiro). Veja [Aula 17](../aulas/17_poo.md#herança).
+Faz sentido dizer "Guerreiro é um Personagem" (herança), mas não faz sentido dizer "Guerreiro é uma Arma": ele *tem* uma. Se você tentar forçar herança numa relação de posse (`class Guerreiro(Arma)`), o `Guerreiro` herdaria atributos e métodos de `Arma` que não fazem sentido nenhum para ele (`dano` de uma arma não é o mesmo que a força de um guerreiro). Veja [Aula 17](../aulas/17_poo.md#herança).
