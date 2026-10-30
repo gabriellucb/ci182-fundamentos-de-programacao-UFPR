@@ -22,6 +22,7 @@ Pra praticar sem depender só da leitura:
 - **`docs/exemplos/`**: arquivos Python comentados, um por aula, pra consultar sintaxe e ver padrões funcionando.
 - **`docs/listas/`**: listas de exercícios oficiais da disciplina, em PDF e TXT.
 - **[`docs/material_professores/`](docs/material_professores/README.md)**: material produzido pelos professores da disciplina (notas de aula, slides, provas antigas), usado aqui com autorização.
+- **[`docs/material_monitores/`](docs/material_monitores/README.md)**: listas de exercícios feitas por outros monitores da disciplina, também usadas aqui com autorização.
 - **`docs/gabaritos/`**: gabaritos das listas, abrindo direto no Google Colab. Tente resolver antes de olhar.
 - **`docs/respostas/`**: minhas respostas dos exercícios sugeridos ao final de cada aula.
 - **`docs/debug/`**: programas com bugs intencionais, separados por dificuldade, pra treinar leitura de erro e correção de código (sem gabarito, de propósito).
@@ -87,4 +88,4 @@ Cada arquivo corresponde a uma aula. O nome segue o mesmo padrão de `docs/aulas
 
 O código-fonte (arquivos `.py`) está sob licença [MIT](LICENSE). O conteúdo escrito (aulas, FAQ, glossário, apêndices e demais `.md`) está sob [Creative Commons BY-SA 4.0](LICENSE-CONTENT).
 
-`docs/listas/` é material oficial da disciplina CI182/CI240 da UFPR, elaborado no âmbito da monitoria sob supervisão da professora responsável. `docs/material_professores/` é material produzido pelos professores da disciplina, usado aqui com autorização, mas não é de minha autoria. Nenhuma das duas licenças acima cobre esses arquivos; eles estão aqui só como referência de apoio.
+`docs/listas/` é material oficial da disciplina CI182/CI240 da UFPR, elaborado no âmbito da monitoria sob supervisão da professora responsável. `docs/material_professores/` e `docs/material_monitores/` são materiais produzidos pelos professores e por outros monitores da disciplina, usados aqui com autorização, mas não são de minha autoria. Nenhuma das duas licenças acima cobre esses arquivos; eles estão aqui só como referência de apoio.
